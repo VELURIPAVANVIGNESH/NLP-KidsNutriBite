@@ -1,0 +1,101 @@
+{
+  "query": "What is the protein requirement for a 10-year-old child?",
+  "child_age": 10.0,
+  "scope_status": "in_scope",
+  "status": "success",
+  "answer": "Based on official ICMR-NIN 2020 guidelines (Table 2a. Summary of recommended protein requirements for Indians 2020, page 5) [NK-015: NK-015-C00013]:\n\nRecommended requirements for a 10-year-old child (age group 10–12 years):\n- **Boys 10–12 years**: 31.8 g/day (EAR: 26.2 g/day)\n- **Girls 10–12 years**: 32.8 g/day (EAR: 26.6 g/day)\n\nSource: NK-015-C00013, Page 5, Table 2a. Summary of recommended protein requirements for Indians 2020.",
+  "citations": [
+    {
+      "chunk_id": "NK-015-C00013",
+      "source": "NK-015",
+      "title": "A Brief Note on Nutrient Requirements for Indians, Recommended Dietary Allowances (RDA) and Estimated Average Requirements (EAR)",
+      "page_numbers": [
+        5
+      ]
+    },
+    {
+      "chunk_id": "NK-019-C00079",
+      "source": "NK-019",
+      "title": "Dietary protein quality evaluation in human nutrition: Report of an FAO Expert Consultation",
+      "page_numbers": [
+        39
+      ]
+    },
+    {
+      "chunk_id": "NK-019-C00078",
+      "source": "NK-019",
+      "title": "Dietary protein quality evaluation in human nutrition: Report of an FAO Expert Consultation",
+      "page_numbers": [
+        38,
+        39
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "chunk_id": "NK-021-C00582",
+      "score": 0.9326309561729431,
+      "text": "The average body weight of a 10-year-old child, as per the Food and Agriculture\nOrganization references, is 25 kg. Thus, the io dine requirement for a 1–10-year-old child\nwould be 90–120 µg/day. Iodine requirements in adults\nIodine at 150 µg/day for adolescents and adults is just ified by the fact th at it corresponds to\nthe daily urinary excretion of iodine and to the iodine content of food in non-endemic areas\n(areas where iodine intake is adequate) (5). It also provides the iodine intake nece",
+      "source": "NK-021",
+      "page_numbers": [
+        203
+      ]
+    },
+    {
+      "chunk_id": "NK-021-C00581",
+      "score": 0.753241777420044,
+      "text": "FAO/WHO expert consultation on human vitamin and mineral requirements 187\nIodine requirements in children\nThe daily iodine need on a body weight basis decreases progressively with age. A study by\nTovar and colleagues (16) correlating 24-hour thyroid radioiodine upt ake and urinary iodine\nexcretion in 9–13-year-old schoolchildren in rural Mexico s uggested that an iodine intake in\nexcess of 60 µg/day is associated with a 24-hour thyroidal radioiodine uptake below 30\npercent. Lower excretion value",
+      "source": "NK-021",
+      "page_numbers": [
+        203
+      ]
+    },
+    {
+      "chunk_id": "NK-015-C00013",
+      "score": 0.22107085585594177,
+      "text": "5 \n \nTable 2a. Summary of recommended protein requirements for Indians 2020 \n \n Body \nweight\n \n(kg) \nEAR\n \n(g/kg/d) \nRDA\n \n(g/kg/d) \nEAR\n \n(g/d) \nRDA\n \n(g/d) \n \nAdult Men \nSedentary \n65 0.66 0.83 42.9 54.0 \n \nModerate \nHeavy Work \nAdult \nWomen \nSedentary \n55 0.66 0.83 36.3 45.7 \n \nModerate \nHeavy Work \nPregnant \nWomen \n2nd Trimester +7.6 +9.5 \n3rd Trimester +17.6 +22.0 \nLactating \nWomen \n0-6 months +13.6 +16.9 \n6-12 months +10.6 +13.2 \nInfants 0-6 months 5.8 1.16 1.40 6.7 8.1 \n6-12 months 8.5 1.",
+      "source": "NK-015",
+      "page_numbers": [
+        5
+      ]
+    },
+    {
+      "chunk_id": "NK-019-C00079",
+      "score": 0.15528130531311035,
+      "text": "Dietary protein quality evaluation in human nutrition: Report of an FAO Expert Consultation\n30\nwas assumed to reflect the amino acid pattern of human tissue protein. On this basis \namino acid requirement patterns were derived for children aged 0.5, 1–2, 3–10, 11–14, \n15–18 years and for adults. Calculation of the scoring patterns from amino acid requirement values \nA scoring pattern for protein quality evaluation is calculated on the basis of the ratio \nof amino acid to protein requirement (i.e.",
+      "source": "NK-019",
+      "page_numbers": [
+        39
+      ]
+    },
+    {
+      "chunk_id": "NK-019-C00078",
+      "score": 0.1252869814634323,
+      "text": "It therefore adopted a factorial approach for \ninfants and children based on the amino acid requirements for maintenance and growth. Maintenance was assumed to exhibit the same amino acid pattern at all ages on a mg/\nkg body weight basis so that the adult requirement pattern was adopted, while growth \nTable 5. Recommended amino acid scoring patterns for infants, children and older children, \nadolescents and adults\nAge group His Ile Leu Lys SAA AAA Thr Trp val\nscoring pattern mg/g protein require",
+      "source": "NK-019",
+      "page_numbers": [
+        38,
+        39
+      ]
+    }
+  ],
+  "generation_metadata": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "top_k": 50,
+    "max_new_tokens": 512,
+    "seed": 42,
+    "do_sample": false,
+    "active_model": "Qwen/Qwen2.5-1.5B-Instruct"
+  },
+  "fidelity_check": {
+    "passed": true,
+    "nutrient_detected": "protein",
+    "unit_contaminated": false,
+    "nutrient_contaminated": false,
+    "failure_reason": "",
+    "explanation": "",
+    "method": "deterministic_fidelity_guard"
+  }
+}

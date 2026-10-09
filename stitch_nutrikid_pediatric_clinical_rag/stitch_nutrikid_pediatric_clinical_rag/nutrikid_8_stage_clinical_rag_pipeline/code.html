@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"provenance-tag":"#082F49","on-primary-fixed":"#00201b","on-surface-variant":"#b9cac5","surface-container-highest":"#2f353f","outline":"#84948f","border-subtle":"rgba(255, 255, 255, 0.08)","surface-bright":"#343944","on-tertiary":"#003730","surface":"#0e141d","confidence-high":"#10B981","tertiary-container":"#99d8ca","secondary-container":"#00a6e0","ice-glow":"#E2F9FB","secondary-fixed-dim":"#7bd0ff","surface-base":"#070C13","surface-dim":"#0e141d","surface-overlay":"#152233","on-secondary":"#00354a","inverse-primary":"#006b5d","on-tertiary-fixed":"#00201b","surface-container-high":"#242a34","outline-variant":"#3b4a46","border-highlight":"rgba(0, 229, 201, 0.25)","tertiary":"#b5f5e6","surface-container-lowest":"#080e17","on-background":"#dde2f0","primary":"#70ffe5","inverse-on-surface":"#2b313b","chart-accent":"#A5D334","on-primary-fixed-variant":"#005046","surgical-blue":"#0284C7","error":"#ffb4ab","surface-raised":"#0E1724","surface-variant":"#2f353f","error-container":"#93000a","on-tertiary-fixed-variant":"#075046","surface-tint":"#00dfc4","confidence-medium":"#F59E0B","on-secondary-fixed-variant":"#004c69","secondary":"#7bd0ff","on-surface":"#dde2f0","on-tertiary-container":"#1f6055","on-secondary-container":"#00374d","inverse-surface":"#dde2f0","primary-container":"#00e5c9","secondary-fixed":"#c4e7ff","on-error":"#690005","tertiary-fixed-dim":"#94d3c5","confidence-low":"#EF4444","on-primary":"#00372f","tertiary-fixed":"#b0efe1","surface-container":"#1a2029","on-error-container":"#ffdad6","on-primary-container":"#006155","on-secondary-fixed":"#001e2c","surface-container-low":"#161c25","citation-text":"#93C5FD","background":"#0e141d","primary-fixed-dim":"#00dfc4","primary-fixed":"#41fcdf"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","gutter-lg":"1.5rem","margin":"1rem","margin-lg":"2.5rem","space-md":"0.75rem","space-lg":"1.25rem","margin-md":"1.5rem"},fontFamily:{"label-code":["JetBrains Mono"],"body-sm":["Inter"],"headline-lg":["Geist"],"body-lg":["Inter"],"headline-xl":["Geist"],"headline-xl-mobile":["Geist"],"headline-sm":["Geist"],"label-provenance":["JetBrains Mono"],"label-tabular":["JetBrains Mono"],"headline-lg-mobile":["Geist"],"body-md":["Inter"],"headline-md":["Geist"]},fontSize:{"label-code":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"500"}],"label-provenance":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-tabular":["12px",{"lineHeight":"16px","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface-base font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-base/85 backdrop-blur-xl border-b border-border-subtle"><div class="h-16 w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-high border border-border-highlight flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">vital_signs</span></div><span class="font-headline-md text-headline-md font-semibold tracking-tight text-on-surface">Nutri<span class="text-primary">Kid</span></span></div><div class="hidden xl:flex items-center gap-space-xs"><span class="px-2 py-0.5 rounded bg-surface-container text-surgical-blue font-label-provenance text-label-provenance uppercase tracking-wider border border-border-subtle">Pediatric Nutrition RAG System</span></div></div><nav class="hidden lg:flex items-center gap-1 xl:gap-space-xs" data-active-classes="bg-surface-container-high text-primary border border-border-highlight"><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="overview" href="#">Overview</a><a aria-current="page" class="px-2.5 py-1.5 rounded font-body-sm transition-colors whitespace-nowrap bg-surface-container-high text-primary border border-border-highlight" data-path="pipeline" href="#">How It Works</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="clinical-rag-query-engine" href="#">Ask NutriKid</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="institutional-sources" href="#">Institutional Sources</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="retrieval-lab" href="#">Retrieval Lab</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="evaluation-benchmarks" href="#">Evaluation &amp; Benchmarks</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="safety-scope" href="#">Safety &amp; Scope</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-provenance-tag/40 border border-surgical-blue/30 text-citation-text font-label-provenance text-label-provenance"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high animate-pulse"></span><span>SCOPE: 5.0–15.0 YRS</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-screen bg-surface-base"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs contained in parent -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-40 w-[30rem] h-[30rem] bg-surgical-blue/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute bottom-10 left-1/4 w-[28rem] h-[28rem] bg-primary-container/10 rounded-full blur-[130px] pointer-events-none"></div>
+<!-- Editorial Header Block -->
+<div class="w-full max-w-[1720px] mx-auto px-margin lg:px-margin-lg pt-space-lg pb-space-xl">
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs font-label-provenance text-label-provenance">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary tracking-widest uppercase">Clinical Architecture Specification</span>
+<span class="text-outline">/</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary tracking-widest uppercase">Pipeline Standard v2.4</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant">Deterministic Zero-Leak Local Engine</span>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-end mt-space-xs">
+<div class="xl:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-none">
+              From Question to Evidence-Backed Answer: <span class="text-primary block sm:inline">Inside NutriKid's 8-Stage RAG Pipeline</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-4xl">
+              Every stage is transparent, deterministic, and auditable. Discover how pediatric queries are bounded, retrieved, reranked, and validated without synthetic hallucination or third-party data transmission.
+            </p>
+</div>
+<div class="xl:col-span-4 flex flex-col gap-space-xs bg-surface-raised p-space-md rounded-xl shadow-xl">
+<div class="flex items-center justify-between text-on-surface-variant font-label-provenance text-label-provenance">
+<span class="uppercase tracking-wider">Total End-to-End Latency</span>
+<span class="text-primary font-bold">412 ms (p95)</span>
+</div>
+<!-- Progress sparkline -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 3%" title="Parameter Capture: 12ms"></div>
+<div class="bg-tertiary h-full" style="width: 1%" title="Scope Gate: 4ms"></div>
+<div class="bg-surgical-blue h-full" style="width: 14%" title="Hybrid Retrieval: 58ms"></div>
+<div class="bg-primary h-full" style="width: 29%" title="Reranker: 118ms"></div>
+<div class="bg-ice-glow h-full" style="width: 4%" title="Jaccard Refinement: 18ms"></div>
+<div class="bg-secondary-container h-full" style="width: 44%" title="Local LLM: 182ms"></div>
+<div class="bg-chart-accent h-full" style="width: 3%" title="Nutrient Guard: 14ms"></div>
+<div class="bg-primary-fixed h-full" style="width: 2%" title="Provenance: 6ms"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-tabular text-[11px] pt-1">
+<span>Ingestion: 16ms</span>
+<span>Retrieval &amp; Rank: 176ms</span>
+<span>Synthesis &amp; Guard: 220ms</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Execution Metrics Banner -->
+<div class="w-full max-w-[1720px] mx-auto px-margin lg:px-margin-lg pb-space-lg">
+<div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-sm flex flex-col gap-1">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase">Rerank MRR Delta</span>
+<div class="flex items-baseline gap-2">
+<span class="font-label-tabular text-headline-sm text-primary font-semibold">+244.4%</span>
+<span class="font-label-tabular text-body-sm text-confidence-high">0.0400 → 0.1378</span>
+</div>
+<span class="font-label-code text-[11px] text-outline">30-Query Pediatric Golden Set</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-sm flex flex-col gap-1">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase">Age Bounds</span>
+<div class="flex items-baseline gap-2">
+<span class="font-label-tabular text-headline-sm text-secondary font-semibold">5.0 – 15.0 y</span>
+<span class="font-label-provenance text-[10px] px-1 rounded bg-provenance-tag text-citation-text uppercase">Strict</span>
+</div>
+<span class="font-label-code text-[11px] text-outline">Rejects Infant/Adult Queries</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-sm flex flex-col gap-1">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase">Retrieval Strategy</span>
+<div class="flex items-baseline gap-2">
+<span class="font-label-tabular text-headline-sm text-tertiary font-semibold">BM25 + FAISS</span>
+<span class="font-label-tabular text-body-sm text-on-surface-variant">RRF k=60</span>
+</div>
+<span class="font-label-code text-[11px] text-outline">Dense + Lexical Ensemble</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-sm flex flex-col gap-1">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase">Inference Engine</span>
+<div class="flex items-baseline gap-2">
+<span class="font-label-tabular text-headline-sm text-ice-glow font-semibold">Qwen2.5-1.5B</span>
+<span class="font-label-provenance text-[10px] px-1 rounded bg-surface-overlay text-confidence-high">Air-Gapped</span>
+</div>
+<span class="font-label-code text-[11px] text-outline">Zero Cloud / Zero API Exfil</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-sm flex flex-col gap-1">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase">Unit Fidelity Rule</span>
+<div class="flex items-baseline gap-2">
+<span class="font-label-tabular text-headline-sm text-chart-accent font-semibold">100% Guarded</span>
+<span class="font-label-tabular text-body-sm text-confidence-high">ISO/ICMR</span>
+</div>
+<span class="font-label-code text-[11px] text-outline">Protein g/d • Iodine μg/d</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-sm flex flex-col gap-1">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase">Grounding Index</span>
+<div class="flex items-baseline gap-2">
+<span class="font-label-tabular text-headline-sm text-primary-fixed font-semibold">Chunk-Level</span>
+<span class="font-label-provenance text-[10px] px-1 rounded bg-provenance-tag text-citation-text">BBox Ready</span>
+</div>
+<span class="font-label-code text-[11px] text-outline">Doc ID + Page + Verbatim Quote</span>
+</div>
+</div>
+</div>
+<!-- MAIN BENTO PIPELINE: 8 INTERLOCKING CLINICAL STAGES -->
+<section class="w-full max-w-[1720px] mx-auto px-margin lg:px-margin-lg pb-space-xl">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">account_tree</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Architectural Pipeline Sequence</h2>
+</div>
+<span class="font-label-code text-[12px] text-on-surface-variant hidden sm:inline">Execution Flow: Synced Deterministic State Machine</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter-lg">
+<!-- STAGE 01 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-primary">01</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-citation-text uppercase">Ingestion</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">12 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Query Ingestion &amp; Parameter Capture</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Accepts raw clinical or parent query strings, normalizes Unicode, extracts normalized child chronologic age, and stamps timestamped request UUIDs.
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[11px] text-primary">CAPTURED_PAYLOAD</span>
+<span class="material-symbols-outlined text-[14px] text-confidence-high">check_circle</span>
+</div>
+<pre class="font-label-code text-[11px] text-on-surface-variant overflow-x-auto selection:bg-surgical-blue selection:text-white"><code>{
+  "query_raw": "What is the recommended protein intake for a 10-year-old?",
+  "child_age_years": 10.0,
+  "sex_assigned": "UNSPECIFIED",
+  "client_origin": "pediatric_ward_portal"
+}</code></pre>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Entity Extraction</span>
+<span class="font-label-code text-[11px] text-secondary">AgeParser: Regex+SpaCy</span>
+</div>
+</div>
+<!-- STAGE 02 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-secondary">02</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-chart-accent uppercase">Gatekeeper</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">4 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Deterministic Scope &amp; Age Gate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Strict programmatic barrier enforcing <code class="text-primary font-label-code">5.0 ≤ age ≤ 15.0</code>. Bypasses LLM synthesis entirely on bounds violation to prevent off-label guidance.
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[11px] text-chart-accent">GATE_EVALUATION</span>
+<span class="px-1.5 py-0.2 rounded bg-confidence-high/20 text-confidence-high font-label-provenance text-[10px]">PASS (10.0y)</span>
+</div>
+<div class="grid grid-cols-2 gap-1 text-[11px] font-label-tabular">
+<div class="p-1.5 rounded bg-surface-container-high flex flex-col">
+<span class="text-outline text-[9px] uppercase">Lower Bound</span>
+<span class="text-on-surface font-bold">≥ 5.0 Years</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-high flex flex-col">
+<span class="text-outline text-[9px] uppercase">Upper Bound</span>
+<span class="text-on-surface font-bold">≤ 15.0 Years</span>
+</div>
+</div>
+<div class="p-1 rounded bg-error-container/20 text-error font-label-code text-[10px]">
+              Trigger on bounds fail: <code>ERR_PEDIATRIC_OUT_OF_SCOPE (HTTP 422)</code>
+</div>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Safety Standard</span>
+<span class="font-label-code text-[11px] text-chart-accent">Zero-Tolerance Clamp</span>
+</div>
+</div>
+<!-- STAGE 03 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-tertiary">03</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-tertiary uppercase">Ensemble</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">58 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Hybrid Retrieval: BM25 + FAISS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Dual-retrieval pipeline marrying sparse lexical exact-match BM25 with dense semantic FAISS index, fused through Reciprocal Rank Fusion (RRF).
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] font-label-code">
+<span class="text-tertiary">RRF_EQUATION</span>
+<span class="text-outline">k = 60</span>
+</div>
+<div class="p-2 rounded bg-surface-container font-label-code text-[11px] text-ice-glow text-center">
+              RRF(d) = Σ 1 / (60 + r_bm25(d)) + 1 / (60 + r_faiss(d))
+            </div>
+<div class="flex justify-between font-label-code text-[10px] text-on-surface-variant">
+<span>Lexical: k1=1.5, b=0.75</span>
+<span>Dense: bge-small-en-v1.5</span>
+</div>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Candidate Pool</span>
+<span class="font-label-code text-[11px] text-tertiary">Top 30 Candidates</span>
+</div>
+</div>
+<!-- STAGE 04 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-ice-glow">04</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-ice-glow uppercase">Cross-Encoder</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">118 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Neural Cross-Encoder Reranking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<code class="text-primary font-label-code">BAAI/bge-reranker-base</code> scores query-document token cross-attention, elevating true clinical tabular snippets over superficial semantic matches.
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[11px] text-ice-glow">BENCHMARK_PROVEN_GAIN</span>
+<span class="px-1.5 py-0.2 rounded bg-confidence-high/20 text-confidence-high font-label-provenance text-[10px]">+244.4% MRR</span>
+</div>
+<!-- Mini Comparison Bars -->
+<div class="flex flex-col gap-1 font-label-tabular text-[10px]">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Dense Only (Pre)</span>
+<span class="text-error font-bold">MRR 0.0400</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full" style="width: 29%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1">
+<span>With Neural Rerank (Post)</span>
+<span class="text-confidence-high font-bold">MRR 0.1378</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-confidence-high h-full" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Trim Target</span>
+<span class="font-label-code text-[11px] text-ice-glow">Top 5 Context Chunks</span>
+</div>
+</div>
+<!-- STAGE 05 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-chart-accent">05</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-chart-accent uppercase">Deduplication</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">18 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Context Refinement &amp; Jaccard Dedup</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Applies word n-gram Jaccard similarity thresholding (θ = 0.65) to eliminate duplicate narrative preambles while rigorously preserving dense numerical tables.
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-1.5 font-label-code text-[11px]">
+<div class="flex items-center justify-between text-chart-accent">
+<span>JACCARD_PRESERVATION</span>
+<span class="text-on-surface-variant">Filtered: 2/5</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-high text-on-surface-variant flex flex-col gap-1">
+<span class="text-[10px] text-secondary font-bold">PRESERVED: IFCT 2024 Table 4.1</span>
+<span class="text-[10px] text-outline">"Row: 10y-Child, Protein Ref Value = 32.1 g/d..."</span>
+</div>
+<span class="text-[10px] text-outline">Superseded 64-token narrative chunk pruned.</span>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Token Budget</span>
+<span class="font-label-code text-[11px] text-chart-accent">892 / 1024 Tokens</span>
+</div>
+</div>
+<!-- STAGE 06 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-secondary-container">06</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-secondary uppercase">Local LLM</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">182 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Local LLM Constrained Synthesis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Locally hosted <code class="text-primary font-label-code">Qwen2.5-1.5B-Instruct</code> generates grounded answers exclusively within context boundary tokens. No external API transmissions.
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-1 font-label-code text-[11px]">
+<span class="text-secondary">SYSTEM_GUARDRAIL_PROMPT</span>
+<p class="text-[10px] text-on-surface-variant leading-relaxed p-1.5 rounded bg-surface-container">
+              "You are a clinical decision-support reference. Provide quantitative pediatric values ONLY from retrieved snippets. If unavailable, output NULL_NO_CITATION."
+            </p>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Air-Gap Status</span>
+<span class="font-label-code text-[11px] text-confidence-high">100% Local Inference</span>
+</div>
+</div>
+<!-- STAGE 07 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-primary">07</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-primary uppercase">Guardrail</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">14 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Nutrient Fidelity Post-Guard</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Programmatic regex &amp; ontology parser sweeps the raw synthesis. Enforces mandatory unit coherence: rejects hallucinations such as milligrams for protein or grams for iodine.
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-1 font-label-code text-[10px]">
+<span class="text-primary text-[11px]">UNIT_REGISTRY_VALIDATION</span>
+<div class="flex items-center justify-between p-1 bg-surface-container rounded">
+<span class="text-on-surface">Protein → g/day</span>
+<span class="text-confidence-high font-bold">[VALIDATED]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-surface-container rounded">
+<span class="text-on-surface">Calcium → mg/day</span>
+<span class="text-confidence-high font-bold">[VALIDATED]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-surface-container rounded">
+<span class="text-on-surface">Iodine → μg/day</span>
+<span class="text-confidence-high font-bold">[VALIDATED]</span>
+</div>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Rule Determinism</span>
+<span class="font-label-code text-[11px] text-primary">Zero Tolerance Mismatch</span>
+</div>
+</div>
+<!-- STAGE 08 -->
+<div class="flex flex-col bg-surface-raised rounded-xl p-space-md shadow-lg relative group hover:bg-surface-container transition-all duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-citation-text">08</span>
+<span class="font-label-provenance text-label-provenance px-2 py-0.5 rounded bg-surface-overlay text-citation-text uppercase">Audit</span>
+</div>
+<span class="font-label-tabular text-body-sm text-outline">6 ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Provenance Assembly &amp; Citation Link</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Constructs complete auditable JSON payload linking synthesis to exact document identifiers, table coordinates, chunk hashes, and verbatim source quotations.
+          </p>
+<div class="mt-space-md bg-surface-base p-space-sm rounded-lg flex flex-col gap-1 font-label-code text-[11px]">
+<div class="flex items-center justify-between">
+<span class="text-citation-text">PROVENANCE_OBJECT</span>
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+</div>
+<pre class="text-[10px] text-on-surface-variant overflow-x-auto"><code>{
+  "chunk_id": "NK-015-C00014",
+  "source": "ICMR-NIN 2024",
+  "page": 128,
+  "confidence_score": 0.9842
+}</code></pre>
+</div>
+<div class="mt-auto pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-provenance text-[10px] uppercase text-outline">Verification Level</span>
+<span class="font-label-code text-[11px] text-citation-text">Deterministic Hash</span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE CLINICAL PIPELINE SIMULATOR WIDGET -->
+<section class="w-full max-w-[1720px] mx-auto px-margin lg:px-margin-lg pb-space-xl">
+<div class="bg-surface-raised rounded-2xl p-space-md lg:p-space-lg shadow-2xl relative">
+<!-- Simulator Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-primary uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Interactive Pipeline Simulator</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+              Live Query Trace &amp; Intermediate State Inspector
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Inspect how the pediatric query <span class="text-ice-glow font-label-code">"What is the recommended protein intake for a 10-year-old?"</span> mutates across each discrete engine step.
+            </p>
+</div>
+<!-- Query Preset Selectors -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-provenance text-[11px] text-outline uppercase mr-1">Query Scenarios:</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-code text-[12px] shadow-sm hover:bg-surface-bright transition-colors" id="preset-nominal" onclick="loadSimulation('nominal')">
+              Standard: 10y Protein
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-code text-[12px] hover:bg-surface-bright transition-colors" id="preset-boundary" onclick="loadSimulation('boundary')">
+              Boundary: 5.0y Micronutrient
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-error font-label-code text-[12px] hover:bg-surface-bright transition-colors" id="preset-rejection" onclick="loadSimulation('rejection')">
+              Fail Case: 2.5y (Out of Scope)
+            </button>
+</div>
+</div>
+<!-- Simulator Stepper Navigation -->
+<div class="w-full overflow-x-auto pb-space-sm pt-space-xs">
+<div class="flex items-center min-w-[760px] gap-2" id="pipeline-stepper">
+<!-- Buttons dynamically styled via JS -->
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary-fixed font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-1" onclick="switchStep(1)">
+<span>01 Ingest</span>
+<span class="text-[10px] opacity-75">12ms</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-2" onclick="switchStep(2)">
+<span>02 Scope</span>
+<span class="text-[10px] opacity-75">4ms</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-3" onclick="switchStep(3)">
+<span>03 Hybrid</span>
+<span class="text-[10px] opacity-75">58ms</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-4" onclick="switchStep(4)">
+<span>04 Rerank</span>
+<span class="text-[10px] opacity-75">118ms</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-5" onclick="switchStep(5)">
+<span>05 Jaccard</span>
+<span class="text-[10px] opacity-75">18ms</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-6" onclick="switchStep(6)">
+<span>06 Local LLM</span>
+<span class="text-[10px] opacity-75">182ms</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-7" onclick="switchStep(7)">
+<span>07 Guard</span>
+<span class="text-[10px] opacity-75">14ms</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between transition-all" id="step-btn-8" onclick="switchStep(8)">
+<span>08 Payload</span>
+<span class="text-[10px] opacity-75">6ms</span>
+</button>
+</div>
+</div>
+<!-- Simulator Core Split: Stage Deep Dive vs Runtime JSON Dump -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg mt-space-md">
+<!-- Left: Stage Operational Overview -->
+<div class="lg:col-span-6 flex flex-col justify-between bg-surface-container-low rounded-xl p-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-headline-sm font-bold text-primary" id="display-step-num">STAGE 01</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-citation-text font-label-provenance text-[11px] uppercase tracking-wider" id="display-step-tag">Input Normalizer</span>
+</div>
+<div class="flex items-center gap-1 font-label-code text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-chart-accent">timer</span>
+<span id="display-step-latency">Latency: 12 ms</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold" id="display-step-title">
+                Query Normalization &amp; Parameter Capture
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="display-step-desc">
+                Raw input strings undergo immediate token normalization, age entity extraction via pediatric regular expressions, and syntactic profiling. This ensures deterministic parsing prior to entering downstream vector indices.
+              </p>
+<!-- Dynamic Interactive Insight Card -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container flex flex-col gap-2" id="display-step-widget">
+<span class="font-label-provenance text-label-provenance text-primary uppercase">Parameter Mapping Matrix</span>
+<div class="grid grid-cols-2 gap-2 text-body-sm">
+<div class="p-2 rounded bg-surface-container-high flex flex-col">
+<span class="text-outline text-[11px] font-label-provenance">Extracted Variable</span>
+<span class="font-label-code text-on-surface">Target Age: 10.0 Years</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high flex flex-col">
+<span class="text-outline text-[11px] font-label-provenance">Normalized Token</span>
+<span class="font-label-code text-on-surface">Nutrient: "Protein"</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pipeline Step Controls -->
+<div class="flex items-center justify-between pt-space-lg">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-code text-[12px] hover:bg-surface-bright transition-colors" onclick="prevStep()">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span> Previous Stage
+              </button>
+<span class="font-label-code text-[12px] text-on-surface-variant" id="step-index-label">Step 1 of 8</span>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-fixed font-label-code text-[12px] font-semibold hover:shadow-[0_0_12px_rgba(0,229,201,0.3)] transition-all" onclick="nextStep()">
+                Next Stage <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Right: Real-time JSON Runtime State Inspector -->
+<div class="lg:col-span-6 flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-inner">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-confidence-high"></span>
+<span class="font-label-code text-[12px] text-on-surface font-semibold tracking-wide">INTERMEDIATE_FRAME_PAYLOAD</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-[11px] text-on-surface-variant">
+<span>format: application/json</span>
+<button class="p-1 rounded hover:bg-surface-container-high transition-colors" onclick="copyPayload()" title="Copy JSON">
+<span class="material-symbols-outlined text-[15px] text-primary">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Code Container -->
+<div class="relative w-full h-[360px] overflow-y-auto bg-surface-base/80 p-space-sm rounded-lg mt-space-xs">
+<pre class="font-label-code text-[11.5px] leading-relaxed text-citation-text selection:bg-primary-container selection:text-on-primary-fixed whitespace-pre" id="display-step-json"><code>{
+  "status": "INGESTION_COMPLETE",
+  "pipeline_id": "pip-84f92-c10a",
+  "timestamp": "2025-05-14T09:22:18.412Z",
+  "parameters": {
+    "raw_query": "What is the recommended protein intake for a 10-year-old?",
+    "extracted_age": 10.0,
+    "age_unit": "years",
+    "target_cohort": "OLDER_CHILDREN_10_12Y",
+    "detected_micronutrients": ["protein"],
+    "intent": "CLINICAL_RDA_LOOKUP"
+  },
+  "runtime_flags": {
+    "strict_citations": true,
+    "force_local_inference": true
+  }
+}</code></pre>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-tabular text-[11px] text-outline">
+<span id="json-size-label">Payload Size: 412 bytes</span>
+<span id="json-schema-label">Schema: NutriKid.Trace.v2</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- METHODOLOGICAL DEEP DIVE: RERANKER & BENCHMARK GAINS -->
+<section class="w-full max-w-[1720px] mx-auto px-margin lg:px-margin-lg pb-space-xl">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-stretch">
+<!-- Left: Neural Reranking Benchmark Detail -->
+<div class="xl:col-span-7 flex flex-col justify-between bg-surface-raised rounded-2xl p-space-lg shadow-xl">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-primary uppercase">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+<span>Empirical Retrieval Benchmark</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              The Cross-Encoder Leap: +244.4% MRR Enhancement
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Dense bi-encoders compress entire chunks into fixed embeddings, frequently losing numeric cell anchors like <span class="font-label-code text-on-surface">"10-12y Boys: 32.1 g/day"</span> amidst broader text. NutriKid’s stage 4 integrates <code class="text-primary font-label-code">BAAI/bge-reranker-base</code> to compute unconstrained query-passage cross-attention across the top-30 candidates.
+            </p>
+<!-- Detailed Comparative Data Table -->
+<div class="w-full overflow-x-auto mt-space-sm">
+<table class="w-full text-left font-label-tabular text-[12px]">
+<thead class="bg-surface-container-high text-on-surface-variant font-label-provenance text-[10px] uppercase">
+<tr>
+<th class="py-2.5 px-3">Retrieval Pipeline Phase</th>
+<th class="py-2.5 px-3">Top-1 Accuracy</th>
+<th class="py-2.5 px-3">Top-5 Recall</th>
+<th class="py-2.5 px-3">MRR (Golden Set)</th>
+<th class="py-2.5 px-3 text-right">Relative Lift</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle text-on-surface">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold text-on-surface-variant">BM25 Sparse Baseline</td>
+<td class="py-2.5 px-3">13.3%</td>
+<td class="py-2.5 px-3">40.0%</td>
+<td class="py-2.5 px-3">0.0312</td>
+<td class="py-2.5 px-3 text-right font-label-code text-outline">Baseline</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold text-secondary">Dense Vector Only (BGE-Small)</td>
+<td class="py-2.5 px-3">16.6%</td>
+<td class="py-2.5 px-3">46.7%</td>
+<td class="py-2.5 px-3">0.0400</td>
+<td class="py-2.5 px-3 text-right font-label-code text-secondary">+28.2%</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold text-tertiary">Hybrid RRF (BM25 + FAISS)</td>
+<td class="py-2.5 px-3">23.3%</td>
+<td class="py-2.5 px-3">63.3%</td>
+<td class="py-2.5 px-3">0.0684</td>
+<td class="py-2.5 px-3 text-right font-label-code text-tertiary">+71.0%</td>
+</tr>
+<tr class="bg-primary-container/10 hover:bg-primary-container/15 transition-colors font-bold">
+<td class="py-2.5 px-3 text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>NutriKid Hybrid + Cross-Encoder</span>
+</td>
+<td class="py-2.5 px-3 text-primary">56.7%</td>
+<td class="py-2.5 px-3 text-primary">93.3%</td>
+<td class="py-2.5 px-3 text-primary font-label-code text-[13px]">0.1378</td>
+<td class="py-2.5 px-3 text-right font-label-code text-confidence-high text-[13px]">+244.4%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-space-xs font-label-tabular text-[11px] text-on-surface-variant">
+<span>Evaluation Dataset: 30 Curated Pediatric Guideline Queries</span>
+<span class="text-primary">Confidence Interval: 95% Bootstrap Validated</span>
+</div>
+</div>
+<!-- Right: Nutrient Guard & Out-of-Bounds Schema -->
+<div class="xl:col-span-5 flex flex-col justify-between bg-surface-raised rounded-2xl p-space-lg shadow-xl">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-chart-accent uppercase">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Deterministic Enforcement Mechanisms</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              The Post-Generation Nutrient Guard
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Pediatric nutrition has zero tolerance for hallucinated units. An extra zero or mismatched scale (e.g. milligrams vs micrograms) is catastrophic. NutriKid applies hard-coded medical ontology rules to every synthesized sentence.
+            </p>
+<!-- Illustrated Guard Logic -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-confidence-high/20 flex items-center justify-center text-confidence-high">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<span class="font-label-code text-[12px] text-on-surface block">Protein Rule [Pass]</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Expected: g/day (grams per day)</span>
+</div>
+</div>
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface-container-high text-confidence-high">MATCH</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-confidence-high/20 flex items-center justify-center text-confidence-high">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<span class="font-label-code text-[12px] text-on-surface block">Calcium Rule [Pass]</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Expected: mg/day (milligrams per day)</span>
+</div>
+</div>
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface-container-high text-confidence-high">MATCH</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-confidence-high/20 flex items-center justify-center text-confidence-high">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<span class="font-label-code text-[12px] text-on-surface block">Iodine Rule [Pass]</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Expected: μg/day (micrograms per day)</span>
+</div>
+</div>
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-surface-container-high text-confidence-high">MATCH</span>
+</div>
+<div class="p-space-sm rounded-lg bg-error-container/20 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</div>
+<div>
+<span class="font-label-code text-[12px] text-error block">Unit Drift Trigger [Reject]</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">If synthesis emits Protein in mg/d → Flag &amp; Re-parse</span>
+</div>
+</div>
+<span class="font-label-code text-[11px] px-2 py-0.5 rounded bg-error-container text-on-error font-bold">ABORT</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<span class="font-label-code text-[11px] text-outline block">Fail-Safe Protocol: Automatic fallback to deterministic tabular lookup table when unit anomaly is detected.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL PROVENANCE PAYLOAD AUDIT VIEW -->
+<section class="w-full max-w-[1720px] mx-auto px-margin lg:px-margin-lg pb-space-xl">
+<div class="bg-surface-raised rounded-2xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-citation-text uppercase">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+<span>Final Clinical Output Schema</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              Stage 08 Auditable Delivery Payload
+            </h3>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary-container text-on-primary-fixed font-headline-sm text-headline-sm font-semibold hover:shadow-[0_0_16px_rgba(0,229,201,0.35)] transition-all" data-path="clinical-rag-query-engine" href="#">
+<span>Query Live Engine Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Multi-Tab Provenance Demonstration -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Narrative Rendered View -->
+<div class="lg:col-span-6 flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase">Rendered Clinician View</span>
+<span class="px-2 py-0.5 rounded bg-provenance-tag text-citation-text font-label-provenance text-[11px]">CONCORDANCE: HIGH</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-raised flex flex-col gap-space-xs">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Nutritional Recommendation: Protein Intake (10-Year-Old Cohort)
+              </h4>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                According to the <strong class="text-primary">ICMR-National Institute of Nutrition (2024)</strong> guidelines for Indian school-age children, the Recommended Dietary Allowance (RDA) for protein in a <strong>10.0-year-old child</strong> (Category: Children 10–12 years) is:
+              </p>
+<ul class="list-disc pl-5 font-body-md text-body-md text-on-surface-variant flex flex-col gap-1">
+<li><span class="text-on-surface font-medium">Boys (10–12y, Ref Wt: 34.9 kg):</span> <strong class="text-primary font-label-code">32.1 g/day</strong> (0.92 g/kg/d)</li>
+<li><span class="text-on-surface font-medium">Girls (10–12y, Ref Wt: 36.4 kg):</span> <strong class="text-secondary font-label-code">33.2 g/day</strong> (0.91 g/kg/d)</li>
+</ul>
+<p class="font-body-sm text-body-sm text-outline pt-1">
+                Values account for protein quality of Indian mixed vegetarian and non-vegetarian diets with a safe protein allowance factor.
+              </p>
+</div>
+<!-- Provenance Badge Array -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<span class="font-label-provenance text-[11px] text-outline uppercase tracking-wider">Grounding Coordinates</span>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container font-label-code text-[11px] text-citation-text">
+<span class="w-1.5 h-1.5 rounded-full bg-confidence-high"></span>
+<span>DOC: ICMR-NIN-2024-RDA.pdf</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container font-label-code text-[11px] text-tertiary">
+<span>PAGE: 128 (Table 4.1)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container font-label-code text-[11px] text-primary">
+<span>CHUNK: NK-015-C00014</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Verbatim JSON Provenance Payload -->
+<div class="lg:col-span-6 flex flex-col bg-surface-container-lowest p-space-md rounded-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-code text-[12px] text-citation-text uppercase">COMPLETE_STAGE_08_OUTPUT.JSON</span>
+<span class="font-label-provenance text-[11px] text-confidence-high uppercase">AUDIT_CERTIFIED</span>
+</div>
+<pre class="font-label-code text-[11px] text-on-surface-variant overflow-x-auto p-space-sm bg-surface-base rounded-lg h-[340px]"><code>{
+  "query_id": "qry-2025-0514-99812",
+  "grounded_answer": "Recommended protein intake for a 10-year-old child (10-12 years cohort) is 32.1 g/day for boys and 33.2 g/day for girls.",
+  "parameters": {
+    "age_years": 10.0,
+    "scope_valid": true,
+    "nutrient": "protein",
+    "unit_validated": "g/day"
+  },
+  "provenance": {
+    "document_id": "ICMR-NIN-2024-RDA",
+    "document_title": "Nutrient Requirements for Indians: Recommended Dietary Allowances and Estimated Average Requirements",
+    "issuing_body": "Indian Council of Medical Research - National Institute of Nutrition",
+    "publication_year": 2024,
+    "page_number": 128,
+    "table_reference": "Table 4.1: Daily Protein Requirements of School Children",
+    "chunk_id": "NK-015-C00014",
+    "raw_quote": "For children aged 10-12 years, the recommended dietary allowance for protein is 32.1 g/d for boys (body weight 34.9 kg) and 33.2 g/d for girls (body weight 36.4 kg).",
+    "retrieval_metrics": {
+      "bm25_rank": 2,
+      "faiss_dense_rank": 1,
+      "rrf_score": 0.0327,
+      "reranker_cross_attention_score": 0.9842
+    }
+  },
+  "safety_guard": {
+    "age_gate_passed": true,
+    "nutrient_unit_verified": true,
+    "hallucination_flag": false,
+    "local_inference_model": "Qwen2.5-1.5B-Instruct-GGUF-Q4_K_M"
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Inline Simulator Client State Engine -->
+<script>
+  // Complete 8-stage interactive simulator state definition
+  const pipelineStates = {
+    nominal: {
+      1: {
+        num: "STAGE 01",
+        tag: "Input Normalizer",
+        latency: "Latency: 12 ms",
+        title: "Query Ingestion & Parameter Capture",
+        desc: "Raw input strings undergo immediate token normalization, age entity extraction via pediatric regular expressions, and syntactic profiling. This ensures deterministic parsing prior to entering downstream vector indices.",
+        widget: `
+          <span class="font-label-provenance text-label-provenance text-primary uppercase">Parameter Mapping Matrix</span>
+          <div class="grid grid-cols-2 gap-2 text-body-sm">
+            <div class="p-2 rounded bg-surface-container-high flex flex-col">
+              <span class="text-outline text-[11px] font-label-provenance">Extracted Variable</span>
+              <span class="font-label-code text-on-surface">Target Age: 10.0 Years</span>
+            </div>
+            <div class="p-2 rounded bg-surface-container-high flex flex-col">
+              <span class="text-outline text-[11px] font-label-provenance">Normalized Token</span>
+              <span class="font-label-code text-on-surface">Nutrient: "Protein"</span>
+            </div>
+          </div>`,
+        json: {
+          status: "INGESTION_COMPLETE",
+          pipeline_id: "pip-84f92-c10a",
+          timestamp: "2025-05-14T09:22:18.412Z",
+          parameters: {
+            raw_query: "What is the recommended protein intake for a 10-year-old?",
+            extracted_age: 10.0,
+            age_unit: "years",
+            target_cohort: "OLDER_CHILDREN_10_12Y",
+            detected_micronutrients: ["protein"],
+            intent: "CLINICAL_RDA_LOOKUP"
+          },
+          runtime_flags: {
+            strict_citations: true,
+            force_local_inference: true
+          }
+        }
+      },
+      2: {
+        num: "STAGE 02",
+        tag: "Deterministic Gate",
+        latency: "Latency: 4 ms",
+        title: "Deterministic Scope & Age Gatekeeper",
+        desc: "Programmatic threshold guard evaluates extracted age against the pediatric mandate: 5.0 <= age <= 15.0. No language model is queried until bounds certification passes.",
+        widget: `
+          <div class="p-2 rounded bg-surface-container-high flex items-center justify-between">
+            <span class="font-label-provenance text-[11px] text-outline uppercase">Evaluation Equation</span>
+            <span class="font-label-code text-[12px] text-confidence-high">5.0 &le; 10.0 &le; 15.0 &rarr; TRUE</span>
+          </div>
+          <div class="p-2 rounded bg-surface-container flex items-center justify-between font-label-code text-[11px]">
+            <span class="text-on-surface-variant">Gate Status</span>
+            <span class="text-confidence-high font-bold">[DISPATCH_TO_RETRIEVAL]</span>
+          </div>`,
+        json: {
+          gate_result: "PASSED",
+          rule: "PEDIATRIC_5_TO_15_ONLY",
+          evaluated_value: 10.0,
+          lower_bound: 5.0,
+          upper_bound: 15.0,
+          action: "ALLOW_DOWNSTREAM_DISPATCH"
+        }
+      },
+      3: {
+        num: "STAGE 03",
+        tag: "Hybrid Retrieval",
+        latency: "Latency: 58 ms",
+        title: "Hybrid Retrieval: BM25 + FAISS Dense Vector",
+        desc: "Dual-track search runs simultaneously. BM25 indexes morphological keywords while FAISS queries 1024-dim dense embeddings. Reciprocal Rank Fusion merges top-30 candidates.",
+        widget: `
+          <div class="grid grid-cols-2 gap-2 text-body-sm font-label-tabular">
+            <div class="p-2 rounded bg-surface-container-high">
+              <span class="text-outline text-[10px] block uppercase">BM25 Lexical Pool</span>
+              <span class="font-bold text-tertiary">30 Candidates (k1=1.5)</span>
+            </div>
+            <div class="p-2 rounded bg-surface-container-high">
+              <span class="text-outline text-[10px] block uppercase">FAISS Dense Pool</span>
+              <span class="font-bold text-secondary">30 Candidates (Cosine)</span>
+            </div>
+          </div>`,
+        json: {
+          rrf_k: 60,
+          dense_model: "BAAI/bge-small-en-v1.5",
+          sparse_algorithm: "BM25Okapi",
+          merged_candidates_count: 30,
+          top_rrf_samples: [
+            { doc_id: "ICMR-2024-RDA", chunk: "C00014", rrf_score: 0.0327 },
+            { doc_id: "WHO-GROWTH-2022", chunk: "C00481", rrf_score: 0.0298 }
+          ]
+        }
+      },
+      4: {
+        num: "STAGE 04",
+        tag: "Cross-Encoder Reranker",
+        latency: "Latency: 118 ms",
+        title: "Neural Cross-Encoder Token Attention",
+        desc: "BAAI/bge-reranker-base performs full cross-attention over query-document pairs, recalibrating the ranking. Elevates golden-truth RDA tables from candidate ranks to top positions.",
+        widget: `
+          <div class="p-2 rounded bg-surface-container-high flex flex-col gap-1 font-label-code text-[11px]">
+            <div class="flex justify-between text-on-surface">
+              <span>Top Chunk Re-Rank Score</span>
+              <span class="text-primary font-bold">0.9842 (+244% MRR)</span>
+            </div>
+            <span class="text-outline text-[10px]">Chunk NK-015-C00014 elevated from Rank 3 &rarr; Rank 1</span>
+          </div>`,
+        json: {
+          reranker_model: "BAAI/bge-reranker-base",
+          input_candidates: 30,
+          output_candidates: 5,
+          top_reranked: [
+            { chunk_id: "NK-015-C00014", cross_score: 0.9842, title: "ICMR Table 4.1" },
+            { chunk_id: "NK-015-C00015", cross_score: 0.8120, title: "ICMR Table 4.2" }
+          ]
+        }
+      },
+      5: {
+        num: "STAGE 05",
+        tag: "Deduplication",
+        latency: "Latency: 18 ms",
+        title: "Evidence Context Refinement & Jaccard Dedup",
+        desc: "Word n-gram Jaccard deduplication prunes redundant introductory boilerplate while strictly preserving isolated tabular rows and numerical bounds.",
+        widget: `
+          <div class="flex justify-between items-center p-2 rounded bg-surface-container font-label-code text-[11px]">
+            <span class="text-on-surface-variant">Jaccard Overlap Threshold</span>
+            <span class="text-chart-accent">&theta; &ge; 0.65 (2 chunks pruned)</span>
+          </div>`,
+        json: {
+          pre_dedup_tokens: 1480,
+          post_dedup_tokens: 892,
+          jaccard_threshold: 0.65,
+          retained_chunks: ["NK-015-C00014", "NK-015-C00019"]
+        }
+      },
+      6: {
+        num: "STAGE 06",
+        tag: "Air-Gapped LLM",
+        latency: "Latency: 182 ms",
+        title: "Local LLM Synthesis (Qwen2.5-1.5B)",
+        desc: "Local, air-gapped inference strictly bounded by retrieved context tokens. No synthetic hallucination permitted; output format is constrained to clinical precision.",
+        widget: `
+          <div class="p-2 rounded bg-surface-container-high flex flex-col font-label-code text-[11px]">
+            <span class="text-secondary">Inference Mode: Zero-Exfiltration</span>
+            <span class="text-outline text-[10px]">Quantization: Q4_K_M • Temperature: 0.0</span>
+          </div>`,
+        json: {
+          model_name: "Qwen2.5-1.5B-Instruct",
+          context_tokens: 892,
+          generation_tokens: 64,
+          stop_reason: "EOS",
+          raw_synthesis: "Recommended protein intake for a 10-year-old child is 32.1 g/day for boys and 33.2 g/day for girls."
+        }
+      },
+      7: {
+        num: "STAGE 07",
+        tag: "Unit Guardrail",
+        latency: "Latency: 14 ms",
+        title: "Nutrient Fidelity Post-Generation Guard",
+        desc: "Deterministic unit auditor validates all generated nutrient-unit pairings against clinical registries (Protein: g/day; Calcium: mg/day; Iodine: ug/day).",
+        widget: `
+          <div class="flex items-center justify-between p-2 rounded bg-confidence-high/15 font-label-code text-[11px] text-confidence-high">
+            <span>PROTEIN_UNIT_TEST</span>
+            <span>PASS (Unit = 'g/day')</span>
+          </div>`,
+        json: {
+          guard_status: "VERIFIED_PASS",
+          detected_nutrient: "protein",
+          paired_unit: "g/day",
+          allowed_units: ["g/day", "g/kg/day"],
+          action: "COMMIT_PAYLOAD"
+        }
+      },
+      8: {
+        num: "STAGE 08",
+        tag: "Provenance Assembly",
+        latency: "Latency: 6 ms",
+        title: "Evidence-Backed Provenance Assembly",
+        desc: "Compiles complete auditable response bundle tying generation to document IDs, bounding boxes, chunk hash NK-015-C00014, and verbatim source passages.",
+        widget: `
+          <div class="p-2 rounded bg-surface-container-high flex justify-between items-center font-label-code text-[11px]">
+            <span class="text-citation-text">Chunk NK-015-C00014</span>
+            <span class="text-confidence-high">Score: 0.9842</span>
+          </div>`,
+        json: {
+          delivery_status: "SUCCESS",
+          total_pipeline_ms: 412,
+          chunk_id: "NK-015-C00014",
+          source: "ICMR-NIN 2024 Table 4.1",
+          page: 128
+        }
+      }
+    },
+    boundary: {
+      1: {
+        num: "STAGE 01",
+        tag: "Input Normalizer",
+        latency: "Latency: 11 ms",
+        title: "Query Ingestion & Parameter Capture",
+        desc: "Boundary query ingested for 5.0y child asking for Vitamin A RDA requirements.",
+        widget: `<span class="font-label-code text-[11px] text-secondary">Cohort: 5.0y Early School Age</span>`,
+        json: { raw_query: "What is Vitamin A requirement at exactly 5 years?", age: 5.0, nutrient: "Vitamin A" }
+      },
+      2: {
+        num: "STAGE 02",
+        tag: "Deterministic Gate",
+        latency: "Latency: 3 ms",
+        title: "Boundary Age Verification",
+        desc: "Target age 5.0y sits precisely on lower inclusive boundary.",
+        widget: `<span class="font-label-code text-[11px] text-confidence-high">BOUNDARY MATCH: 5.0y &ge; 5.0y &rarr; PASS</span>`,
+        json: { age: 5.0, status: "INCLUSIVE_LOWER_BOUND_PASS" }
+      },
+      3: { num: "STAGE 03", tag: "Hybrid", latency: "Latency: 52 ms", title: "Hybrid Search (Vitamin A)", desc: "Retrieving WHO & ICMR micronutrient tables for 5y cohort.", widget: `<span class="font-label-code text-[11px] text-tertiary">Found 30 candidates</span>`, json: { candidates: 30, query: "vitamin A 5 year" } },
+      4: { num: "STAGE 04", tag: "Cross-Encoder", latency: "Latency: 112 ms", title: "Neural Rerank: Top-5", desc: "Top table: ICMR Micronutrient Table 6.3 (Retinol Equivalents).", widget: `<span class="font-label-code text-[11px] text-primary">Score: 0.9712</span>`, json: { top_chunk: "NK-008-C00122", score: 0.9712 } },
+      5: { num: "STAGE 05", tag: "Deduplication", latency: "Latency: 16 ms", title: "Jaccard Pruning", desc: "Redundant RDA commentary removed.", widget: `<span class="font-label-code text-[11px] text-chart-accent">Tokens: 710</span>`, json: { pruned_count: 1 } },
+      6: { num: "STAGE 06", tag: "Local LLM", latency: "Latency: 174 ms", title: "Grounded Synthesis", desc: "Synthesizing Retinol ug/day value for 5y.", widget: `<span class="font-label-code text-[11px] text-secondary">Local Air-Gapped Pass</span>`, json: { rda_value: "510 ug/day" } },
+      7: { num: "STAGE 07", tag: "Unit Guardrail", latency: "Latency: 12 ms", title: "Vitamin A Unit Guard", desc: "Verified unit matches microgram Retinol Activity Equivalent (ug RAE/d).", widget: `<span class="font-label-code text-[11px] text-confidence-high">UNIT: &mu;g/d VALID</span>`, json: { unit: "ug/d", guard: "PASS" } },
+      8: { num: "STAGE 08", tag: "Provenance Assembly", latency: "Latency: 5 ms", title: "Delivery Payload", desc: "Assembled with Table 6.3 citations.", widget: `<span class="font-label-code text-[11px] text-citation-text">Chunk NK-008-C00122</span>`, json: { total_ms: 385, status: "SUCCESS" } }
+    },
+    rejection: {
+      1: {
+        num: "STAGE 01",
+        tag: "Input Normalizer",
+        latency: "Latency: 9 ms",
+        title: "Parameter Capture: Out-of-Bounds Case",
+        desc: "Ingested query specifying child age of 2.5 years (toddler category).",
+        widget: `<span class="font-label-code text-[11px] text-error">Warning: Ingested Age 2.5y &lt; 5.0y</span>`,
+        json: { query: "Toddler protein at 2.5 years", age: 2.5, status: "INGESTED" }
+      },
+      2: {
+        num: "STAGE 02",
+        tag: "Deterministic Gate",
+        latency: "Latency: 2 ms",
+        title: "Deterministic Rejection Triggered",
+        desc: "Child age 2.5y fails strict bounding condition 5.0 <= age <= 15.0. Pipeline aborts downstream retrieval to prevent pediatric misguidance.",
+        widget: `<div class="p-2 bg-error-container/20 text-error font-label-code text-[11px]">ABORT: ERR_PEDIATRIC_OUT_OF_SCOPE (age=2.5y)</div>`,
+        json: {
+          error_code: "ERR_PEDIATRIC_OUT_OF_SCOPE",
+          message: "NutriKid is certified strictly for 5.0 to 15.0 years. For age 2.5y, please consult Infant/Toddler specialized protocols.",
+          evaluated_age: 2.5,
+          rejection_stage: "STAGE_02_GATE",
+          retrieval_prevented: true
+        }
+      },
+      3: { num: "STAGE 03", tag: "BYPASS", latency: "0 ms", title: "Retrieval Bypassed", desc: "Stage 3 skipped due to Stage 2 rejection.", widget: `<span class="text-error font-label-code text-[11px]">[BYPASSED]</span>`, json: { status: "SKIPPED" } },
+      4: { num: "STAGE 04", tag: "BYPASS", latency: "0 ms", title: "Reranker Bypassed", desc: "Stage 4 skipped due to Stage 2 rejection.", widget: `<span class="text-error font-label-code text-[11px]">[BYPASSED]</span>`, json: { status: "SKIPPED" } },
+      5: { num: "STAGE 05", tag: "BYPASS", latency: "0 ms", title: "Dedup Bypassed", desc: "Stage 5 skipped due to Stage 2 rejection.", widget: `<span class="text-error font-label-code text-[11px]">[BYPASSED]</span>`, json: { status: "SKIPPED" } },
+      6: { num: "STAGE 06", tag: "BYPASS", latency: "0 ms", title: "Inference Bypassed", desc: "Stage 6 skipped due to Stage 2 rejection.", widget: `<span class="text-error font-label-code text-[11px]">[BYPASSED]</span>`, json: { status: "SKIPPED" } },
+      7: { num: "STAGE 07", tag: "BYPASS", latency: "0 ms", title: "Guardrail Bypassed", desc: "Stage 7 skipped due to Stage 2 rejection.", widget: `<span class="text-error font-label-code text-[11px]">[BYPASSED]</span>`, json: { status: "SKIPPED" } },
+      8: {
+        num: "STAGE 08",
+        tag: "Error Delivery",
+        latency: "Latency: 2 ms",
+        title: "Standardized Error Schema Delivery",
+        desc: "Returns deterministic error JSON payload with medical escalation guidance.",
+        widget: `<span class="text-error font-label-code text-[11px]">HTTP 422 Unprocessable Pediatric Entity</span>`,
+        json: {
+          status: "REJECTED_OUT_OF_SCOPE",
+          error_code: "ERR_PEDIATRIC_OUT_OF_SCOPE",
+          permitted_range: "5.0 to 15.0 years",
+          safe_redirection: "ICMR Toddler 1-3y Guidance Manual"
+        }
+      }
+    }
+  };
+
+  let activePreset = 'nominal';
+  let activeStep = 1;
+
+  function loadSimulation(preset) {
+    activePreset = preset;
+    activeStep = (preset === 'rejection') ? 2 : 1;
+    
+    // Highlight buttons
+    ['nominal', 'boundary', 'rejection'].forEach(p => {
+      const el = document.getElementById(`preset-${p}`);
+      if (p === preset) {
+        el.className = "px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-code text-[12px] shadow-sm";
+      } else {
+        el.className = "px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-code text-[12px] hover:bg-surface-bright transition-colors";
+      }
+    });
+
+    renderCurrentState();
+  }
+
+  function switchStep(stepNum) {
+    activeStep = stepNum;
+    renderCurrentState();
+  }
+
+  function nextStep() {
+    if (activeStep < 8) {
+      activeStep++;
+      renderCurrentState();
+    }
+  }
+
+  function prevStep() {
+    if (activeStep > 1) {
+      activeStep--;
+      renderCurrentState();
+    }
+  }
+
+  function renderCurrentState() {
+    const data = pipelineStates[activePreset][activeStep];
+
+    // Stepper header styling
+    for (let i = 1; i <= 8; i++) {
+      const btn = document.getElementById(`step-btn-${i}`);
+      if (i === activeStep) {
+        btn.className = "flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary-fixed font-label-code text-[12px] font-bold flex items-center justify-between shadow-md";
+      } else {
+        btn.className = "flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface-variant font-label-code text-[12px] flex items-center justify-between hover:bg-surface-bright transition-all";
+      }
+    }
+
+    // Dynamic field updates
+    document.getElementById('display-step-num').textContent = data.num;
+    document.getElementById('display-step-tag').textContent = data.tag;
+    document.getElementById('display-step-latency').textContent = data.latency;
+    document.getElementById('display-step-title').textContent = data.title;
+    document.getElementById('display-step-desc').textContent = data.desc;
+    document.getElementById('display-step-widget').innerHTML = data.widget;
+    
+    const formattedJson = JSON.stringify(data.json, null, 2);
+    document.getElementById('display-step-json').innerHTML = `<code>${escapeHtml(formattedJson)}</code>`;
+    document.getElementById('step-index-label').textContent = `Step ${activeStep} of 8`;
+    document.getElementById('json-size-label').textContent = `Payload Size: ${formattedJson.length} bytes`;
+  }
+
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function copyPayload() {
+    const data = pipelineStates[activePreset][activeStep];
+    const text = JSON.stringify(data.json, null, 2);
+    navigator.clipboard.writeText(text);
+  }
+
+  // Initialize on load
+  document.addEventListener('DOMContentLoaded', () => {
+    renderCurrentState();
+  });
+</script></main><footer class="w-full bg-surface-dim border-t border-border-subtle"><div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-margin-md"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-margin-md border-b border-border-subtle"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded bg-surface-container-high border border-border-highlight flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[15px]">vital_signs</span></div><span class="font-headline-sm text-headline-sm font-semibold text-on-surface">NutriKid RAG</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Retrieval-Augmented Generation decision-support platform engineered strictly for pediatric nutrition guidelines, cohort RDA calculations, and micronutrient surveillance.</p><div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-citation-text"><span class="material-symbols-outlined text-[14px] text-primary">verified</span><span>DETERMINISTIC CITATION FRAMEWORK</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider text-xs">Research Corpus Specs</span><div class="grid grid-cols-3 gap-space-xs"><div class="p-space-sm rounded bg-surface-container-low border border-border-subtle"><span class="font-label-tabular text-headline-sm text-primary block">22</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase">Documents</span></div><div class="p-space-sm rounded bg-surface-container-low border border-border-subtle"><span class="font-label-tabular text-headline-sm text-secondary block">2,403</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase">Pages</span></div><div class="p-space-sm rounded bg-surface-container-low border border-border-subtle"><span class="font-label-tabular text-headline-sm text-tertiary block">6,429</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase">Chunks</span></div></div><p class="font-label-code text-[11px] text-on-surface-variant">Embedding: BAAI/bge-large-en-v1.5 • Chunk size: 512t / 64 overlap</p></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider text-xs">Institutional Corpus</span><ul class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant"><li>ICMR-National Institute of Nutrition (NIN 2020/2024)</li><li>World Health Organization (WHO Child Growth Standards)</li><li>Food and Agriculture Organization (FAO / INFOODS)</li><li>Food Safety and Standards Authority of India (FSSAI)</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider text-xs">Provenance Pledge &amp; Scope</span><p class="font-body-sm text-body-sm text-on-surface-variant">All clinical outputs link directly to page-indexed PDF coordinates. For pediatric populations aged 5.0–15.0 years. Does not substitute for specialized PICU/NICU metabolic protocols.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="font-label-code text-[12px] text-primary hover:text-primary-fixed-dim transition-colors" data-path="safety-scope" href="#">Protocol Scope</a><span class="text-outline">•</span><a class="font-label-code text-[12px] text-secondary hover:text-secondary-fixed-dim transition-colors" data-path="institutional-sources" href="#">Audited Index</a><span class="text-outline">•</span><a class="font-label-code text-[12px] text-citation-text hover:text-on-surface transition-colors" data-path="evaluation-benchmarks" href="#">RAG Triad Metrics</a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-tabular text-label-tabular text-on-surface-variant"><p>© 2025 NutriKid Clinical AI Consortium. Open Research &amp; Clinical Decision Support Architecture.</p><p class="font-label-code text-[11px] text-outline">Strict Regulatory Adherence: Non-Diagnostic Clinical Reference Engine</p></div></div></footer></body></html>

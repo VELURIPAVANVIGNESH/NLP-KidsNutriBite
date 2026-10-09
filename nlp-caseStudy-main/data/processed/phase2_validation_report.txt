@@ -1,0 +1,65 @@
+# Phase 2 — PDF Parsing & Text Extraction Validation
+
+1. Objective
+Verify that the 22 active retrieval documents in corpus_manifest.csv are correctly layout-parsed into structured JSON documents without extraction corruption, missing pages, or text truncation.
+
+2. Input Contract
+Active documents in corpus_manifest.csv (retrieval_enabled == "true"). Expected: 22 documents.
+
+3. Parser Implementation
+preprocessing/parse_documents.py using pypdf to extract page text sequentially, retaining page provenance and document metadata.
+
+4. Output Artifacts
+22 parsed JSON files in data/processed/parsed/ ({source_id}_parsed.json), parser_report.csv, parser_summary.txt.
+
+5. Documents Processed
+Active PDFs Parsed: 22 / 22 Expected
+Disabled PDFs Parsed: 0 (Expected: 0)
+Failed Documents: 0
+
+6. Page Statistics
+Total Pages Processed: 2403
+Pages with Extracted Text (>=10 chars): 2335
+Empty Pages (0 chars): 47 (Structural front/back cover pages in WHO/ICMR PDFs)
+Low-Text Pages (<10 chars): 21 (Graphic divider pages)
+Text Extraction Coverage: 97.17%
+
+7. Character Statistics
+Total Extracted Characters: 6,014,229
+Average Characters / Page: 2502.8
+Min Page Text Length: 0 chars
+Max Page Text Length: 7,255 chars
+
+8. Unicode / Corruption Statistics
+U+FFFD Replacement Characters: 0 (0.0000% corruption rate)
+Unexpected Null Bytes: 0
+Broken JSON Documents: 0
+Duplicate Page Numbers: 0
+
+9. Metadata / Provenance Validation
+Metadata Inheritance Mismatches: 0
+Page Provenance Mismatches: 0
+
+10. Determinism Validation
+Deterministic Re-Parsing Verification: PASS (100% canonical structure match across output JSON files)
+
+11. Frozen Asset Integrity
+Input PDF Byte Modifications: 0
+Phase 1 Manifest Modifications: 0
+
+12. Test Results
+Total Test Cases: 17
+Passed Test Cases: 17
+Failed Test Cases: 0
+
+13. Expected vs Actual Results
+- Active Parsed Documents: Expected 22 vs Actual 22
+- Total Pages Processed: Expected ~2,403 vs Actual 2403
+- Total Extracted Characters: Expected ~6,021,221 vs Actual 6,014,229
+- U+FFFD Corruption Rate: Expected 0% vs Actual 0
+
+14. Overall PASS/FAIL
+PHASE 2 RESULT: PASS
+
+15. Phase 3 Readiness
+PHASE 3 READINESS: READY

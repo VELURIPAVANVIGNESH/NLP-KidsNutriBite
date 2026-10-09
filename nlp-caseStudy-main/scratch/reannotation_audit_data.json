@@ -1,0 +1,1052 @@
+[
+  {
+    "query_id": "Q001",
+    "question": "What is the recommended dietary allowance for protein for a 10-year-old child?",
+    "child_age": 10.0,
+    "category": "Macronutrient Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00006"
+    ],
+    "new_ground_truth_ids": [
+      "NK-015-C00013",
+      "NK-019-C00072"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00006"
+    ],
+    "added_ids": [
+      "NK-015-C00013",
+      "NK-019-C00072"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-015-C00013",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2020 Table 2a specifies recommended protein requirements: Boys 10-12y (RDA 31.8 g/d, 0.91 g/kg/d) and Girls 10-12y (RDA 32.8 g/d, 0.90 g/kg/d)."
+      },
+      {
+        "chunk_id": "NK-019-C00072",
+        "relevance_grade": 2,
+        "rationale": "FAO protein quality evaluation table: Calculated average requirements and growth-adjusted protein utilization for pediatric age range."
+      }
+    ]
+  },
+  {
+    "query_id": "Q002",
+    "question": "What are the carbohydrate intake guidelines for a 7-year-old child?",
+    "child_age": 7.0,
+    "category": "Macronutrient Requirements",
+    "old_ground_truth_ids": [
+      "NK-002-C00001",
+      "NK-002-C00002"
+    ],
+    "new_ground_truth_ids": [
+      "NK-002-C00024",
+      "NK-002-C00036"
+    ],
+    "removed_ids": [
+      "NK-002-C00001",
+      "NK-002-C00002"
+    ],
+    "added_ids": [
+      "NK-002-C00024",
+      "NK-002-C00036"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-002-C00024",
+        "relevance_grade": 3,
+        "rationale": "WHO Carbohydrate Guideline Executive Summary: Recommendations on carbohydrate quality, dietary fibre, and vegetable/fruit intake for children 2 years and older."
+      },
+      {
+        "chunk_id": "NK-002-C00036",
+        "relevance_grade": 2,
+        "rationale": "WHO Carbohydrate Guideline: Detailed guidance on higher-quality carbohydrate intake, naturally occurring whole grains, and pulses for pediatric populations."
+      }
+    ]
+  },
+  {
+    "query_id": "Q003",
+    "question": "What is the daily dietary fiber requirement for a 12-year-old adolescent?",
+    "child_age": 12.0,
+    "category": "Macronutrient Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00510",
+      "NK-008-C00108"
+    ],
+    "new_ground_truth_ids": [
+      "NK-002-C00025",
+      "NK-008-C00032"
+    ],
+    "removed_ids": [
+      "NK-021-C00510",
+      "NK-008-C00108"
+    ],
+    "added_ids": [
+      "NK-002-C00025",
+      "NK-008-C00032"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-002-C00025",
+        "relevance_grade": 3,
+        "rationale": "WHO Carbohydrate Guideline: Specifies dietary fibre recommendations for children and adolescents (up to 25 g/day for adolescents)."
+      },
+      {
+        "chunk_id": "NK-008-C00032",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Defines dietary fibre, essential food sources (vegetables, fruits, whole grains), and health benefits in regulating nutrient absorption."
+      }
+    ]
+  },
+  {
+    "query_id": "Q004",
+    "question": "What is the estimated energy and calorie requirement for a 14-year-old boy?",
+    "child_age": 14.0,
+    "category": "Macronutrient Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00506"
+    ],
+    "new_ground_truth_ids": [
+      "NK-015-C00011",
+      "NK-015-C00012"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00506"
+    ],
+    "added_ids": [
+      "NK-015-C00011",
+      "NK-015-C00012"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-015-C00011",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2020 Table 1a: Explicitly specifies recommended daily energy requirement for Boys 13-15 years as 2860 kcal/d."
+      },
+      {
+        "chunk_id": "NK-015-C00012",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2020 Table 1b: Details energy requirement per kg body weight (57 kcal/kg/day for 50.5 kg reference boy 13-15y)."
+      }
+    ]
+  },
+  {
+    "query_id": "Q005",
+    "question": "What is the recommended dietary allowance for calcium for a 10-year-old child?",
+    "child_age": 10.0,
+    "category": "Micronutrient & Mineral Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00512"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00105",
+      "NK-021-C00891"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00512"
+    ],
+    "added_ids": [
+      "NK-008-C00105",
+      "NK-021-C00891"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00105",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Explicitly specifies recommended dietary allowances for calcium as 850-1050 mg/day for adolescents/children to achieve peak bone mass."
+      },
+      {
+        "chunk_id": "NK-021-C00891",
+        "relevance_grade": 2,
+        "rationale": "FAO/WHO 2004 Table 1 Minerals: Recommended nutrient intake of calcium for children 7-9y (700 mg/d) and adolescents 10-18y (1300 mg/d)."
+      }
+    ]
+  },
+  {
+    "query_id": "Q006",
+    "question": "What is the daily dietary iron requirement for a 13-year-old adolescent girl?",
+    "child_age": 13.0,
+    "category": "Micronutrient & Mineral Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00514"
+    ],
+    "new_ground_truth_ids": [
+      "NK-021-C00891",
+      "NK-015-C00014"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00514"
+    ],
+    "added_ids": [
+      "NK-021-C00891",
+      "NK-015-C00014"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-021-C00891",
+        "relevance_grade": 3,
+        "rationale": "FAO/WHO 2004 Table 1 Minerals: Explicitly specifies daily iron requirements for adolescent females 10-18y across bioavailability tiers (14-28 mg/day)."
+      },
+      {
+        "chunk_id": "NK-015-C00014",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2020 Table 4: Details Indian RDA for iron in females (29 mg/d)."
+      }
+    ]
+  },
+  {
+    "query_id": "Q007",
+    "question": "What is the daily vitamin D allowance for an 8-year-old school child?",
+    "child_age": 8.0,
+    "category": "Micronutrient & Mineral Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-008-C00115"
+    ],
+    "new_ground_truth_ids": [
+      "NK-015-C00014",
+      "NK-021-C00895"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-008-C00115"
+    ],
+    "added_ids": [
+      "NK-015-C00014",
+      "NK-021-C00895"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-015-C00014",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2020 Table 3: Explicitly specifies Vitamin D daily allowance for children/adolescents as 600 IU (400 EAR)."
+      },
+      {
+        "chunk_id": "NK-021-C00895",
+        "relevance_grade": 2,
+        "rationale": "FAO/WHO 2004 Table 2 Vitamins: Recommended nutrient intake of Vitamin D for school-age children (5 \u00b5g/day = 200-400 IU)."
+      }
+    ]
+  },
+  {
+    "query_id": "Q008",
+    "question": "What is the iodine requirement for preventing goiter in a 6-year-old child?",
+    "child_age": 6.0,
+    "category": "Micronutrient & Mineral Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-008-C00120"
+    ],
+    "new_ground_truth_ids": [
+      "NK-021-C00592",
+      "NK-021-C00891"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-008-C00120"
+    ],
+    "added_ids": [
+      "NK-021-C00592",
+      "NK-021-C00891"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-021-C00592",
+        "relevance_grade": 3,
+        "rationale": "FAO/WHO 2004 Table 38: Recommended dietary intakes of iodine for children 1-6 years (90 \u00b5g/day) to prevent deficiency and goiter."
+      },
+      {
+        "chunk_id": "NK-021-C00891",
+        "relevance_grade": 2,
+        "rationale": "FAO/WHO 2004 Table 1 Minerals: Specifies iodine intake for children 4-6 years (90 \u00b5g/day) and safe intake levels."
+      }
+    ]
+  },
+  {
+    "query_id": "Q009",
+    "question": "What is the recommended daily zinc allowance for an 11-year-old child?",
+    "child_age": 11.0,
+    "category": "Micronutrient & Mineral Requirements",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00515"
+    ],
+    "new_ground_truth_ids": [
+      "NK-021-C00891",
+      "NK-021-C00820"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00515"
+    ],
+    "added_ids": [
+      "NK-021-C00891",
+      "NK-021-C00820"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-021-C00891",
+        "relevance_grade": 3,
+        "rationale": "FAO/WHO 2004 Table 1 Minerals: Recommended daily zinc allowance for children and adolescents 10-18y across dietary bioavailability levels."
+      },
+      {
+        "chunk_id": "NK-021-C00820",
+        "relevance_grade": 2,
+        "rationale": "FAO/WHO 2004 Table 56: Recommended nutrient intakes for dietary zinc to meet normative storage requirements."
+      }
+    ]
+  },
+  {
+    "query_id": "Q010",
+    "question": "Are non-sugar sweeteners recommended for weight control in a 9-year-old child?",
+    "child_age": 9.0,
+    "category": "WHO Dietary Guidelines",
+    "old_ground_truth_ids": [
+      "NK-003-C00001",
+      "NK-003-C00002"
+    ],
+    "new_ground_truth_ids": [
+      "NK-003-C00026",
+      "NK-003-C00113"
+    ],
+    "removed_ids": [
+      "NK-003-C00001",
+      "NK-003-C00002"
+    ],
+    "added_ids": [
+      "NK-003-C00026",
+      "NK-003-C00113"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-003-C00026",
+        "relevance_grade": 3,
+        "rationale": "WHO Non-Sugar Sweeteners Guideline: Explicit recommendation advising that NSS not be used for weight control or reducing disease risk in children."
+      },
+      {
+        "chunk_id": "NK-003-C00113",
+        "relevance_grade": 2,
+        "rationale": "WHO Non-Sugar Sweeteners Guideline Remarks: Scope and policy guidance confirming NSS should not be used in children."
+      }
+    ]
+  },
+  {
+    "query_id": "Q011",
+    "question": "What is the free sugars intake limit recommended by WHO for a 5-year-old child?",
+    "child_age": 5.0,
+    "category": "WHO Dietary Guidelines",
+    "old_ground_truth_ids": [
+      "NK-001-C00001",
+      "NK-001-C00002"
+    ],
+    "new_ground_truth_ids": [
+      "NK-007-C00018",
+      "NK-007-C00051"
+    ],
+    "removed_ids": [
+      "NK-001-C00001",
+      "NK-001-C00002"
+    ],
+    "added_ids": [
+      "NK-007-C00018",
+      "NK-007-C00051"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-007-C00018",
+        "relevance_grade": 3,
+        "rationale": "WHO Sugars Guideline: Explicit recommendation to reduce free sugars intake to less than 10% of total energy in children, with conditional reduction below 5%."
+      },
+      {
+        "chunk_id": "NK-007-C00051",
+        "relevance_grade": 2,
+        "rationale": "WHO Sugars Guideline Recommendations & Remarks: Reiteration of free sugar threshold (<10% and <5%) for dental and cardiometabolic health in children."
+      }
+    ]
+  },
+  {
+    "query_id": "Q012",
+    "question": "What is the recommended limit for saturated fatty acids intake for a 10-year-old child?",
+    "child_age": 10.0,
+    "category": "WHO Dietary Guidelines",
+    "old_ground_truth_ids": [
+      "NK-005-C00001",
+      "NK-005-C00003"
+    ],
+    "new_ground_truth_ids": [
+      "NK-023-C00260",
+      "NK-013-C00083"
+    ],
+    "removed_ids": [
+      "NK-005-C00001",
+      "NK-005-C00003"
+    ],
+    "added_ids": [
+      "NK-023-C00260",
+      "NK-013-C00083"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-023-C00260",
+        "relevance_grade": 3,
+        "rationale": "WHO/FAO TRS 916: Specifies the traditional population nutrient goal restricting saturated fatty acids intake to less than 10% of daily energy intake."
+      },
+      {
+        "chunk_id": "NK-013-C00083",
+        "relevance_grade": 2,
+        "rationale": "WHO Total Fat Guideline: Recommendations on limiting saturated fatty acid consumption and replacing with unsaturated fats in children."
+      }
+    ]
+  },
+  {
+    "query_id": "Q013",
+    "question": "What is the sodium intake recommendation for controlling blood pressure in a 12-year-old child?",
+    "child_age": 12.0,
+    "category": "WHO Dietary Guidelines",
+    "old_ground_truth_ids": [
+      "NK-007-C00001",
+      "NK-007-C00002"
+    ],
+    "new_ground_truth_ids": [
+      "NK-006-C00013",
+      "NK-006-C00053"
+    ],
+    "removed_ids": [
+      "NK-007-C00001",
+      "NK-007-C00002"
+    ],
+    "added_ids": [
+      "NK-006-C00013",
+      "NK-006-C00053"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-006-C00013",
+        "relevance_grade": 3,
+        "rationale": "WHO Sodium Guideline: Explicitly recommends reduction in sodium intake to control blood pressure, adjusting the 2 g/day adult maximum downward for children based on energy requirements."
+      },
+      {
+        "chunk_id": "NK-006-C00053",
+        "relevance_grade": 2,
+        "rationale": "WHO Sodium Guideline: Review of evidence on reduced sodium intake lowering blood pressure in pediatric populations."
+      }
+    ]
+  },
+  {
+    "query_id": "Q014",
+    "question": "Is red meat and processed meat consumption safe for a 15-year-old adolescent?",
+    "child_age": 15.0,
+    "category": "Food Safety & Additives",
+    "old_ground_truth_ids": [
+      "NK-017-C00001",
+      "NK-017-C00003"
+    ],
+    "new_ground_truth_ids": [
+      "NK-017-C00028",
+      "NK-017-C00065"
+    ],
+    "removed_ids": [
+      "NK-017-C00001",
+      "NK-017-C00003"
+    ],
+    "added_ids": [
+      "NK-017-C00028",
+      "NK-017-C00065"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-017-C00028",
+        "relevance_grade": 3,
+        "rationale": "WHO Information Brief: Evaluates health impacts of red meat vs processed meat (IARC Group 1 carcinogen) and guidelines on limiting consumption."
+      },
+      {
+        "chunk_id": "NK-017-C00065",
+        "relevance_grade": 2,
+        "rationale": "WHO Information Brief: National dietary guideline recommendations on moderating red and processed meat for adolescent populations."
+      }
+    ]
+  },
+  {
+    "query_id": "Q015",
+    "question": "Are low-sodium salt substitutes safe for daily consumption in a 10-year-old child?",
+    "child_age": 10.0,
+    "category": "Food Safety & Additives",
+    "old_ground_truth_ids": [
+      "NK-018-C00001",
+      "NK-018-C00002"
+    ],
+    "new_ground_truth_ids": [
+      "NK-018-C00039",
+      "NK-018-C00040"
+    ],
+    "removed_ids": [
+      "NK-018-C00001",
+      "NK-018-C00002"
+    ],
+    "added_ids": [
+      "NK-018-C00039",
+      "NK-018-C00040"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-018-C00039",
+        "relevance_grade": 3,
+        "rationale": "WHO Guideline on Lower-Sodium Salt Substitutes: Evaluates safety of potassium-enriched low-sodium salt substitutes in discretionary foods."
+      },
+      {
+        "chunk_id": "NK-018-C00040",
+        "relevance_grade": 2,
+        "rationale": "WHO Guideline on Lower-Sodium Salt Substitutes: Specifies that potassium intake recommendations (90 mmol/d) must be adjusted downward for children."
+      }
+    ]
+  },
+  {
+    "query_id": "Q016",
+    "question": "What are the food safety standards for artificial food coloring in snacks for an 8-year-old?",
+    "child_age": 8.0,
+    "category": "Food Safety & Additives",
+    "old_ground_truth_ids": [
+      "NK-020-C00010",
+      "NK-020-C00012"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00250",
+      "NK-009-C00002"
+    ],
+    "removed_ids": [
+      "NK-020-C00010",
+      "NK-020-C00012"
+    ],
+    "added_ids": [
+      "NK-008-C00250",
+      "NK-009-C00002"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00250",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Standards on food additives, warning against synthetic coloring agents, artificial flavors, and preservatives in children's snacks."
+      },
+      {
+        "chunk_id": "NK-009-C00002",
+        "relevance_grade": 2,
+        "rationale": "FSSAI Food Safety for Children: Detection of artificial color, food adulterants, and chemical hazards in school snacks."
+      }
+    ]
+  },
+  {
+    "query_id": "Q017",
+    "question": "What are the safe limits for heavy metals lead and contaminants in pediatric food for a 5-year-old?",
+    "child_age": 5.0,
+    "category": "Food Safety & Additives",
+    "old_ground_truth_ids": [
+      "NK-020-C00025",
+      "NK-020-C00030"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00201",
+      "NK-008-C00202"
+    ],
+    "removed_ids": [
+      "NK-020-C00025",
+      "NK-020-C00030"
+    ],
+    "added_ids": [
+      "NK-008-C00201",
+      "NK-008-C00202"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00201",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Guidance on cooking hygiene, reducing chemical contaminants and toxic residues in food."
+      },
+      {
+        "chunk_id": "NK-008-C00202",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Proper pre-cooking and washing procedures to eliminate heavy metals, pesticide residues, and environmental contaminants."
+      }
+    ]
+  },
+  {
+    "query_id": "Q018",
+    "question": "What is the dietary management and iron supplementation for anemia in a 12-year-old girl?",
+    "child_age": 12.0,
+    "category": "Clinical Nutrition & Deficiency",
+    "old_ground_truth_ids": [
+      "NK-021-C00514",
+      "NK-008-C00110"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00125",
+      "NK-021-C00653"
+    ],
+    "removed_ids": [
+      "NK-021-C00514",
+      "NK-008-C00110"
+    ],
+    "added_ids": [
+      "NK-008-C00125",
+      "NK-021-C00653"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00125",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Management of anemia in adolescents, promoting dietary iron, avoiding tea with meals, and consuming vitamin C to enhance iron bioavailability."
+      },
+      {
+        "chunk_id": "NK-021-C00653",
+        "relevance_grade": 2,
+        "rationale": "FAO/WHO 2004 Chapter 13 Iron: Iron deficiency and supplementation trials in adolescent girls showing cognitive and physiological improvements."
+      }
+    ]
+  },
+  {
+    "query_id": "Q019",
+    "question": "What are the dietary indicators for stunting and protein-energy malnutrition in a 5-year-old child?",
+    "child_age": 5.0,
+    "category": "Clinical Nutrition & Deficiency",
+    "old_ground_truth_ids": [
+      "NK-021-C00006",
+      "NK-021-C00010"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00107",
+      "NK-001-C00004"
+    ],
+    "removed_ids": [
+      "NK-021-C00006",
+      "NK-021-C00010"
+    ],
+    "added_ids": [
+      "NK-008-C00107",
+      "NK-001-C00004"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00107",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Identifies the cycle of infection and inadequate dietary intake leading to child malnutrition, stunting, and wasting."
+      },
+      {
+        "chunk_id": "NK-001-C00004",
+        "relevance_grade": 2,
+        "rationale": "WHO Growth Reference: Defines anthropometric and dietary growth indicators (height-for-age stunting and BMI-for-age) for school-age children."
+      }
+    ]
+  },
+  {
+    "query_id": "Q020",
+    "question": "What are the dietary recommendations for childhood obesity management in an 11-year-old child?",
+    "child_age": 11.0,
+    "category": "Clinical Nutrition & Deficiency",
+    "old_ground_truth_ids": [
+      "NK-008-C00050",
+      "NK-008-C00052"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00109",
+      "NK-008-C00020"
+    ],
+    "removed_ids": [
+      "NK-008-C00050",
+      "NK-008-C00052"
+    ],
+    "added_ids": [
+      "NK-008-C00109",
+      "NK-008-C00020"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00109",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Explicit dietary recommendations to manage and prevent pediatric overweight/obesity and insulin resistance."
+      },
+      {
+        "chunk_id": "NK-008-C00020",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Adolescent obesity management through restricting ultra-processed foods (UPFs), HFSS foods, and sugary drinks."
+      }
+    ]
+  },
+  {
+    "query_id": "Q021",
+    "question": "How can vitamin A deficiency and night blindness be prevented in a 7-year-old child?",
+    "child_age": 7.0,
+    "category": "Clinical Nutrition & Deficiency",
+    "old_ground_truth_ids": [
+      "NK-008-C00112",
+      "NK-021-C00505"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00125",
+      "NK-021-C00895"
+    ],
+    "removed_ids": [
+      "NK-008-C00112",
+      "NK-021-C00505"
+    ],
+    "added_ids": [
+      "NK-008-C00125",
+      "NK-021-C00895"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00125",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Details dietary prevention of Vitamin A deficiency and night blindness through carotenoid-rich foods (papaya, carrots, GLVs)."
+      },
+      {
+        "chunk_id": "NK-021-C00895",
+        "relevance_grade": 2,
+        "rationale": "FAO/WHO 2004 Table 2 Vitamins: Recommended daily nutrient intake of Vitamin A (500 \u00b5g RE/day) for children 7-9y to prevent ocular and systemic deficiency."
+      }
+    ]
+  },
+  {
+    "query_id": "Q022",
+    "question": "What are the increased nutrient demands during adolescent growth spurt for a 13-year-old boy?",
+    "child_age": 13.0,
+    "category": "Age-Specific Nuances (5\u201315 yrs)",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00507"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00104",
+      "NK-015-C00011"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00507"
+    ],
+    "added_ids": [
+      "NK-008-C00104",
+      "NK-015-C00011"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00104",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Details physiological changes and nutrient acceleration during adolescent peak growth spurt (9-10 cm, 8-10 kg annually)."
+      },
+      {
+        "chunk_id": "NK-015-C00011",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2020 Table 1a: Quantitative scaling of daily energy requirement to 2860 kcal/d for boys 13-15y during peak growth."
+      }
+    ]
+  },
+  {
+    "query_id": "Q023",
+    "question": "What is the recommended dietary transition for a school-age child entering age 5 years?",
+    "child_age": 5.0,
+    "category": "Age-Specific Nuances (5\u201315 yrs)",
+    "old_ground_truth_ids": [
+      "NK-021-C00006",
+      "NK-008-C00015"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00101",
+      "NK-008-C00109"
+    ],
+    "removed_ids": [
+      "NK-021-C00006",
+      "NK-008-C00015"
+    ],
+    "added_ids": [
+      "NK-008-C00101",
+      "NK-008-C00109"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00101",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Guideline on transitioning young children to wholesome balanced family diets above age 2 and at school entry."
+      },
+      {
+        "chunk_id": "NK-008-C00109",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Figure 5.1 provides the complete suggested daily diet chart for normally nourished active children aged 4-6 years."
+      }
+    ]
+  },
+  {
+    "query_id": "Q024",
+    "question": "What are the specific micronutrient needs during pubertal onset for an 11-year-old girl?",
+    "child_age": 11.0,
+    "category": "Age-Specific Nuances (5\u201315 yrs)",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00508"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00104",
+      "NK-021-C00891"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00508"
+    ],
+    "added_ids": [
+      "NK-008-C00104",
+      "NK-021-C00891"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00104",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Details pubertal onset demands, skeletal mineral integrity, and calcium/iron requirements in pubertal girls."
+      },
+      {
+        "chunk_id": "NK-021-C00891",
+        "relevance_grade": 2,
+        "rationale": "FAO/WHO 2004 Table 1 Minerals: Recommends 1,300 mg/day calcium and up to 28 mg/day iron for females 10-18y at pubertal onset."
+      }
+    ]
+  },
+  {
+    "query_id": "Q025",
+    "question": "What are the daily micronutrient requirements for a 9-year-old primary school child?",
+    "child_age": 9.0,
+    "category": "Age-Specific Nuances (5\u201315 yrs)",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-021-C00511"
+    ],
+    "new_ground_truth_ids": [
+      "NK-021-C00891",
+      "NK-008-C00111"
+    ],
+    "removed_ids": [
+      "NK-021-C00505",
+      "NK-021-C00511"
+    ],
+    "added_ids": [
+      "NK-021-C00891",
+      "NK-008-C00111"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-021-C00891",
+        "relevance_grade": 3,
+        "rationale": "FAO/WHO 2004 Table 1 Minerals: Specific daily mineral allowances for children 7-9 years (Calcium 700 mg, Iron 18 mg, Zinc 11.3 mg, Iodine 100 \u00b5g)."
+      },
+      {
+        "chunk_id": "NK-008-C00111",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Figure 5.2 gives the suggested daily balanced meal plan for school children aged 7-9 years."
+      }
+    ]
+  },
+  {
+    "query_id": "Q026",
+    "question": "What are the comprehensive dietary guidelines for a 15-year-old high school student?",
+    "child_age": 15.0,
+    "category": "Age-Specific Nuances (5\u201315 yrs)",
+    "old_ground_truth_ids": [
+      "NK-021-C00505",
+      "NK-008-C00020"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00020",
+      "NK-008-C00101"
+    ],
+    "removed_ids": [
+      "NK-021-C00505"
+    ],
+    "added_ids": [
+      "NK-008-C00101"
+    ],
+    "kept_ids": [
+      "NK-008-C00020"
+    ],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00020",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Preserved from old ground truth. Comprehensive dietary rules for adolescents (meal frequency, avoiding UPFs/HFSS, restricting sugar)."
+      },
+      {
+        "chunk_id": "NK-008-C00101",
+        "relevance_grade": 2,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Principles of balanced and diverse nutrition for adolescents supporting health and cognitive performance."
+      }
+    ]
+  },
+  {
+    "query_id": "Q027",
+    "question": "What is the recommended nutritional norm for a mid-day meal for an 8-year-old primary student?",
+    "child_age": 8.0,
+    "category": "School Feeding & Programs",
+    "old_ground_truth_ids": [
+      "NK-012-C00001",
+      "NK-012-C00003"
+    ],
+    "new_ground_truth_ids": [
+      "NK-012-C00028",
+      "NK-012-C00030"
+    ],
+    "removed_ids": [
+      "NK-012-C00001",
+      "NK-012-C00003"
+    ],
+    "added_ids": [
+      "NK-012-C00028",
+      "NK-012-C00030"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-012-C00028",
+        "relevance_grade": 3,
+        "rationale": "WHO School Food Environment Guideline: Good-practice statement that foods and beverages provided or served at school must be safe and contribute to healthy diets."
+      },
+      {
+        "chunk_id": "NK-012-C00030",
+        "relevance_grade": 2,
+        "rationale": "WHO School Food Environment Guideline: Guidance on school meal provision, meal frequencies, and nutrient-dense meal standards for primary students."
+      }
+    ]
+  },
+  {
+    "query_id": "Q028",
+    "question": "What are the caloric and protein standards for upper primary school lunches for a 12-year-old child?",
+    "child_age": 12.0,
+    "category": "School Feeding & Programs",
+    "old_ground_truth_ids": [
+      "NK-012-C00005",
+      "NK-012-C00008"
+    ],
+    "new_ground_truth_ids": [
+      "NK-012-C00033",
+      "NK-012-C00034"
+    ],
+    "removed_ids": [
+      "NK-012-C00005",
+      "NK-012-C00008"
+    ],
+    "added_ids": [
+      "NK-012-C00033",
+      "NK-012-C00034"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-012-C00033",
+        "relevance_grade": 3,
+        "rationale": "WHO School Food Environment Guideline: Strong recommendation on mandatory nutrition standards and nutrient-based criteria for school lunches and meals."
+      },
+      {
+        "chunk_id": "NK-012-C00034",
+        "relevance_grade": 2,
+        "rationale": "WHO School Food Environment Guideline: Implementation rules governing caloric and nutritional quality of food served or sold in school lunches."
+      }
+    ]
+  },
+  {
+    "query_id": "Q029",
+    "question": "What are the FSSAI school canteen regulations on high fat, sugar, and salt (HFSS) foods for a 10-year-old?",
+    "child_age": 10.0,
+    "category": "School Feeding & Programs",
+    "old_ground_truth_ids": [
+      "NK-024-C00001",
+      "NK-024-C00005"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00230",
+      "NK-024-C00094"
+    ],
+    "removed_ids": [
+      "NK-024-C00001",
+      "NK-024-C00005"
+    ],
+    "added_ids": [
+      "NK-008-C00230",
+      "NK-024-C00094"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00230",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Explicitly defines HFSS foods (high fat, sugar, salt) and provides guidelines to restrict them in schools and canteens."
+      },
+      {
+        "chunk_id": "NK-024-C00094",
+        "relevance_grade": 2,
+        "rationale": "FSSAI Report on Fat, Sugar and Salt: Outlines national multisectoral initiatives to limit unhealthy HFSS foods in school environments and education programs."
+      }
+    ]
+  },
+  {
+    "query_id": "Q030",
+    "question": "How are fortified staple foods like rice and salt integrated into school feeding programs for a 6-year-old?",
+    "child_age": 6.0,
+    "category": "School Feeding & Programs",
+    "old_ground_truth_ids": [
+      "NK-013-C00001",
+      "NK-013-C00004"
+    ],
+    "new_ground_truth_ids": [
+      "NK-008-C00241",
+      "NK-012-C00030"
+    ],
+    "removed_ids": [
+      "NK-013-C00001",
+      "NK-013-C00004"
+    ],
+    "added_ids": [
+      "NK-008-C00241",
+      "NK-012-C00030"
+    ],
+    "kept_ids": [],
+    "new_annotations": [
+      {
+        "chunk_id": "NK-008-C00241",
+        "relevance_grade": 3,
+        "rationale": "ICMR-NIN 2024 Dietary Guidelines: Specifies national regulations for fortification of staples (double-fortified salt with iron and iodine, fortified rice/wheat flour) in school feeding programs."
+      },
+      {
+        "chunk_id": "NK-012-C00030",
+        "relevance_grade": 2,
+        "rationale": "WHO School Food Environment Guideline: Standards on incorporating nutrient-dense fortified staples into school feeding programs for young children."
+      }
+    ]
+  }
+]

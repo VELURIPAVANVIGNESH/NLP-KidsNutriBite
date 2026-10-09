@@ -1,0 +1,23 @@
+source_id,file_name,pages_processed,pages_with_text,empty_pages,low_text_pages,extraction_warnings,extraction_errors,character_count,word_count,status
+NK-001,07-043497.pdf,8,8,0,0,0,0,36503,6126,Success
+NK-002,9789240073593-engCarbohydrate intake for adults and childrenWHO guideline.pdf,100,95,4,1,1,0,266886,40296,Success
+NK-003,9789240073616-engUse of non-sugar sweetenersWHO guideline.pdf,90,85,4,1,1,0,257571,38831,Success
+NK-004,9789240101876-eng.What are healthy diets.pdf,23,21,2,0,0,0,45613,6406,Success
+NK-005,9789241504829_engGuidelinepotassium intake for adults and children.pdf,52,50,2,0,0,0,126397,18272,Success
+NK-006,9789241504836_engGuidelinesodium intake for adults and children.pdf,56,55,1,0,0,0,136411,19983,Success
+NK-007,9789241549028_engGuidelinesugars intake for adults and children.pdf,59,58,1,0,0,0,151040,22775,Success
+NK-008,DGI_07th_May_2024_fin.pdf,148,137,11,0,0,4,306029,47182,Success
+NK-009,Food_Safety_School_Childrens.pdf,8,8,0,0,0,0,5984,1000,Success
+NK-010,IFCT_BOOK.pdf,585,566,1,18,18,0,1107514,158442,Success
+NK-011,Implementing effective-adolscent.pdf,68,65,3,0,0,0,172794,22894,Success
+NK-012,PoliciesandinterventionstocreatehealthyschoolfoodenvironmentsWHOguideline.pdf,106,104,2,0,0,0,297613,42473,Success
+NK-013,Totalfatintakefortheadults.pdf,66,61,4,1,1,0,186490,28242,Success
+NK-015,brief_note.pdf,6,6,0,0,0,0,14354,2271,Success
+NK-017,9789240074828-engRed and processed meat in the context of h.pdf,56,54,2,0,0,0,161587,23324,Success
+NK-018,9789240105591-engUse of lower-sodium salt substitutesWHO guideline ﻿.pdf,82,78,4,0,0,0,220909,32646,Success
+NK-019,Dietary protein quality.pdf,76,76,0,0,0,0,176797,26747,Success
+NK-020,Global Accelerated Action for the Health of Adolescents (AA-HA!) - Second edition.pdf,255,255,0,0,0,0,854590,117743,Success
+NK-021,Human Vitamin .pdf,303,303,0,0,0,0,885891,139815,Success
+NK-022,WHO-NMH-NHD-18.4-engREPLACE trans fa an action package to eliminate industrially produced trans-fatty acids.pdf,8,8,0,0,0,0,28063,1990,Success
+NK-023,"WHO_TRS_916Diet, nutrition and the prevention of chronic diseases.pdf",160,159,1,0,0,0,414898,62703,Success
+NK-024,ref-2-txt-book-1.pdf,88,83,5,0,0,0,160295,23859,Success

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"slate-dark":"#0f172a","slate-muted":"#334155","slate-subtle":"#64748b","border-subtle":"#e2e8f0","border-highlight":"rgba(13, 148, 136, 0.3)","surface-base":"#ffffff","surface-raised":"#ffffff","surface-container":"#f8fafc","surface-container-low":"#f1f5f9","surface-container-high":"#e2e8f0","surface-container-lowest":"#ffffff","primary":"#0d9488","primary-hover":"#0f766e","primary-container":"#0d9488","on-primary-fixed":"#ffffff","secondary":"#0284c7","tertiary":"#475569","confidence-high":"#059669","chart-accent":"#65a30d","surgical-blue":"#0369a1","citation-text":"#0284c7"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.375rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","gutter-lg":"1.5rem","margin":"1rem","margin-lg":"2.5rem","space-md":"0.75rem","space-lg":"1.25rem","margin-md":"1.5rem"},fontFamily:{"label-code":["JetBrains Mono","monospace"],"body-sm":["Inter","sans-serif"],"headline-lg":["Geist","sans-serif"],"body-lg":["Inter","sans-serif"],"headline-xl":["Geist","sans-serif"],"headline-xl-mobile":["Geist","sans-serif"],"headline-sm":["Geist","sans-serif"],"label-provenance":["JetBrains Mono","monospace"],"label-tabular":["JetBrains Mono","monospace"],"headline-lg-mobile":["Geist","sans-serif"],"body-md":["Inter","sans-serif"],"headline-md":["Geist","sans-serif"]},fontSize:{"label-code":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["34px",{"lineHeight":"42px","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"500"}],"label-provenance":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-tabular":["12px",{"lineHeight":"16px","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface-base font-body-md text-slate-dark antialiased selection:bg-teal-100 selection:text-teal-900"><header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-border-subtle"><div class="h-16 w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-teal-50 border border-teal-200 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">vital_signs</span></div><span class="font-headline-md text-headline-md font-semibold tracking-tight text-slate-dark">Nutri<span class="text-primary">Kid</span></span></div><div class="hidden xl:flex items-center gap-space-xs"><span class="px-2 py-0.5 rounded bg-sky-50 text-surgical-blue font-label-provenance text-label-provenance uppercase tracking-wider border border-sky-100">Pediatric Nutrition RAG System</span></div></div><nav class="hidden lg:flex items-center gap-1 xl:gap-space-xs"><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark transition-colors whitespace-nowrap" data-path="overview" href="#">Overview</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark transition-colors whitespace-nowrap" data-path="pipeline" href="#">How It Works</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark transition-colors whitespace-nowrap" data-path="clinical-rag-query-engine" href="#">Ask NutriKid</a><a aria-current="page" class="px-2.5 py-1.5 rounded font-body-sm transition-colors whitespace-nowrap bg-teal-50 text-primary font-medium border border-teal-200" data-path="institutional-sources" href="#">Institutional Sources</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark transition-colors whitespace-nowrap" data-path="retrieval-lab" href="#">Retrieval Lab</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark transition-colors whitespace-nowrap" data-path="evaluation-benchmarks" href="#">Evaluation &amp; Benchmarks</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark transition-colors whitespace-nowrap" data-path="safety-scope" href="#">Safety &amp; Scope</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-sky-50 border border-sky-200 text-sky-800 font-label-provenance text-label-provenance"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>SCOPE: 5.0–15.0 YRS</span></div><div class="w-8 h-8 rounded-full bg-teal-700 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-white text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-screen bg-slate-50/60"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-space-xl flex flex-col gap-space-xl">
+<!-- Top System Header Block -->
+<div class="relative overflow-hidden rounded-xl bg-white border border-border-subtle p-space-lg lg:p-space-xl shadow-sm">
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-teal-100/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 left-1/3 w-80 h-80 bg-sky-100/50 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm max-w-4xl">
+<div class="flex flex-wrap items-center gap-space-xs font-label-provenance text-label-provenance uppercase tracking-wider">
+<span class="px-2 py-0.5 rounded bg-teal-50 text-primary border border-teal-200">AUDITED ARCHIVE</span>
+<span class="text-slate-subtle">•</span>
+<span class="text-slate-muted">DETERMINISTIC VECTOR STORE v1.4</span>
+<span class="text-slate-subtle">•</span>
+<span class="text-emerald-700 flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> IMMUTABLE REPOSITORY
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-slate-dark tracking-tight">
+            Institutional Sources &amp; Frozen Corpus Repository
+          </h1>
+<p class="font-body-lg text-body-lg text-slate-muted leading-relaxed">
+            Explore the 22 authoritative pediatric guidelines, nutritional standards, and composition tables forming NutriKid's frozen evidence base. All queries execute strictly within this immutable, citation-grounded boundary.
+          </p>
+</div>
+<!-- Ledger State Card -->
+<div class="shrink-0 bg-slate-50 border border-slate-200 rounded-lg p-space-md shadow-sm flex flex-col gap-1.5 min-w-[320px]">
+<div class="flex items-center justify-between text-slate-muted font-label-provenance text-label-provenance">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">lock</span> CORPUS LEDGER SEAL
+            </span>
+<span class="text-emerald-700 font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>VERIFIED</span>
+</div>
+<div class="flex items-center justify-between bg-white border border-slate-200 px-2.5 py-1.5 rounded shadow-inner">
+<span class="font-label-code text-[11px] text-slate-dark select-all">sha256:7f9c2e0b4a189f77...e41a</span>
+<button class="text-secondary hover:text-primary transition-colors p-1" id="copyHashBtn" title="Copy Complete Hash">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-tabular text-[10px] text-slate-subtle text-right">Frozen Timestamp: 2024-11-14 03:22 UTC</span>
+</div>
+</div>
+<!-- Corpus KPI Bento Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-gutter mt-space-lg">
+<div class="rounded-lg bg-white border border-border-subtle p-space-md shadow-sm transition hover:border-teal-300">
+<div class="flex items-center justify-between text-slate-subtle font-label-provenance text-label-provenance mb-1">
+<span>DOCUMENTS</span>
+<span class="material-symbols-outlined text-primary text-[18px]">menu_book</span>
+</div>
+<span class="font-label-tabular text-headline-lg font-bold text-slate-dark tracking-tight">22</span>
+<span class="block font-body-sm text-[11px] text-slate-muted mt-0.5">Authoritative Standards</span>
+</div>
+<div class="rounded-lg bg-white border border-border-subtle p-space-md shadow-sm transition hover:border-sky-300">
+<div class="flex items-center justify-between text-slate-subtle font-label-provenance text-label-provenance mb-1">
+<span>PAGES INDEXED</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">find_in_page</span>
+</div>
+<span class="font-label-tabular text-headline-lg font-bold text-secondary tracking-tight">2,403</span>
+<span class="block font-body-sm text-[11px] text-slate-muted mt-0.5">OCR &amp; Layout Scanned</span>
+</div>
+<div class="rounded-lg bg-white border border-border-subtle p-space-md shadow-sm transition hover:border-slate-400">
+<div class="flex items-center justify-between text-slate-subtle font-label-provenance text-label-provenance mb-1">
+<span>CANONICAL CHUNKS</span>
+<span class="material-symbols-outlined text-slate-subtle text-[18px]">scatter_plot</span>
+</div>
+<span class="font-label-tabular text-headline-lg font-bold text-slate-dark tracking-tight">6,429</span>
+<span class="block font-body-sm text-[11px] text-slate-muted mt-0.5">512t Dense BGE Vectors</span>
+</div>
+<div class="rounded-lg bg-white border border-border-subtle p-space-md shadow-sm transition hover:border-lime-400">
+<div class="flex items-center justify-between text-slate-subtle font-label-provenance text-label-provenance mb-1">
+<span>IFCT FOOD ROWS</span>
+<span class="material-symbols-outlined text-chart-accent text-[18px]">table_rows</span>
+</div>
+<span class="font-label-tabular text-headline-lg font-bold text-chart-accent tracking-tight">8,351</span>
+<span class="block font-body-sm text-[11px] text-slate-muted mt-0.5">Nutrient Breakdown Rows</span>
+</div>
+<div class="col-span-2 sm:col-span-1 rounded-lg bg-white border border-border-subtle p-space-md shadow-sm transition hover:border-teal-300">
+<div class="flex items-center justify-between text-slate-subtle font-label-provenance text-label-provenance mb-1">
+<span>COVERAGE AGE</span>
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">child_care</span>
+</div>
+<span class="font-label-tabular text-headline-lg font-bold text-primary tracking-tight">5.0–15.0</span>
+<span class="block font-body-sm text-[11px] text-slate-muted mt-0.5">Pediatric Years Cohort</span>
+</div>
+</div>
+</div>
+<!-- Source Authority Institutional Cards (4 Key Pillars) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-provenance text-label-provenance uppercase tracking-wider text-surgical-blue">PILLARS OF EVIDENCE</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark font-semibold">Authoritative Research Institutions</h2>
+</div>
+<span class="font-label-code text-body-sm text-slate-subtle hidden md:block">Deterministic Parsing Tier 1</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- ICMR-NIN Card -->
+<div class="rounded-xl bg-white border border-border-subtle p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 via-teal-400 to-transparent"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-label-provenance text-[11px] font-semibold">PRIMARY REFERENCE</span>
+<span class="inline-flex items-center gap-1 font-label-provenance text-[11px] text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> ACTIVE
+              </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-slate-dark font-semibold">ICMR - NIN</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-0.5">National Institute of Nutrition, India</p>
+</div>
+<!-- Documents Checklist -->
+<div class="flex flex-col gap-space-xs bg-slate-50 border border-slate-200 p-space-sm rounded-lg">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Nutrient Requirements for Indians (2020)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Dietary Guidelines for Indians (2024)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Indian Food Composition Tables (IFCT 2017)</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 text-[12px] font-label-code text-slate-muted">
+<span class="text-slate-subtle uppercase text-[10px] tracking-wider">Indexed Domain Coverage</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">RDA</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">EAR</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">TUL</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Minerals</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Electrolytes</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-slate-100 flex items-center justify-between font-label-tabular text-label-tabular text-slate-muted">
+<span>3,420 Chunks</span>
+<span class="text-primary font-semibold">53.2% Weight</span>
+</div>
+</div>
+<!-- WHO Card -->
+<div class="rounded-xl bg-white border border-border-subtle p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 via-sky-400 to-transparent"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-200 font-label-provenance text-[11px] font-semibold">GLOBAL CONSENSUS</span>
+<span class="inline-flex items-center gap-1 font-label-provenance text-[11px] text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> ACTIVE
+              </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-slate-dark font-semibold">WHO</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-0.5">World Health Organization</p>
+</div>
+<!-- Documents Checklist -->
+<div class="flex flex-col gap-space-xs bg-slate-50 border border-slate-200 p-space-sm rounded-lg">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Assessing &amp; Managing Children at Facilities (2023)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Physical Activity, Sedentary Behaviour &amp; Sleep</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Tech Report: Micronutrient Fortification in Schools</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 text-[12px] font-label-code text-slate-muted">
+<span class="text-slate-subtle uppercase text-[10px] tracking-wider">Indexed Domain Coverage</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Growth Charts</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Z-Scores</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Anemia</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Wasting</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-slate-100 flex items-center justify-between font-label-tabular text-label-tabular text-slate-muted">
+<span>1,650 Chunks</span>
+<span class="text-secondary font-semibold">25.7% Weight</span>
+</div>
+</div>
+<!-- FAO Card -->
+<div class="rounded-xl bg-white border border-border-subtle p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lime-600 via-lime-500 to-transparent"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-lime-50 text-lime-900 border border-lime-200 font-label-provenance text-[11px] font-semibold">MACRONUTRIENT RATIOS</span>
+<span class="inline-flex items-center gap-1 font-label-provenance text-[11px] text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> ACTIVE
+              </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-slate-dark font-semibold">FAO</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-0.5">Food and Agriculture Organization</p>
+</div>
+<!-- Documents Checklist -->
+<div class="flex flex-col gap-space-xs bg-slate-50 border border-slate-200 p-space-sm rounded-lg">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-chart-accent text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Human Energy and Protein Requirements</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-chart-accent text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Dietary Protein Quality Evaluation (DIAAS)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-chart-accent text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Fats &amp; Fatty Acids in Human Nutrition</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 text-[12px] font-label-code text-slate-muted">
+<span class="text-slate-subtle uppercase text-[10px] tracking-wider">Indexed Domain Coverage</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Protein Score</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">BMR Constants</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Bioavailability</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-slate-100 flex items-center justify-between font-label-tabular text-label-tabular text-slate-muted">
+<span>810 Chunks</span>
+<span class="text-chart-accent font-semibold">12.6% Weight</span>
+</div>
+</div>
+<!-- FSSAI Card -->
+<div class="rounded-xl bg-white border border-border-subtle p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 via-sky-400 to-transparent"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-cyan-50 text-cyan-800 border border-cyan-200 font-label-provenance text-[11px] font-semibold">REGULATORY &amp; SAFETY</span>
+<span class="inline-flex items-center gap-1 font-label-provenance text-[11px] text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> ACTIVE
+              </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-slate-dark font-semibold">FSSAI</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-0.5">Food Safety and Standards Authority of India</p>
+</div>
+<!-- Documents Checklist -->
+<div class="flex flex-col gap-space-xs bg-slate-50 border border-slate-200 p-space-sm rounded-lg">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-citation-text text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Safe and Nutritious Food at School (Yellow Book)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-citation-text text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Food Safety &amp; Fortification Regulations</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-citation-text text-[16px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-[12px] text-slate-dark">Guidance on Sugar, Saturated Fats &amp; Sodium</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 text-[12px] font-label-code text-slate-muted">
+<span class="text-slate-subtle uppercase text-[10px] tracking-wider">Indexed Domain Coverage</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Canteen Compliance</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">HFSS Limits</span>
+<span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-dark border border-slate-200">Fortified Staple (+F)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-slate-100 flex items-center justify-between font-label-tabular text-label-tabular text-slate-muted">
+<span>549 Chunks</span>
+<span class="text-citation-text font-semibold">8.5% Weight</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Institutional Integrity & Non-Endorsement Disclosure Banner -->
+<div class="rounded-lg bg-teal-50/70 border border-teal-200/80 p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-start sm:items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5 sm:mt-0">shield</span>
+<div>
+<span class="font-label-provenance text-[11px] text-teal-800 uppercase tracking-wider block font-semibold">Institutional Integrity &amp; Provenance Protocol</span>
+<p class="font-body-sm text-body-sm text-slate-muted">
+            Institutional sources provide the authoritative empirical and consensus data indexed by NutriKid. Inclusion of documents does not imply official partnership or direct institutional endorsement.
+          </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-2">
+<span class="font-label-code text-[11px] text-slate-muted font-medium">PEDIATRIC AUDIT 2024-Q4</span>
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+</div>
+</div>
+<!-- Comprehensive Document Explorer Section -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">library_books</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark font-semibold">Document Explorer &amp; Ingestion Hashes</h2>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted">Direct cryptographic verification for every ingested guideline segment.</p>
+</div>
+<!-- Search & Category Filters -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="relative min-w-[240px]">
+<input class="w-full bg-white text-slate-dark placeholder:text-slate-400 font-body-sm text-body-sm pl-8 pr-3 py-1.5 rounded border border-border-subtle focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="docSearchInput" placeholder="Search title, ID, agency or hash..." type="text"/>
+<span class="material-symbols-outlined text-slate-400 text-[16px] absolute left-2.5 top-2.5">search</span>
+</div>
+<div class="flex items-center bg-slate-100 border border-slate-200 p-1 rounded gap-1 text-[11px] font-label-code">
+<button class="filter-btn px-2.5 py-1 rounded bg-primary text-white font-semibold shadow-sm" data-category="ALL">ALL (22)</button>
+<button class="filter-btn px-2.5 py-1 rounded text-slate-muted hover:text-slate-dark" data-category="Macronutrients">Macronutrients</button>
+<button class="filter-btn px-2.5 py-1 rounded text-slate-muted hover:text-slate-dark" data-category="Micronutrients">Micronutrients</button>
+<button class="filter-btn px-2.5 py-1 rounded text-slate-muted hover:text-slate-dark" data-category="Food Tables">Food Tables</button>
+<button class="filter-btn px-2.5 py-1 rounded text-slate-muted hover:text-slate-dark" data-category="School Meals">School Meals</button>
+</div>
+</div>
+</div>
+<!-- High-Density Clinical Table -->
+<div class="rounded-xl bg-white border border-border-subtle overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="corpusTable">
+<thead>
+<tr class="bg-slate-50 border-b border-border-subtle text-slate-muted font-label-provenance text-[11px] uppercase tracking-wider">
+<th class="py-2.5 px-space-md">Doc ID</th>
+<th class="py-2.5 px-space-md">Guideline &amp; Canonical Standard</th>
+<th class="py-2.5 px-space-md">Agency</th>
+<th class="py-2.5 px-space-md text-center">Year</th>
+<th class="py-2.5 px-space-md text-right">Pages</th>
+<th class="py-2.5 px-space-md text-right">Chunks</th>
+<th class="py-2.5 px-space-md font-label-code">Ingestion Hash</th>
+<th class="py-2.5 px-space-md text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 font-body-sm text-body-sm text-slate-dark" id="tableBody">
+<!-- NK-001 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Micronutrients" data-doc="NK-001">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-001</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Nutrient Requirements for Indians (RDA / EAR)</span>
+<span class="px-1.5 py-0.2 rounded bg-teal-50 border border-teal-200 text-[10px] text-teal-800 font-label-provenance uppercase">Micronutrients</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Recommended Dietary Allowances and Estimated Average Requirements for 5-15y</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">ICMR-NIN</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2020</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">448</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-primary">1,180</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">c48f2a...98e0</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="ICMR-NIN" data-chunks="1,180" data-docid="NK-001" data-doctitle="Nutrient Requirements for Indians (2020)" data-pages="448">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-002 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Food Tables" data-doc="NK-002">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-002</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Indian Food Composition Tables (IFCT)</span>
+<span class="px-1.5 py-0.2 rounded bg-lime-50 border border-lime-200 text-[10px] text-lime-900 font-label-provenance uppercase">Food Tables</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">528 Key Raw &amp; Processed Foods, 151 Nutritional Parameter Matrix</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">ICMR-NIN</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2017</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">572</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-primary">1,450</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">87bb12...771f</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="ICMR-NIN" data-chunks="1,450" data-docid="NK-002" data-doctitle="Indian Food Composition Tables (IFCT 2017)" data-pages="572">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-003 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Macronutrients" data-doc="NK-003">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-003</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Dietary Guidelines for Indians (My Plate for the Day)</span>
+<span class="px-1.5 py-0.2 rounded bg-teal-50 border border-teal-200 text-[10px] text-teal-800 font-label-provenance uppercase">Macronutrients</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Evidence-based portion sizes, ultra-processed food thresholds, adolescent diet</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">ICMR-NIN</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2024</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">154</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-primary">790</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">03ee7c...12ad</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="ICMR-NIN" data-chunks="790" data-docid="NK-003" data-doctitle="Dietary Guidelines for Indians (2024)" data-pages="154">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-004 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Macronutrients" data-doc="NK-004">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-004</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>WHO Child Growth Standards &amp; Growth Reference 5-19y</span>
+<span class="px-1.5 py-0.2 rounded bg-sky-50 border border-sky-200 text-[10px] text-sky-800 font-label-provenance uppercase">Growth &amp; Anthro</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">BMI-for-age, Height-for-age, Weight-for-age LMS curves &amp; percentile tables</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">WHO</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2007/23</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">312</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-secondary">740</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">551ab9...0911</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="WHO" data-chunks="740" data-docid="NK-004" data-doctitle="WHO Child Growth Standards (5-19y)" data-pages="312">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-005 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Micronutrients" data-doc="NK-005">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-005</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Guideline: Assessing &amp; Managing Children at Health Facilities</span>
+<span class="px-1.5 py-0.2 rounded bg-teal-50 border border-teal-200 text-[10px] text-teal-800 font-label-provenance uppercase">Micronutrients</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Anthropometric wasting markers, refeeding syndrome, acute severe malnutrition</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">WHO</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2023</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">182</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-secondary">480</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">3b890f...fe20</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="WHO" data-chunks="480" data-docid="NK-005" data-doctitle="WHO Child Facility Management (2023)" data-pages="182">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-006 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Macronutrients" data-doc="NK-006">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-006</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Human Energy and Protein Requirements (WHO Tech Series 724)</span>
+<span class="px-1.5 py-0.2 rounded bg-teal-50 border border-teal-200 text-[10px] text-teal-800 font-label-provenance uppercase">Macronutrients</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Schofield BMR equations, PAL factors for school-going active children</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">FAO/WHO</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2014</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">214</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-chart-accent">490</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">fa018d...5612</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="FAO/WHO" data-chunks="490" data-docid="NK-006" data-doctitle="FAO/WHO Human Energy &amp; Protein Requirements" data-pages="214">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-007 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Macronutrients" data-doc="NK-007">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-007</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Dietary Protein Quality Evaluation in Human Nutrition (DIAAS)</span>
+<span class="px-1.5 py-0.2 rounded bg-teal-50 border border-teal-200 text-[10px] text-teal-800 font-label-provenance uppercase">Macronutrients</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Digestible Indispensable Amino Acid Scores across grain-legume complementary meals</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">FAO</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2013</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">76</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-chart-accent">320</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">99ca4e...88ab</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="FAO" data-chunks="320" data-docid="NK-007" data-doctitle="FAO Dietary Protein Quality (DIAAS)" data-pages="76">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-008 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="School Meals" data-doc="NK-008">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-008</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Safe &amp; Nutritious Food at School (The Yellow Book)</span>
+<span class="px-1.5 py-0.2 rounded bg-amber-50 border border-amber-200 text-[10px] text-amber-800 font-label-provenance uppercase">School Meals</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">School cafeteria standards, color-coded food categorization, midday meal hygiene</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">FSSAI</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2021</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">116</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-citation-text">314</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">82ef30...cd45</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="FSSAI" data-chunks="314" data-docid="NK-008" data-doctitle="FSSAI Safe &amp; Nutritious Food at School" data-pages="116">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-009 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="School Meals" data-doc="NK-009">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-009</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>PM POSHAN Nutritional Norms for Primary &amp; Upper Primary</span>
+<span class="px-1.5 py-0.2 rounded bg-amber-50 border border-amber-200 text-[10px] text-amber-800 font-label-provenance uppercase">School Meals</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Caloric targets: 450 kcal &amp; 12g protein (Primary), 700 kcal &amp; 20g protein (Upper)</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">MoE / NIN</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2022</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">64</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-citation-text">235</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">66da78...4302</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="MoE/NIN" data-chunks="235" data-docid="NK-009" data-doctitle="PM POSHAN Guidelines (2022)" data-pages="64">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-010 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Micronutrients" data-doc="NK-010">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-010</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>WHO Fortification of Food with Micronutrients</span>
+<span class="px-1.5 py-0.2 rounded bg-teal-50 border border-teal-200 text-[10px] text-teal-800 font-label-provenance uppercase">Micronutrients</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Bioavailability of NaFeEDTA, Iron Fumarate, and Retinyl Palmitate for 5-15y</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">WHO/FAO</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2018</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">360</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-secondary">430</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">14fa99...21cc</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="WHO/FAO" data-chunks="430" data-docid="NK-010" data-doctitle="WHO Micronutrient Fortification" data-pages="360">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-011 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="School Meals" data-doc="NK-011">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-011</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>Food Fortification Resource Centre (+F Standards)</span>
+<span class="px-1.5 py-0.2 rounded bg-cyan-50 border border-cyan-200 text-[10px] text-cyan-800 font-label-provenance uppercase">Fortification</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Regulatory limits for Vitamin A &amp; D in milk/oil, Double Fortified Salt (DFS)</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">FSSAI</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2023</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">48</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-citation-text">160</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">9a12fe...550a</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="FSSAI" data-chunks="160" data-docid="NK-011" data-doctitle="FSSAI Food Fortification (+F) Standards" data-pages="48">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- NK-012 -->
+<tr class="hover:bg-slate-50/80 transition-colors group" data-category="Micronutrients" data-doc="NK-012">
+<td class="py-3 px-space-md font-label-code text-primary font-semibold whitespace-nowrap">NK-012</td>
+<td class="py-3 px-space-md">
+<div class="font-medium text-slate-dark flex items-center gap-1.5">
+<span>National Iron Plus Initiative (NIPI) Adolescent Clinical Protocols</span>
+<span class="px-1.5 py-0.2 rounded bg-teal-50 border border-teal-200 text-[10px] text-teal-800 font-label-provenance uppercase">Micronutrients</span>
+</div>
+<span class="font-body-sm text-[11px] text-slate-muted">Weekly Iron and Folic Acid Supplementation (WIFS) dosage matrices</span>
+</td>
+<td class="py-3 px-space-md font-label-code text-[12px] text-secondary font-medium">MoHFW/NIN</td>
+<td class="py-3 px-space-md text-center font-label-tabular text-slate-muted">2018</td>
+<td class="py-3 px-space-md text-right font-label-tabular text-slate-muted">92</td>
+<td class="py-3 px-space-md text-right font-label-tabular font-medium text-slate-dark">220</td>
+<td class="py-3 px-space-md font-label-code text-[11px] text-slate-muted">
+<span class="bg-slate-50 border border-slate-200 px-2 py-0.5 rounded text-slate-subtle font-label-code">41ca90...d188</span>
+</td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<button class="open-inspector-btn inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 hover:bg-primary hover:text-white text-slate-dark transition-colors font-label-code text-[11px] border border-slate-200" data-agency="MoHFW/NIN" data-chunks="220" data-docid="NK-012" data-doctitle="NIPI Guidelines" data-pages="92">
+<span>Inspect Chunks</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Ledger Footer -->
+<div class="p-space-sm bg-slate-50 border-t border-border-subtle flex flex-col sm:flex-row items-center justify-between text-slate-muted font-label-tabular text-label-tabular gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Displaying 12 of 22 active corpus guidelines (10 annexes consolidated)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded bg-white border border-slate-200 text-slate-dark hover:bg-slate-100 transition disabled:opacity-50" disabled="">Previous</button>
+<span class="px-2 font-label-code text-[12px] text-primary font-medium">Page 1 of 2</span>
+<button class="px-2 py-1 rounded bg-white border border-slate-200 text-slate-dark hover:bg-slate-100 transition">Next</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide-over / Modal Inspection Drawer (Triggered by Inspect Chunks) -->
+<div class="fixed inset-y-0 right-0 w-full max-w-xl bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col border-l border-border-subtle" id="inspectorDrawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-slate-50 border-b border-border-subtle flex items-start justify-between shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-teal-100 text-teal-900 border border-teal-200 font-label-code font-bold text-[12px]" id="drawerDocId">NK-001</span>
+<span class="font-label-provenance text-[11px] text-secondary uppercase font-semibold" id="drawerAgency">ICMR-NIN</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-slate-dark font-semibold mt-1" id="drawerDocTitle">Nutrient Requirements for Indians</h3>
+<span class="font-label-tabular text-[11px] text-slate-subtle" id="drawerMetadata">448 Pages • 1,180 Dense Chunks • SHA256 Ingested</span>
+</div>
+<button class="p-1 rounded bg-white border border-slate-200 text-slate-muted hover:text-slate-dark hover:bg-slate-100 transition" id="closeDrawerBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content: Vector Segments Preview -->
+<div class="p-space-lg flex-1 overflow-y-auto flex flex-col gap-space-md bg-slate-50/40">
+<div class="flex items-center justify-between font-label-provenance text-[11px] text-secondary uppercase tracking-wider font-semibold">
+<span>CANONICAL VECTOR CHUNKS EXCERPT</span>
+<span class="text-slate-muted">EMBEDDING: BGE-LARGE-EN-V1.5</span>
+</div>
+<!-- Sample Chunk Card 1 -->
+<div class="p-space-md rounded-lg bg-white border border-border-subtle shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-code text-[11px]">
+<span class="text-primary font-semibold">[NK-001-CHUNK-0142]</span>
+<span class="text-slate-subtle">PDF Page 104 • Coordinate [45, 120, 520, 240]</span>
+</div>
+<p class="font-body-sm text-[12px] text-slate-dark leading-relaxed italic bg-slate-50 border border-slate-200 p-space-sm rounded">
+            "For children aged 7–9 years, the Estimated Average Requirement (EAR) for calcium is set at 650 mg/day, with a Recommended Dietary Allowance (RDA) of 800 mg/day. Upper Tolerable Intake Level (TUL) is established at 2,000 mg/day to prevent hypercalciuria."
+          </p>
+<div class="flex items-center justify-between text-[10px] font-label-tabular text-slate-muted">
+<span>Cosine Similarity Baseline: 0.941</span>
+<span class="text-emerald-700 font-medium flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Deterministic Match</span>
+</div>
+</div>
+<!-- Sample Chunk Card 2 -->
+<div class="p-space-md rounded-lg bg-white border border-border-subtle shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-code text-[11px]">
+<span class="text-primary font-semibold">[NK-001-CHUNK-0143]</span>
+<span class="text-slate-subtle">PDF Page 106 • Coordinate [60, 210, 540, 390]</span>
+</div>
+<p class="font-body-sm text-[12px] text-slate-dark leading-relaxed italic bg-slate-50 border border-slate-200 p-space-sm rounded">
+            "Iron requirement calculation considers basal losses, expansion of blood volume, and tissue iron deposition. Boys 10–12 years: EAR 19 mg/day, RDA 32 mg/day. Girls 10–12 years: EAR 21 mg/day, RDA 35 mg/day due to onset of menarche preparation."
+          </p>
+<div class="flex items-center justify-between text-[10px] font-label-tabular text-slate-muted">
+<span>Cosine Similarity Baseline: 0.918</span>
+<span class="text-emerald-700 font-medium flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Deterministic Match</span>
+</div>
+</div>
+<!-- Sample Chunk Card 3 -->
+<div class="p-space-md rounded-lg bg-white border border-border-subtle shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-code text-[11px]">
+<span class="text-primary font-semibold">[NK-001-CHUNK-0144]</span>
+<span class="text-slate-subtle">PDF Page 112 • Coordinate [32, 90, 480, 210]</span>
+</div>
+<p class="font-body-sm text-[12px] text-slate-dark leading-relaxed italic bg-slate-50 border border-slate-200 p-space-sm rounded">
+            "Zinc bioavailability is adjusted for high-phytate dietary habits common in Indian cohorts, assuming an estimated 20% absorption efficiency in predominantly plant-based grain routines."
+          </p>
+<div class="flex items-center justify-between text-[10px] font-label-tabular text-slate-muted">
+<span>Cosine Similarity Baseline: 0.887</span>
+<span class="text-emerald-700 font-medium flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Deterministic Match</span>
+</div>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md bg-slate-50 border-t border-border-subtle flex items-center justify-between">
+<span class="font-label-code text-[11px] text-slate-subtle">Raw Vector ID: 7f9c2...41a</span>
+<button class="px-3 py-1.5 rounded bg-white border border-slate-200 hover:bg-slate-100 text-slate-dark font-label-code text-[12px] transition shadow-sm" id="closeDrawerFooterBtn">
+          Close Inspector
+        </button>
+</div>
+</div>
+<!-- Drawer Overlay Backdrop -->
+<div class="fixed inset-0 bg-slate-900/30 backdrop-blur-sm z-40 hidden" id="drawerBackdrop"></div>
+</div>
+</div>
+<script>
+  // Simple Table Search & Filter Logic
+  const searchInput = document.getElementById('docSearchInput');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const tableRows = document.querySelectorAll('#tableBody tr');
+
+  function filterTable() {
+    const query = searchInput.value.toLowerCase().trim();
+    const activeBtn = document.querySelector('.filter-btn.bg-primary');
+    const selectedCategory = activeBtn ? activeBtn.getAttribute('data-category') : 'ALL';
+
+    tableRows.forEach(row => {
+      const rowText = row.innerText.toLowerCase();
+      const rowCategory = row.getAttribute('data-category');
+      
+      const matchesSearch = rowText.includes(query);
+      const matchesCategory = (selectedCategory === 'ALL' || rowCategory === selectedCategory);
+
+      if (matchesSearch && matchesCategory) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  searchInput.addEventListener('input', filterTable);
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-white', 'font-semibold', 'shadow-sm');
+        b.classList.add('text-slate-muted');
+      });
+      btn.classList.add('bg-primary', 'text-white', 'font-semibold', 'shadow-sm');
+      btn.classList.remove('text-slate-muted');
+      filterTable();
+    });
+  });
+
+  // Slide-over Drawer Logic
+  const drawer = document.getElementById('inspectorDrawer');
+  const backdrop = document.getElementById('drawerBackdrop');
+  const openButtons = document.querySelectorAll('.open-inspector-btn');
+  const closeBtn = document.getElementById('closeDrawerBtn');
+  const closeFooterBtn = document.getElementById('closeDrawerFooterBtn');
+
+  const drawerDocId = document.getElementById('drawerDocId');
+  const drawerAgency = document.getElementById('drawerAgency');
+  const drawerDocTitle = document.getElementById('drawerDocTitle');
+  const drawerMetadata = document.getElementById('drawerMetadata');
+
+  function openDrawer(e) {
+    const btn = e.currentTarget;
+    drawerDocId.innerText = btn.getAttribute('data-docid');
+    drawerAgency.innerText = btn.getAttribute('data-agency');
+    drawerDocTitle.innerText = btn.getAttribute('data-doctitle');
+    drawerMetadata.innerText = `${btn.getAttribute('data-pages')} Pages • ${btn.getAttribute('data-chunks')} Dense Chunks • Cryptographic Proof Indexed`;
+
+    drawer.classList.remove('translate-x-full');
+    backdrop.classList.remove('hidden');
+  }
+
+  function closeDrawer() {
+    drawer.classList.add('translate-x-full');
+    backdrop.classList.add('hidden');
+  }
+
+  openButtons.forEach(btn => btn.addEventListener('click', openDrawer));
+  closeBtn.addEventListener('click', closeDrawer);
+  closeFooterBtn.addEventListener('click', closeDrawer);
+  backdrop.addEventListener('click', closeDrawer);
+
+  // Copy Hash Micro-interaction
+  const copyBtn = document.getElementById('copyHashBtn');
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText('sha256:7f9c2e0b4a189f77f3958cc1084da8284e3146b9a8dc5884964177265be7e41a');
+    const icon = copyBtn.querySelector('.material-symbols-outlined');
+    icon.innerText = 'done';
+    icon.classList.add('text-emerald-600');
+    setTimeout(() => {
+      icon.innerText = 'content_copy';
+      icon.classList.remove('text-emerald-600');
+    }, 2000);
+  });
+</script></main><footer class="w-full bg-slate-50 border-t border-border-subtle"><div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-margin-md"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-margin-md border-b border-border-subtle"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded bg-teal-50 border border-teal-200 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[15px]">vital_signs</span></div><span class="font-headline-sm text-headline-sm font-semibold text-slate-dark">NutriKid RAG</span></div><p class="font-body-sm text-body-sm text-slate-muted">Retrieval-Augmented Generation decision-support platform engineered strictly for pediatric nutrition guidelines, cohort RDA calculations, and micronutrient surveillance.</p><div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-secondary font-medium"><span class="material-symbols-outlined text-[14px] text-primary">verified</span><span>DETERMINISTIC CITATION FRAMEWORK</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-slate-dark font-semibold uppercase tracking-wider text-xs">Research Corpus Specs</span><div class="grid grid-cols-3 gap-space-xs"><div class="p-space-sm rounded bg-white border border-border-subtle"><span class="font-label-tabular text-headline-sm text-primary block font-bold">22</span><span class="font-label-provenance text-[10px] text-slate-subtle uppercase">Documents</span></div><div class="p-space-sm rounded bg-white border border-border-subtle"><span class="font-label-tabular text-headline-sm text-secondary block font-bold">2,403</span><span class="font-label-provenance text-[10px] text-slate-subtle uppercase">Pages</span></div><div class="p-space-sm rounded bg-white border border-border-subtle"><span class="font-label-tabular text-headline-sm text-slate-dark block font-bold">6,429</span><span class="font-label-provenance text-[10px] text-slate-subtle uppercase">Chunks</span></div></div><p class="font-label-code text-[11px] text-slate-muted">Embedding: BAAI/bge-large-en-v1.5 • Chunk size: 512t / 64 overlap</p></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-slate-dark font-semibold uppercase tracking-wider text-xs">Institutional Corpus</span><ul class="flex flex-col gap-1 font-body-sm text-body-sm text-slate-muted"><li>ICMR-National Institute of Nutrition (NIN 2020/2024)</li><li>World Health Organization (WHO Child Growth Standards)</li><li>Food and Agriculture Organization (FAO / INFOODS)</li><li>Food Safety and Standards Authority of India (FSSAI)</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-slate-dark font-semibold uppercase tracking-wider text-xs">Provenance Pledge &amp; Scope</span><p class="font-body-sm text-body-sm text-slate-muted">All clinical outputs link directly to page-indexed PDF coordinates. For pediatric populations aged 5.0–15.0 years. Does not substitute for specialized PICU/NICU metabolic protocols.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="font-label-code text-[12px] text-primary hover:underline transition-colors" data-path="safety-scope" href="#">Protocol Scope</a><span class="text-slate-subtle">•</span><a class="font-label-code text-[12px] text-secondary hover:underline transition-colors" data-path="institutional-sources" href="#">Audited Index</a><span class="text-slate-subtle">•</span><a class="font-label-code text-[12px] text-slate-dark hover:underline transition-colors" data-path="evaluation-benchmarks" href="#">RAG Triad Metrics</a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-tabular text-label-tabular text-slate-subtle"><p>© 2025 NutriKid Clinical AI Consortium. Open Research &amp; Clinical Decision Support Architecture.</p><p class="font-label-code text-[11px] text-slate-subtle">Strict Regulatory Adherence: Non-Diagnostic Clinical Reference Engine</p></div></div></footer></body></html>

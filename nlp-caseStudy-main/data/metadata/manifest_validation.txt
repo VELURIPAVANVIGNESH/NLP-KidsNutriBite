@@ -1,0 +1,40 @@
+============================================================
+NUTRIKID CORPUS MANIFEST VALIDATION REPORT
+============================================================
+Total PDFs Discovered on Disk: 32
+Total Manifest Records:        32
+
+Folder Counts:
+  01_PRIMARY_KNOWLEDGE:   16
+  02_SUPPORTING_KNOWLEDGE: 8
+  03_EVALUATION_CONTEXT:   2
+  04_OUT_OF_SCOPE_INFANT:  6
+  05_REFERENCE_ONLY:       0
+
+============================================================
+VALIDATION ERRORS (0)
+============================================================
+[+] No validation errors found.
+
+============================================================
+VALIDATION WARNINGS (1)
+============================================================
+[!] WARNING: Alternative/duplicate document version detected: 'knowledge_corpus/01_PRIMARY_KNOWLEDGE/ref-1-txt-book.pdf' is an alternative version of 'knowledge_corpus/01_PRIMARY_KNOWLEDGE/DGI_07th_May_2024_fin.pdf' (Dietary Guidelines for Indians).
+
+============================================================
+DUPLICATE / ALTERNATIVE VERSIONS DETECTED (1)
+============================================================
+[!] Alternative version: 'knowledge_corpus/01_PRIMARY_KNOWLEDGE/ref-1-txt-book.pdf' is a duplicate/alternative of 'knowledge_corpus/01_PRIMARY_KNOWLEDGE/DGI_07th_May_2024_fin.pdf'
+
+============================================================
+METADATA FIELDS REQUIRING VERIFICATION (8)
+============================================================
+The following files have empty or unverified fields:
+  - NK-010 (IFCT_BOOK.pdf): missing age_range
+  - NK-017 (9789240074828-engRed and processed meat in the context of h.pdf): missing age_range
+  - NK-019 (Dietary protein quality.pdf): missing age_range
+  - NK-021 (Human Vitamin .pdf): missing age_range
+  - NK-022 (WHO-NMH-NHD-18.4-engREPLACE trans fa an action package to eliminate industrially produced trans-fatty acids.pdf): missing age_range
+  - NK-023 (WHO_TRS_916Diet, nutrition and the prevention of chronic diseases.pdf): missing age_range
+  - NK-025 (FR375.pdf): missing age_range
+  - NK-026 (NFHS-5_Phase-II_0.pdf): missing age_range

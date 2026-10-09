@@ -1,0 +1,1290 @@
+{
+  "n_queries": 30,
+  "faiss": {
+    "recall@5": 0.15,
+    "recall@10": 0.25,
+    "mrr": 0.187,
+    "ndcg@5": 0.1291
+  },
+  "chroma": {
+    "recall@5": 0.15,
+    "recall@10": 0.25,
+    "mrr": 0.187,
+    "ndcg@5": 0.1291
+  },
+  "avg_top5_overlap": 1.0,
+  "avg_top10_overlap": 1.0,
+  "pct_agree_top1": 100.0,
+  "example_agree": {
+    "query_id": "Q030",
+    "query_text": "How are fortified staple foods like rice and salt integrated into school feeding programs for a 6-year-old?",
+    "top5_overlap": 1.0
+  },
+  "example_differ": {
+    "query_id": "Q001",
+    "query_text": "What is the recommended dietary allowance for protein for a 10-year-old child?",
+    "top5_overlap": 1.0
+  },
+  "per_query": [
+    {
+      "query_id": "Q001",
+      "query_text": "What is the recommended dietary allowance for protein for a 10-year-old child?",
+      "faiss_top10": [
+        "NK-008-C00105",
+        "NK-008-C00111",
+        "NK-004-C00011",
+        "NK-008-C00039",
+        "NK-008-C00087",
+        "NK-021-C00582",
+        "NK-021-C00581",
+        "NK-021-C00152",
+        "NK-015-C00014",
+        "NK-008-C00078"
+      ],
+      "chroma_top10": [
+        "NK-008-C00105",
+        "NK-008-C00111",
+        "NK-004-C00011",
+        "NK-008-C00039",
+        "NK-008-C00087",
+        "NK-021-C00582",
+        "NK-021-C00581",
+        "NK-021-C00152",
+        "NK-015-C00014",
+        "NK-008-C00078"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q002",
+      "query_text": "What are the carbohydrate intake guidelines for a 7-year-old child?",
+      "faiss_top10": [
+        "NK-002-C00013",
+        "NK-002-C00103",
+        "NK-002-C00001",
+        "NK-013-C00122",
+        "NK-011-C00067",
+        "NK-007-C00001",
+        "NK-008-C00111",
+        "NK-002-C00036",
+        "NK-011-C00153",
+        "NK-011-C00017"
+      ],
+      "chroma_top10": [
+        "NK-002-C00013",
+        "NK-002-C00103",
+        "NK-002-C00001",
+        "NK-013-C00122",
+        "NK-011-C00067",
+        "NK-007-C00001",
+        "NK-008-C00111",
+        "NK-002-C00036",
+        "NK-011-C00153",
+        "NK-011-C00017"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "mrr": 0.125,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "mrr": 0.125,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q003",
+      "query_text": "What is the daily dietary fiber requirement for a 12-year-old adolescent?",
+      "faiss_top10": [
+        "NK-002-C00014",
+        "NK-002-C00259",
+        "NK-002-C00103",
+        "NK-002-C00113",
+        "NK-002-C00022",
+        "NK-002-C00112",
+        "NK-002-C00021",
+        "NK-002-C00013",
+        "NK-008-C00111",
+        "NK-002-C00069"
+      ],
+      "chroma_top10": [
+        "NK-002-C00014",
+        "NK-002-C00259",
+        "NK-002-C00103",
+        "NK-002-C00022",
+        "NK-002-C00113",
+        "NK-002-C00112",
+        "NK-002-C00021",
+        "NK-002-C00013",
+        "NK-008-C00111",
+        "NK-002-C00069"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q004",
+      "query_text": "What is the estimated energy and calorie requirement for a 14-year-old boy?",
+      "faiss_top10": [
+        "NK-008-C00111",
+        "NK-002-C00259",
+        "NK-008-C00112",
+        "NK-011-C00049",
+        "NK-013-C00087",
+        "NK-021-C00713",
+        "NK-021-C00507",
+        "NK-021-C00581",
+        "NK-021-C00810",
+        "NK-015-C00009"
+      ],
+      "chroma_top10": [
+        "NK-008-C00111",
+        "NK-002-C00259",
+        "NK-008-C00112",
+        "NK-011-C00049",
+        "NK-013-C00087",
+        "NK-021-C00713",
+        "NK-021-C00507",
+        "NK-021-C00581",
+        "NK-021-C00810",
+        "NK-015-C00009"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q005",
+      "query_text": "What is the recommended dietary allowance for calcium for a 10-year-old child?",
+      "faiss_top10": [
+        "NK-008-C00105",
+        "NK-021-C00507",
+        "NK-021-C00534",
+        "NK-021-C00506",
+        "NK-021-C00505",
+        "NK-021-C00514",
+        "NK-021-C00512",
+        "NK-021-C00511",
+        "NK-021-C00502",
+        "NK-021-C00504"
+      ],
+      "chroma_top10": [
+        "NK-008-C00105",
+        "NK-021-C00507",
+        "NK-021-C00534",
+        "NK-021-C00506",
+        "NK-021-C00505",
+        "NK-021-C00514",
+        "NK-021-C00512",
+        "NK-021-C00511",
+        "NK-021-C00502",
+        "NK-021-C00504"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      },
+      "chroma_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q006",
+      "query_text": "What is the daily dietary iron requirement for a 13-year-old adolescent girl?",
+      "faiss_top10": [
+        "NK-021-C00614",
+        "NK-021-C00613",
+        "NK-021-C00022",
+        "NK-021-C00612",
+        "NK-011-C00070",
+        "NK-021-C00616",
+        "NK-021-C00615",
+        "NK-021-C00611",
+        "NK-021-C00017",
+        "NK-021-C00893"
+      ],
+      "chroma_top10": [
+        "NK-021-C00614",
+        "NK-021-C00613",
+        "NK-021-C00022",
+        "NK-021-C00612",
+        "NK-011-C00070",
+        "NK-021-C00616",
+        "NK-021-C00615",
+        "NK-021-C00611",
+        "NK-021-C00017",
+        "NK-021-C00893"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q007",
+      "query_text": "What is the daily vitamin D allowance for an 8-year-old school child?",
+      "faiss_top10": [
+        "NK-021-C00370",
+        "NK-021-C00364",
+        "NK-021-C00376",
+        "NK-021-C00507",
+        "NK-021-C00363",
+        "NK-021-C00323",
+        "NK-008-C00105",
+        "NK-021-C00365",
+        "NK-021-C00355",
+        "NK-021-C00015"
+      ],
+      "chroma_top10": [
+        "NK-021-C00370",
+        "NK-021-C00364",
+        "NK-021-C00376",
+        "NK-021-C00507",
+        "NK-021-C00363",
+        "NK-021-C00323",
+        "NK-008-C00105",
+        "NK-021-C00365",
+        "NK-021-C00355",
+        "NK-021-C00015"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q008",
+      "query_text": "What is the iodine requirement for preventing goiter in a 6-year-old child?",
+      "faiss_top10": [
+        "NK-021-C00582",
+        "NK-021-C00581",
+        "NK-021-C00578",
+        "NK-021-C00587",
+        "NK-021-C00580",
+        "NK-021-C00585",
+        "NK-021-C00576",
+        "NK-021-C00586",
+        "NK-021-C00577",
+        "NK-021-C00591"
+      ],
+      "chroma_top10": [
+        "NK-021-C00582",
+        "NK-021-C00581",
+        "NK-021-C00578",
+        "NK-021-C00587",
+        "NK-021-C00580",
+        "NK-021-C00585",
+        "NK-021-C00576",
+        "NK-021-C00586",
+        "NK-021-C00577",
+        "NK-021-C00591"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q009",
+      "query_text": "What is the recommended daily zinc allowance for an 11-year-old child?",
+      "faiss_top10": [
+        "NK-021-C00819",
+        "NK-021-C00809",
+        "NK-021-C00823",
+        "NK-021-C00817",
+        "NK-021-C00822",
+        "NK-021-C00816",
+        "NK-021-C00891",
+        "NK-021-C00810",
+        "NK-021-C00807",
+        "NK-021-C00153"
+      ],
+      "chroma_top10": [
+        "NK-021-C00819",
+        "NK-021-C00809",
+        "NK-021-C00823",
+        "NK-021-C00817",
+        "NK-021-C00822",
+        "NK-021-C00816",
+        "NK-021-C00891",
+        "NK-021-C00810",
+        "NK-021-C00807",
+        "NK-021-C00153"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "mrr": 0.14285714285714285,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "mrr": 0.14285714285714285,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q010",
+      "query_text": "Are non-sugar sweeteners recommended for weight control in a 9-year-old child?",
+      "faiss_top10": [
+        "NK-003-C00010",
+        "NK-003-C00240",
+        "NK-003-C00029",
+        "NK-003-C00031",
+        "NK-003-C00198",
+        "NK-003-C00206",
+        "NK-003-C00016",
+        "NK-003-C00210",
+        "NK-007-C00043",
+        "NK-003-C00025"
+      ],
+      "chroma_top10": [
+        "NK-003-C00010",
+        "NK-003-C00240",
+        "NK-003-C00029",
+        "NK-003-C00031",
+        "NK-003-C00198",
+        "NK-003-C00206",
+        "NK-003-C00016",
+        "NK-003-C00210",
+        "NK-007-C00043",
+        "NK-003-C00025"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q011",
+      "query_text": "What is the free sugars intake limit recommended by WHO for a 5-year-old child?",
+      "faiss_top10": [
+        "NK-024-C00039",
+        "NK-007-C00051",
+        "NK-007-C00023",
+        "NK-007-C00018",
+        "NK-023-C00346",
+        "NK-007-C00012",
+        "NK-007-C00001",
+        "NK-007-C00025",
+        "NK-013-C00018",
+        "NK-024-C00081"
+      ],
+      "chroma_top10": [
+        "NK-024-C00039",
+        "NK-007-C00051",
+        "NK-007-C00023",
+        "NK-007-C00018",
+        "NK-023-C00346",
+        "NK-007-C00012",
+        "NK-007-C00001",
+        "NK-007-C00025",
+        "NK-013-C00018",
+        "NK-024-C00081"
+      ],
+      "faiss_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.5992429307166866
+      },
+      "chroma_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.5992429307166866
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q012",
+      "query_text": "What is the recommended limit for saturated fatty acids intake for a 10-year-old child?",
+      "faiss_top10": [
+        "NK-013-C00087",
+        "NK-023-C00262",
+        "NK-021-C00323",
+        "NK-024-C00039",
+        "NK-004-C00043",
+        "NK-013-C00093",
+        "NK-013-C00019",
+        "NK-013-C00015",
+        "NK-021-C00332",
+        "NK-013-C00092"
+      ],
+      "chroma_top10": [
+        "NK-013-C00087",
+        "NK-023-C00262",
+        "NK-021-C00323",
+        "NK-024-C00039",
+        "NK-004-C00043",
+        "NK-013-C00093",
+        "NK-013-C00019",
+        "NK-013-C00015",
+        "NK-021-C00332",
+        "NK-013-C00092"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q013",
+      "query_text": "What is the sodium intake recommendation for controlling blood pressure in a 12-year-old child?",
+      "faiss_top10": [
+        "NK-006-C00013",
+        "NK-020-C00327",
+        "NK-011-C00067",
+        "NK-011-C00017",
+        "NK-006-C00063",
+        "NK-006-C00054",
+        "NK-006-C00055",
+        "NK-018-C00108",
+        "NK-006-C00017",
+        "NK-006-C00065"
+      ],
+      "chroma_top10": [
+        "NK-006-C00013",
+        "NK-020-C00327",
+        "NK-011-C00067",
+        "NK-011-C00017",
+        "NK-006-C00063",
+        "NK-006-C00054",
+        "NK-006-C00055",
+        "NK-018-C00108",
+        "NK-006-C00017",
+        "NK-006-C00065"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      },
+      "chroma_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q014",
+      "query_text": "Is red meat and processed meat consumption safe for a 15-year-old adolescent?",
+      "faiss_top10": [
+        "NK-017-C00015",
+        "NK-017-C00125",
+        "NK-017-C00062",
+        "NK-017-C00037",
+        "NK-017-C00086",
+        "NK-017-C00063",
+        "NK-017-C00102",
+        "NK-017-C00040",
+        "NK-017-C00064",
+        "NK-017-C00105"
+      ],
+      "chroma_top10": [
+        "NK-017-C00015",
+        "NK-017-C00125",
+        "NK-017-C00062",
+        "NK-017-C00037",
+        "NK-017-C00086",
+        "NK-017-C00063",
+        "NK-017-C00102",
+        "NK-017-C00040",
+        "NK-017-C00064",
+        "NK-017-C00105"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q015",
+      "query_text": "Are low-sodium salt substitutes safe for daily consumption in a 10-year-old child?",
+      "faiss_top10": [
+        "NK-006-C00103",
+        "NK-018-C00039",
+        "NK-018-C00022",
+        "NK-006-C00053",
+        "NK-018-C00021",
+        "NK-018-C00040",
+        "NK-018-C00030",
+        "NK-018-C00011",
+        "NK-018-C00058",
+        "NK-018-C00035"
+      ],
+      "chroma_top10": [
+        "NK-006-C00103",
+        "NK-018-C00039",
+        "NK-018-C00022",
+        "NK-006-C00053",
+        "NK-018-C00021",
+        "NK-018-C00040",
+        "NK-018-C00030",
+        "NK-018-C00011",
+        "NK-018-C00058",
+        "NK-018-C00035"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.44412286644879784
+      },
+      "chroma_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.44412286644879784
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q016",
+      "query_text": "What are the food safety standards for artificial food coloring in snacks for an 8-year-old?",
+      "faiss_top10": [
+        "NK-024-C00047",
+        "NK-008-C00264",
+        "NK-009-C00002",
+        "NK-008-C00192",
+        "NK-009-C00006",
+        "NK-024-C00046",
+        "NK-008-C00087",
+        "NK-024-C00074",
+        "NK-008-C00193",
+        "NK-012-C00111"
+      ],
+      "chroma_top10": [
+        "NK-024-C00047",
+        "NK-008-C00264",
+        "NK-009-C00002",
+        "NK-008-C00192",
+        "NK-009-C00006",
+        "NK-024-C00046",
+        "NK-008-C00087",
+        "NK-024-C00074",
+        "NK-008-C00193",
+        "NK-012-C00111"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 0.3333333333333333,
+        "ndcg@5": 0.23463936301137822
+      },
+      "chroma_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 0.3333333333333333,
+        "ndcg@5": 0.23463936301137822
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q017",
+      "query_text": "What are the safe limits for heavy metals lead and contaminants in pediatric food for a 5-year-old?",
+      "faiss_top10": [
+        "NK-021-C00817",
+        "NK-021-C00330",
+        "NK-021-C00466",
+        "NK-021-C00322",
+        "NK-021-C00712",
+        "NK-021-C00578",
+        "NK-021-C00592",
+        "NK-020-C00630",
+        "NK-021-C00323",
+        "NK-021-C00809"
+      ],
+      "chroma_top10": [
+        "NK-021-C00817",
+        "NK-021-C00330",
+        "NK-021-C00466",
+        "NK-021-C00322",
+        "NK-021-C00712",
+        "NK-021-C00578",
+        "NK-021-C00592",
+        "NK-020-C00630",
+        "NK-021-C00323",
+        "NK-021-C00809"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q018",
+      "query_text": "What is the dietary management and iron supplementation for anemia in a 12-year-old girl?",
+      "faiss_top10": [
+        "NK-020-C00333",
+        "NK-020-C00324",
+        "NK-011-C00020",
+        "NK-021-C00614",
+        "NK-011-C00076",
+        "NK-011-C00073",
+        "NK-021-C00631",
+        "NK-011-C00096",
+        "NK-020-C00791",
+        "NK-021-C00661"
+      ],
+      "chroma_top10": [
+        "NK-020-C00333",
+        "NK-020-C00324",
+        "NK-011-C00020",
+        "NK-021-C00614",
+        "NK-011-C00076",
+        "NK-011-C00073",
+        "NK-021-C00631",
+        "NK-011-C00096",
+        "NK-020-C00791",
+        "NK-021-C00661"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q019",
+      "query_text": "What are the dietary indicators for stunting and protein-energy malnutrition in a 5-year-old child?",
+      "faiss_top10": [
+        "NK-019-C00134",
+        "NK-021-C00724",
+        "NK-008-C00105",
+        "NK-023-C00105",
+        "NK-023-C00106",
+        "NK-008-C00100",
+        "NK-021-C00483",
+        "NK-021-C00455",
+        "NK-017-C00119",
+        "NK-001-C00020"
+      ],
+      "chroma_top10": [
+        "NK-019-C00134",
+        "NK-021-C00724",
+        "NK-008-C00105",
+        "NK-023-C00105",
+        "NK-023-C00106",
+        "NK-008-C00100",
+        "NK-021-C00483",
+        "NK-021-C00455",
+        "NK-017-C00119",
+        "NK-001-C00020"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q020",
+      "query_text": "What are the dietary recommendations for childhood obesity management in an 11-year-old child?",
+      "faiss_top10": [
+        "NK-013-C00087",
+        "NK-008-C00109",
+        "NK-002-C00013",
+        "NK-008-C00111",
+        "NK-008-C00105",
+        "NK-008-C00039",
+        "NK-011-C00067",
+        "NK-008-C00087",
+        "NK-008-C00106",
+        "NK-023-C00202"
+      ],
+      "chroma_top10": [
+        "NK-013-C00087",
+        "NK-008-C00109",
+        "NK-002-C00013",
+        "NK-008-C00111",
+        "NK-008-C00105",
+        "NK-008-C00039",
+        "NK-011-C00067",
+        "NK-008-C00087",
+        "NK-008-C00106",
+        "NK-023-C00202"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 0.5,
+        "ndcg@5": 0.44412286644879784
+      },
+      "chroma_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 0.5,
+        "ndcg@5": 0.44412286644879784
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q021",
+      "query_text": "How can vitamin A deficiency and night blindness be prevented in a 7-year-old child?",
+      "faiss_top10": [
+        "NK-021-C00315",
+        "NK-021-C00351",
+        "NK-021-C00327",
+        "NK-021-C00297",
+        "NK-021-C00339",
+        "NK-011-C00096",
+        "NK-008-C00125",
+        "NK-010-C00054",
+        "NK-021-C00345",
+        "NK-021-C00330"
+      ],
+      "chroma_top10": [
+        "NK-021-C00315",
+        "NK-021-C00351",
+        "NK-021-C00327",
+        "NK-021-C00297",
+        "NK-021-C00339",
+        "NK-011-C00096",
+        "NK-008-C00125",
+        "NK-010-C00054",
+        "NK-021-C00345",
+        "NK-021-C00330"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "mrr": 0.14285714285714285,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "mrr": 0.14285714285714285,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q022",
+      "query_text": "What are the increased nutrient demands during adolescent growth spurt for a 13-year-old boy?",
+      "faiss_top10": [
+        "NK-011-C00049",
+        "NK-021-C00810",
+        "NK-011-C00006",
+        "NK-011-C00045",
+        "NK-008-C00104",
+        "NK-011-C00048",
+        "NK-021-C00508",
+        "NK-020-C00319",
+        "NK-011-C00052",
+        "NK-008-C00102"
+      ],
+      "chroma_top10": [
+        "NK-011-C00049",
+        "NK-021-C00810",
+        "NK-011-C00006",
+        "NK-011-C00045",
+        "NK-008-C00104",
+        "NK-011-C00048",
+        "NK-021-C00508",
+        "NK-020-C00319",
+        "NK-011-C00052",
+        "NK-008-C00102"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 0.2,
+        "ndcg@5": 0.272312688806029
+      },
+      "chroma_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 0.2,
+        "ndcg@5": 0.272312688806029
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q023",
+      "query_text": "What is the recommended dietary transition for a school-age child entering age 5 years?",
+      "faiss_top10": [
+        "NK-008-C00080",
+        "NK-008-C00105",
+        "NK-004-C00011",
+        "NK-008-C00039",
+        "NK-012-C00038",
+        "NK-004-C00043",
+        "NK-008-C00082",
+        "NK-002-C00013",
+        "NK-008-C00106",
+        "NK-011-C00017"
+      ],
+      "chroma_top10": [
+        "NK-008-C00080",
+        "NK-008-C00105",
+        "NK-004-C00011",
+        "NK-008-C00039",
+        "NK-012-C00038",
+        "NK-004-C00043",
+        "NK-008-C00082",
+        "NK-002-C00013",
+        "NK-008-C00106",
+        "NK-011-C00017"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q024",
+      "query_text": "What are the specific micronutrient needs during pubertal onset for an 11-year-old girl?",
+      "faiss_top10": [
+        "NK-011-C00049",
+        "NK-021-C00810",
+        "NK-011-C00096",
+        "NK-011-C00072",
+        "NK-008-C00022",
+        "NK-021-C00891",
+        "NK-011-C00070",
+        "NK-008-C00104",
+        "NK-021-C00897",
+        "NK-020-C00330"
+      ],
+      "chroma_top10": [
+        "NK-011-C00049",
+        "NK-021-C00810",
+        "NK-011-C00096",
+        "NK-011-C00072",
+        "NK-008-C00022",
+        "NK-021-C00891",
+        "NK-011-C00070",
+        "NK-008-C00104",
+        "NK-021-C00897",
+        "NK-020-C00330"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 1.0,
+        "mrr": 0.16666666666666666,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 1.0,
+        "mrr": 0.16666666666666666,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q025",
+      "query_text": "What are the daily micronutrient requirements for a 9-year-old primary school child?",
+      "faiss_top10": [
+        "NK-008-C00111",
+        "NK-008-C00022",
+        "NK-004-C00011",
+        "NK-021-C00323",
+        "NK-011-C00017",
+        "NK-021-C00614",
+        "NK-021-C00581",
+        "NK-021-C00231",
+        "NK-017-C00119",
+        "NK-021-C00611"
+      ],
+      "chroma_top10": [
+        "NK-008-C00111",
+        "NK-008-C00022",
+        "NK-004-C00011",
+        "NK-021-C00323",
+        "NK-011-C00017",
+        "NK-021-C00614",
+        "NK-021-C00581",
+        "NK-021-C00231",
+        "NK-017-C00119",
+        "NK-021-C00611"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.46927872602275644
+      },
+      "chroma_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.46927872602275644
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q026",
+      "query_text": "What are the comprehensive dietary guidelines for a 15-year-old high school student?",
+      "faiss_top10": [
+        "NK-008-C00106",
+        "NK-011-C00006",
+        "NK-008-C00005",
+        "NK-024-C00013",
+        "NK-011-C00069",
+        "NK-008-C00105",
+        "NK-024-C00077",
+        "NK-002-C00088",
+        "NK-012-C00157",
+        "NK-021-C00079"
+      ],
+      "chroma_top10": [
+        "NK-008-C00106",
+        "NK-011-C00006",
+        "NK-008-C00005",
+        "NK-024-C00013",
+        "NK-011-C00069",
+        "NK-008-C00105",
+        "NK-024-C00077",
+        "NK-002-C00088",
+        "NK-012-C00157",
+        "NK-021-C00079"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q027",
+      "query_text": "What is the recommended nutritional norm for a mid-day meal for an 8-year-old primary student?",
+      "faiss_top10": [
+        "NK-008-C00111",
+        "NK-008-C00105",
+        "NK-008-C00087",
+        "NK-008-C00039",
+        "NK-008-C00285",
+        "NK-008-C00165",
+        "NK-008-C00082",
+        "NK-008-C00171",
+        "NK-005-C00060",
+        "NK-008-C00258"
+      ],
+      "chroma_top10": [
+        "NK-008-C00111",
+        "NK-008-C00105",
+        "NK-008-C00087",
+        "NK-008-C00039",
+        "NK-008-C00285",
+        "NK-008-C00165",
+        "NK-008-C00082",
+        "NK-008-C00171",
+        "NK-005-C00060",
+        "NK-008-C00258"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q028",
+      "query_text": "What are the caloric and protein standards for upper primary school lunches for a 12-year-old child?",
+      "faiss_top10": [
+        "NK-008-C00111",
+        "NK-008-C00087",
+        "NK-008-C00112",
+        "NK-008-C00100",
+        "NK-008-C00171",
+        "NK-008-C00097",
+        "NK-008-C00039",
+        "NK-008-C00078",
+        "NK-008-C00105",
+        "NK-008-C00285"
+      ],
+      "chroma_top10": [
+        "NK-008-C00111",
+        "NK-008-C00087",
+        "NK-008-C00112",
+        "NK-008-C00100",
+        "NK-008-C00171",
+        "NK-008-C00097",
+        "NK-008-C00039",
+        "NK-008-C00078",
+        "NK-008-C00105",
+        "NK-008-C00285"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q029",
+      "query_text": "What are the FSSAI school canteen regulations on high fat, sugar, and salt (HFSS) foods for a 10-year-old?",
+      "faiss_top10": [
+        "NK-024-C00066",
+        "NK-024-C00150",
+        "NK-024-C00074",
+        "NK-011-C00069",
+        "NK-024-C00151",
+        "NK-012-C00045",
+        "NK-012-C00166",
+        "NK-011-C00068",
+        "NK-024-C00039",
+        "NK-012-C00051"
+      ],
+      "chroma_top10": [
+        "NK-024-C00066",
+        "NK-024-C00150",
+        "NK-024-C00074",
+        "NK-011-C00069",
+        "NK-024-C00151",
+        "NK-012-C00045",
+        "NK-012-C00166",
+        "NK-011-C00068",
+        "NK-024-C00039",
+        "NK-012-C00051"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    },
+    {
+      "query_id": "Q030",
+      "query_text": "How are fortified staple foods like rice and salt integrated into school feeding programs for a 6-year-old?",
+      "faiss_top10": [
+        "NK-024-C00151",
+        "NK-008-C00082",
+        "NK-011-C00069",
+        "NK-012-C00166",
+        "NK-021-C00071",
+        "NK-021-C00073",
+        "NK-008-C00101",
+        "NK-008-C00080",
+        "NK-012-C00046",
+        "NK-008-C00085"
+      ],
+      "chroma_top10": [
+        "NK-024-C00151",
+        "NK-008-C00082",
+        "NK-011-C00069",
+        "NK-012-C00166",
+        "NK-021-C00071",
+        "NK-021-C00073",
+        "NK-008-C00101",
+        "NK-008-C00080",
+        "NK-012-C00046",
+        "NK-008-C00085"
+      ],
+      "faiss_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "chroma_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr": 0.0,
+        "ndcg@5": 0.0
+      },
+      "top5_overlap": 1.0,
+      "top1_agree": true
+    }
+  ]
+}

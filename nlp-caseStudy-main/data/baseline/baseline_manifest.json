@@ -1,0 +1,42 @@
+{
+  "baseline_version": "v1.0.0-frozen",
+  "frozen_timestamp": "2026-08-11T12:30:00Z",
+  "project_name": "NutriKid — FlexRAG Pediatric Nutrition RAG",
+  "target_demographic_scope": {
+    "min_age": 5.0,
+    "max_age": 15.0,
+    "unit": "years"
+  },
+  "corpus_statistics": {
+    "total_pdfs_discovered": 32,
+    "active_retrieval_pdfs": 22,
+    "out_of_scope_infant_pdfs": 6,
+    "total_parsed_pages": 2403,
+    "extracted_characters": 6021221,
+    "total_chunks": 6429,
+    "prose_chunks": 4879,
+    "ifct_table_chunks": 1550
+  },
+  "retrieval_configuration": {
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "vector_dimension": 384,
+    "faiss_index_type": "IndexFlatIP",
+    "faiss_vector_count": 6429,
+    "bm25_parameters": {
+      "k1": 1.5,
+      "b": 0.75,
+      "vocabulary_size": 32939
+    },
+    "hybrid_fusion": {
+      "method": "Reciprocal Rank Fusion (RRF)",
+      "rrf_k": 60,
+      "candidate_k": 100
+    }
+  },
+  "evaluation_benchmark": {
+    "queries_count": 30,
+    "categories_count": 7,
+    "relevance_scale": "0-3 graded",
+    "binary_relevance_threshold": 2
+  }
+}

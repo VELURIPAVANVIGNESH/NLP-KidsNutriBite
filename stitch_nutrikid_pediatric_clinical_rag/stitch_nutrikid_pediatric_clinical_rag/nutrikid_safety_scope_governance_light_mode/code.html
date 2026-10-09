@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"slate-dark":"#0f172a","slate-muted":"#334155","slate-subtle":"#64748b","border-subtle":"#e2e8f0","border-highlight":"#008377","surface-base":"#ffffff","surface-dim":"#f8fafc","surface-raised":"#ffffff","surface-container":"#f1f5f9","surface-container-high":"#e2e8f0","surface-container-low":"#f8fafc","surface-container-lowest":"#ffffff","primary":"#00685e","primary-container":"#008377","on-primary":"#ffffff","on-primary-fixed":"#ffffff","on-surface":"#0f172a","on-surface-variant":"#334155","outline":"#94a3b8","outline-variant":"#cbd5e1","confidence-high":"#059669","confidence-medium":"#d97706","confidence-low":"#dc2626","citation-text":"#0284c7","surgical-blue":"#0369a1","provenance-tag":"#e0f2fe"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","gutter-lg":"1.5rem","margin":"1rem","margin-lg":"2.5rem","space-md":"0.75rem","space-lg":"1.25rem","margin-md":"1.5rem"},fontFamily:{"label-code":["JetBrains Mono","monospace"],"body-sm":["Inter","sans-serif"],"headline-lg":["Geist","sans-serif"],"body-lg":["Inter","sans-serif"],"headline-xl":["Geist","sans-serif"],"headline-xl-mobile":["Geist","sans-serif"],"headline-sm":["Geist","sans-serif"],"label-provenance":["JetBrains Mono","monospace"],"label-tabular":["JetBrains Mono","monospace"],"headline-lg-mobile":["Geist","sans-serif"],"body-md":["Inter","sans-serif"],"headline-md":["Geist","sans-serif"]},fontSize:{"label-code":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"500"}],"label-provenance":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-tabular":["12px",{"lineHeight":"16px","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface-base font-body-md text-slate-dark antialiased selection:bg-teal-100 selection:text-teal-900"><header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-border-subtle shadow-sm"><div class="h-16 w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-teal-50 border border-teal-200 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">vital_signs</span></div><span class="font-headline-md text-headline-md font-semibold tracking-tight text-slate-dark">Nutri<span class="text-primary">Kid</span></span></div><div class="hidden xl:flex items-center gap-space-xs"><span class="px-2 py-0.5 rounded bg-sky-50 text-surgical-blue font-label-provenance text-label-provenance uppercase tracking-wider border border-sky-200">Pediatric Nutrition RAG System</span></div></div><nav class="hidden lg:flex items-center gap-1 xl:gap-space-xs"><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="overview" href="#">Overview</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="pipeline" href="#">How It Works</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="clinical-rag-query-engine" href="#">Ask NutriKid</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="institutional-sources" href="#">Institutional Sources</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="retrieval-lab" href="#">Retrieval Lab</a><a class="px-2.5 py-1.5 rounded text-slate-muted font-body-sm text-body-sm hover:text-slate-dark hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="evaluation-benchmarks" href="#">Evaluation &amp; Benchmarks</a><a aria-current="page" class="px-2.5 py-1.5 rounded font-body-sm transition-colors whitespace-nowrap bg-teal-50 text-primary border border-teal-200 font-semibold" data-path="safety-scope" href="#">Safety &amp; Scope</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-sky-50 border border-sky-200 text-surgical-blue font-label-provenance text-label-provenance"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high animate-pulse"></span><span>SCOPE: 5.0–15.0 YRS</span></div><div class="w-8 h-8 rounded-full bg-teal-100 border border-teal-200 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-screen bg-surface-base"><div class="flex flex-col w-full">
+<!-- Top Protocol Status Ribbon -->
+<section class="w-full bg-slate-50 border-b border-border-subtle py-space-sm px-margin lg:px-margin-lg">
+<div class="max-w-[1800px] mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-confidence-high animate-pulse"></span>
+<span class="font-label-provenance text-label-provenance uppercase tracking-widest text-primary font-semibold">Governance Core Active</span>
+<span class="font-label-code text-body-sm text-outline-variant">•</span>
+<span class="font-label-code text-body-sm text-slate-muted">CDSCO Software Boundary: Clinical Reference Class I Exempt</span>
+</div>
+<div class="flex items-center gap-space-md font-label-tabular text-body-sm text-slate-muted">
+<span>Policy Engine: <strong class="text-slate-dark">Deterministic Guardrail v2.4</strong></span>
+<span class="text-outline-variant">•</span>
+<span>Model Local Hash: <span class="font-label-code text-surgical-blue text-label-tabular">sha256:7c9e01...Qwen2.5</span></span>
+</div>
+</div>
+</section>
+<!-- Editorial Header Block -->
+<section class="w-full py-space-xl px-margin lg:px-margin-lg relative overflow-hidden bg-slate-50/70 border-b border-border-subtle">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-80 h-80 rounded-full bg-surgical-blue/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1800px] mx-auto flex flex-col gap-space-md relative z-10">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded bg-sky-50 border border-sky-200 text-surgical-blue">
+<span class="material-symbols-outlined text-[14px]">shield_with_heart</span>
+<span class="font-label-provenance text-label-provenance uppercase tracking-wider font-semibold">Clinical Governance &amp; Safety Scope Architecture</span>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-end">
+<div class="xl:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-slate-dark tracking-tight">
+            Clinical Safety Architecture, Explicit Boundaries &amp; Scope Enforcement
+          </h1>
+<p class="font-body-lg text-body-lg text-slate-muted max-w-4xl">
+            NutriKid is engineered around evidence retrieval and deterministic guardrails — not medical diagnosis, prescriptive triage, or clinical decision substitution. Every algorithmic inference is anchored to institutional literature.
+          </p>
+</div>
+<div class="xl:col-span-4 flex flex-col gap-space-xs p-space-md rounded-xl bg-white border border-border-subtle shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-provenance text-label-provenance uppercase text-slate-muted">Deterministic Invariant</span>
+<span class="font-label-code text-body-sm text-primary font-bold">5.0 ≤ AGE ≤ 15.0</span>
+</div>
+<div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden flex border border-slate-200">
+<div class="w-[20%] bg-rose-200"></div>
+<div class="w-[40%] bg-primary"></div>
+<div class="w-[40%] bg-rose-200"></div>
+</div>
+<div class="flex justify-between font-label-tabular text-[11px] text-slate-muted pt-1">
+<span>0.0y (Infant Void)</span>
+<span class="text-primary font-bold">Validated Cohort</span>
+<span>15.1y+ (Adult Void)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Side-by-Side Dual Architecture Matrix -->
+<section class="w-full py-space-xl px-margin lg:px-margin-lg bg-white">
+<div class="max-w-[1800px] mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-provenance text-label-provenance uppercase text-surgical-blue tracking-widest block font-semibold">Structural Invariants</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark">Dual-Column Protocol Governance Matrix</h2>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted max-w-md">
+          Constitutional rules applied at the query parser, vector retrieval pipeline, and LLM output validator layers prior to client response dispatch.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter-lg">
+<!-- Permitted Execution Plane -->
+<div class="flex flex-col p-space-lg rounded-xl bg-white border border-border-subtle shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-border-subtle">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-teal-50 border border-teal-200 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div>
+<span class="font-label-provenance text-label-provenance text-primary uppercase tracking-wider block font-semibold">Permitted Execution Plane</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark font-bold">WHAT NUTRIKID DOES</h3>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded bg-emerald-50 text-confidence-high border border-emerald-200 font-label-tabular text-[11px] uppercase font-semibold">Guaranteed Active</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">Institutional Corpus Retrieval</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Retrieves authoritative pediatric nutrition evidence strictly from ICMR-National Institute of Nutrition (2020/2024), WHO Child Growth Standards, FAO INFOODS, and FSSAI statutory regulations.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">straighten</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">Strict Numerical Age Bounding</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Enforces hard age bounding (5.0 ≤ age ≤ 15.0 years) and deterministically aborts inference with a clinical refusal sequence for any age value outside this window.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">fact_check</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">Page-Indexed Provenance Transparency</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Surfaces transparent document coordinates including exact Document ID, Publication Title, Chapter, Table identifier, and original PDF page numbers.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">text_snippet</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">Dual Surface Verification Excerpts</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Provides raw, unedited verbatim evidence text side-by-side with synthesized responses so dietitians can independently verify source fidelity.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">speed</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">Nutrient-Unit Dimensional Post-Guards</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Deterministic post-generation regex validators check unit consistency (e.g. mg/kg/day vs mcg/kg/day, kcal/day) preventing hallucinated unit drift.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">terminal</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">Air-Gapped Local Inference Engine</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Executes entirely on-premises using optimized Qwen2.5-1.5B weights. Guaranteed zero patient telemetry or clinical query tokens sent to public cloud endpoints.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Prohibited Boundary Plane -->
+<div class="flex flex-col p-space-lg rounded-xl bg-white border border-border-subtle shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-confidence-low"></div>
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-border-subtle">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-rose-50 border border-rose-200 flex items-center justify-center text-confidence-low">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</div>
+<div>
+<span class="font-label-provenance text-label-provenance text-confidence-low uppercase tracking-wider block font-semibold">Explicit Negative Scope</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark font-bold">WHAT NUTRIKID DOES NOT DO</h3>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded bg-rose-50 text-confidence-low border border-rose-200 font-label-tabular text-[11px] uppercase font-semibold">Enforced Non-Substitution</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-confidence-low text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">No Medical or Pathology Diagnosis</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Does NOT diagnose pediatric diseases, endocrine disorders, gastrointestinal conditions, or malnutrition syndromes like Marasmus or Kwashiorkor.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-confidence-low text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">No Clinician or Dietitian Replacement</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Does NOT substitute for the clinical evaluation of licensed pediatricians, pediatric gastroenterologists, registered dietitians, or bedside medical officers.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-confidence-low text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">No Inborn Errors of Metabolism Protocol</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Does NOT manage complex metabolic disorders including Phenylketonuria (PKU), Maple Syrup Urine Disease (MSUD), or acute organic acidemias requiring bespoke amino-acid formulations.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-confidence-low text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">No Infant or Adult Cohort Guidance</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Does NOT deliver infant (&lt;5.0y), neonate, gestational, or mature adult (&gt;15.0y) nutritional guidance due to divergent growth velocity equations.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-confidence-low text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">No Pharmacologic or Supplement Prescriptions</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Does NOT prescribe medication dosages, total parenteral nutrition (TPN) compounding formulas, or endorse commercial infant formulas or supplement brands.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-slate-50/80 border border-border-subtle hover:bg-slate-100/60 transition-colors">
+<span class="material-symbols-outlined text-confidence-low text-[20px] shrink-0 mt-0.5">cancel</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">No Medical Device Claim</span>
+<p class="font-body-sm text-body-sm text-slate-muted">Does NOT claim status as a SaMD (Software as a Medical Device), certified diagnostic tool, or CDSCO/US FDA registered clinical medical device.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Break / Photographic Anchor Section -->
+<section class="w-full py-space-xl px-margin lg:px-margin-lg bg-slate-50 border-y border-border-subtle">
+<div class="max-w-[1800px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-gutter-lg items-center">
+<div class="lg:col-span-1 flex flex-col gap-space-sm">
+<span class="font-label-provenance text-label-provenance uppercase text-primary tracking-widest font-semibold">Ground Truth Protocol</span>
+<h3 class="font-headline-lg text-headline-lg text-slate-dark">Audited Source Triangulation</h3>
+<p class="font-body-md text-body-md text-slate-muted">
+          In clinical domains, ungrounded probabilistic generation poses direct patient safety risks. NutriKid prevents synthesis whenever the semantic density distance to peer-reviewed literature drops below 0.72 cosine threshold.
+        </p>
+<div class="flex items-center gap-space-md pt-space-xs font-label-code text-body-sm text-surgical-blue">
+<span>Vector Distance: <strong class="text-primary font-bold">&lt; 0.28 (L2)</strong></span>
+<span>Cosine Concordance: <strong class="text-slate-dark font-bold">&gt; 0.84</strong></span>
+</div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<div class="relative h-64 rounded-xl overflow-hidden shadow-sm border border-border-subtle group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up photograph of a clinical pediatric dietitian reviewing physical ICMR nutritional recommendation binders on a dark slate laboratory desk with digital displays in the background, cool surgical lighting, technical documentary style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkcWSlTO9EhkX86So3z7AzEKiTE8S5pg6G94QNKEG4k0jE0oy7g04ql1HOswOtdOQjr3vWQ4meq9FWMa0JJIsrSuwuwyKOCjbzRRg6iLG08IHneP9Ljvfq1Lk1U-mOe0yp8bguhjp0Df1OTck8x1OKJ-GHOkDrps6AyV-_kxngWhv4rcdRIlNqM984alUAfGjbcHXry_j3SFJcETi8WPqOzAXAo6OVL1IBRUlBdNE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<span class="font-label-provenance text-label-provenance text-emerald-300 uppercase font-semibold">Primary Grounding Corpus</span>
+<p class="font-headline-sm text-headline-sm text-white font-semibold">ICMR-NIN RDA Reference Cohorts</p>
+</div>
+</div>
+<div class="relative h-64 rounded-xl overflow-hidden shadow-sm border border-border-subtle group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean modern medical workstation display screen showing WHO pediatric growth standard curves and anthropometric charts alongside pediatric dietary guidelines in high technical contrast, dark UI theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB22varGfGQtBkVMhYm2V93mWck2Z84jfw0zSPfWeP6LOuwr3a2LfYwEr7_f4AnVK1NDWX_g-dkS2DNfosPw634yJ9kog9cN9srItSPaQBniY_dAZMfthfupdJXYemMJsRJ9ungh2k12M6m3_WbksCa_uua5_DR96F6gfxWLHrN1IigXEcNL0gfq_MRVkL45sKkxZ_W5MWj9zCXGB3Bd2LgLg4MqY86hnPglBstisg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<span class="font-label-provenance text-label-provenance text-sky-300 uppercase font-semibold">Deterministic Boundaries</span>
+<p class="font-headline-sm text-headline-sm text-white font-semibold">Validated Anthropometric Bounds</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Approved Defensible Terminology Table -->
+<section class="w-full py-space-xl px-margin lg:px-margin-lg bg-white">
+<div class="max-w-[1800px] mx-auto flex flex-col gap-space-lg">
+<div class="p-space-md rounded-xl bg-sky-50 border border-sky-200 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-white border border-sky-200 flex items-center justify-center text-surgical-blue shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div>
+<span class="font-label-provenance text-label-provenance uppercase text-surgical-blue tracking-widest block font-semibold">Institutional Wording Guardrail</span>
+<p class="font-headline-sm text-headline-sm text-slate-dark font-semibold">
+              NutriKid enforces defensible terminology across all system surfaces. We categorically reject unsubstantiated marketing phrases.
+            </p>
+</div>
+</div>
+<div class="px-space-md py-space-xs rounded bg-white border border-sky-200 text-slate-dark font-label-tabular text-body-sm whitespace-nowrap self-start sm:self-center shadow-sm">
+          Rule Status: <span class="text-primary font-bold">STRICT ENFORCEMENT</span>
+</div>
+</div>
+<div class="overflow-x-auto rounded-xl border border-border-subtle shadow-sm bg-white">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50 font-label-provenance text-label-provenance text-slate-muted uppercase tracking-wider border-b border-border-subtle">
+<th class="py-space-md px-space-md w-1/4">Disallowed Clinically Non-Compliant Claim</th>
+<th class="py-space-md px-space-md w-1/3">Mandatory Standard Formulation</th>
+<th class="py-space-md px-space-md w-1/4">Underlying Governance Rationale</th>
+<th class="py-space-md px-space-md w-1/6 text-right">Violation Penalty</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle font-body-sm text-body-sm">
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-rose-700 font-label-code text-body-sm font-medium">
+<span class="material-symbols-outlined text-[16px] text-confidence-low">close</span>
+<span class="line-through decoration-confidence-low">"WHO-certified AI model"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-body-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>"Grounded in published WHO institutional guidelines"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-slate-muted">
+                Global bodies certify clinical products, never computational RAG inference algorithms.
+              </td>
+<td class="py-space-md px-space-md text-right font-label-tabular text-confidence-low font-medium">
+                Immediate String Intercept
+              </td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-rose-700 font-label-code text-body-sm font-medium">
+<span class="material-symbols-outlined text-[16px] text-confidence-low">close</span>
+<span class="line-through decoration-confidence-low">"Provides medical diagnosis"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-body-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>"Evidence retrieval and reference support"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-slate-muted">
+                Decision support platforms must preserve clinician primacy and non-diagnostic legal perimeter.
+              </td>
+<td class="py-space-md px-space-md text-right font-label-tabular text-confidence-low font-medium">
+                Stream Abort &amp; Log
+              </td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-rose-700 font-label-code text-body-sm font-medium">
+<span class="material-symbols-outlined text-[16px] text-confidence-low">close</span>
+<span class="line-through decoration-confidence-low">"100% medically accurate"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-body-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>"Traceable to indexed ICMR-NIN source documents"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-slate-muted">
+                Statistical generation models cannot assert deterministic perfection; claims must assert lineage instead.
+              </td>
+<td class="py-space-md px-space-md text-right font-label-tabular text-confidence-low font-medium">
+                Post-Validation Filter
+              </td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-rose-700 font-label-code text-body-sm font-medium">
+<span class="material-symbols-outlined text-[16px] text-confidence-low">close</span>
+<span class="line-through decoration-confidence-low">"Doctor replacement system"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-body-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>"Clinician-adjuvant nutritional knowledge base"</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-slate-muted">
+                Clinical judgment requires patient physical examination, laboratory synthesis, and individualized history.
+              </td>
+<td class="py-space-md px-space-md text-right font-label-tabular text-confidence-low font-medium">
+                Hard Discard
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Section 3: Interactive Boundary Sandbox -->
+<section class="w-full py-space-xl px-margin lg:px-margin-lg bg-slate-50 border-y border-border-subtle">
+<div class="max-w-[1800px] mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-provenance text-label-provenance uppercase text-primary tracking-widest font-semibold">Runtime Validation Suite</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark">Age Scope Enforcement Demonstration &amp; Sandbox</h2>
+<p class="font-body-md text-body-md text-slate-muted max-w-3xl">
+          Simulate how the NutriKid retrieval pipeline intercepts patient age arguments before vector ingestion. Try common edge cases or manually enter any age from 0.5 to 25.0 years.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- Left: Interactive Controls -->
+<div class="lg:col-span-5 flex flex-col gap-space-md p-space-lg rounded-xl bg-white border border-border-subtle shadow-sm">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-slate-dark font-semibold" for="ageSlider">Simulated Patient Age</label>
+<div class="flex items-baseline gap-1 px-3 py-1 rounded bg-slate-100 border border-slate-200">
+<span class="font-label-tabular text-headline-lg text-primary font-bold" id="ageDisplay">10.5</span>
+<span class="font-label-code text-body-sm text-slate-muted">yrs</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<input class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary focus:outline-none" id="ageSlider" max="25.0" min="0.5" step="0.5" type="range" value="10.5"/>
+<div class="flex justify-between font-label-tabular text-[11px] text-slate-muted">
+<span>0.5y</span>
+<span>5.0y (Min)</span>
+<span>10.0y</span>
+<span>15.0y (Max)</span>
+<span>25.0y</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-provenance text-label-provenance uppercase text-slate-muted font-semibold">Pre-Configured Boundary Test Vectors:</span>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="p-space-sm rounded bg-slate-50 border border-border-subtle hover:bg-slate-100 hover:border-slate-300 transition-colors text-left" onclick="setTestAge(2.0)">
+<span class="font-label-code text-confidence-low text-body-sm block font-bold">2.0y</span>
+<span class="font-label-provenance text-[10px] text-slate-muted uppercase">Infant Deflection</span>
+</button>
+<button class="p-space-sm rounded bg-slate-50 border border-border-subtle hover:bg-slate-100 hover:border-slate-300 transition-colors text-left" onclick="setTestAge(10.5)">
+<span class="font-label-code text-primary text-body-sm block font-bold">10.5y</span>
+<span class="font-label-provenance text-[10px] text-slate-muted uppercase">Nominal Cohort</span>
+</button>
+<button class="p-space-sm rounded bg-slate-50 border border-border-subtle hover:bg-slate-100 hover:border-slate-300 transition-colors text-left" onclick="setTestAge(22.0)">
+<span class="font-label-code text-confidence-low text-body-sm block font-bold">22.0y</span>
+<span class="font-label-provenance text-[10px] text-slate-muted uppercase">Adult Discard</span>
+</button>
+</div>
+</div>
+<!-- Technical Guardrail Pipeline Status -->
+<div class="flex flex-col gap-space-xs p-space-sm rounded-lg bg-slate-50 border border-border-subtle font-label-tabular text-body-sm">
+<div class="flex justify-between text-slate-muted">
+<span>Pre-Retrieval Guardrail:</span>
+<span class="text-confidence-high font-bold" id="guardStatusText">PASS (IN_RANGE)</span>
+</div>
+<div class="flex justify-between text-slate-muted">
+<span>Cohort Lookup Table:</span>
+<span class="text-slate-dark font-label-code text-label-tabular font-semibold" id="lookupTableText">ICMR-2020-TAB-4B</span>
+</div>
+<div class="flex justify-between text-slate-muted">
+<span>Vector Query Dispatch:</span>
+<span class="text-primary font-bold" id="queryDispatchText">ALLOWED</span>
+</div>
+</div>
+</div>
+<!-- Right: Dynamic Enforcement Inspector -->
+<div class="lg:col-span-7 flex flex-col p-space-lg rounded-xl bg-white border border-border-subtle shadow-sm">
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-confidence-high" id="inspectorIcon">verified</span>
+<span class="font-headline-sm text-headline-sm text-slate-dark font-bold">Real-time Pipeline Verdict</span>
+</div>
+<span class="px-2.5 py-0.5 rounded font-label-code text-label-tabular bg-emerald-50 text-confidence-high border border-emerald-200 font-semibold" id="badgeState">
+              HTTP 200 • RETRIEVAL ENGAGED
+            </span>
+</div>
+<div class="flex flex-col gap-space-md" id="inspectorContent">
+<!-- Dynamic Injection will occur here via JS -->
+<div class="p-space-md rounded-lg bg-slate-50 border border-border-subtle flex flex-col gap-space-xs">
+<span class="font-label-provenance text-label-provenance text-primary uppercase font-semibold">Cohort Match Verified</span>
+<h4 class="font-headline-sm text-headline-sm text-slate-dark font-bold">Pediatric Demographics: 10.0 – 12.0 Year Age Group</h4>
+<p class="font-body-md text-body-md text-slate-muted">
+                Query permitted. Deterministic pipeline locates ICMR-NIN 2020 Table 4.2: Recommended Dietary Allowances for Children (Girls/Boys 10–12 yrs). Base reference weight 35.0 kg initialized.
+              </p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-provenance text-label-provenance text-slate-muted uppercase font-semibold">Raw Execution Trace</span>
+<div class="p-space-sm rounded-lg bg-slate-900 font-label-code text-label-code text-slate-100 flex flex-col gap-1 overflow-x-auto shadow-inner">
+<span class="text-sky-300">[PRE_GUARD] Parsing age token: '10.5' -&gt; float parsed 10.5</span>
+<span class="text-emerald-400">[PASS] Invariant assertion 5.0 &lt;= 10.5 &lt;= 15.0 evaluated TRUE</span>
+<span class="text-slate-400">[SEARCH] Vector index filtered by metadata: {"category": "pediatric_school_age", "age_min": 10.0, "age_max": 12.0}</span>
+<span class="text-sky-200">[PROVENANCE] 4 chunks selected from ICMR_NIN_RDA_2020.pdf (pp. 78-82)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Institutional Disclaimer & Agreement -->
+<section class="w-full py-space-xl px-margin lg:px-margin-lg bg-white">
+<div class="max-w-[1800px] mx-auto flex flex-col gap-space-lg">
+<div class="p-space-lg rounded-xl bg-white border border-border-subtle shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-space-sm text-amber-700">
+<span class="material-symbols-outlined text-[24px]">assignment_late</span>
+<h3 class="font-headline-md text-headline-md text-slate-dark font-bold">Institutional Clinical Use Agreement &amp; Disclaimer</h3>
+</div>
+<p class="font-body-md text-body-md text-slate-muted leading-relaxed">
+          The NutriKid system is a research prototype engineered strictly for academic, educational, and clinical reference triangulation. It provides probabilistic language generation guided by deterministic vector retrieval. By continuing past this terminal, you certify that:
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-lg bg-slate-50 border border-border-subtle flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle_outline</span>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">Clinician In-the-Loop Requirement</span>
+<p class="font-body-sm text-body-sm text-slate-muted">All generated dietary figures, RDA percentages, and micronutrient ratios will be reviewed by a certified clinical nutritionist before bedside adoption.</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-slate-50 border border-border-subtle flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">emergency</span>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold">No Critical Care or ICU Substitution</span>
+<p class="font-body-sm text-body-sm text-slate-muted">This software is never to be utilized for parenteral nutrition calculations during acute trauma, sepsis, or neonatal metabolic decompensation.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md border-t border-border-subtle">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded border-slate-300 accent-primary text-primary focus:ring-primary cursor-pointer" id="auditCheck" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-slate-dark cursor-pointer font-medium" for="auditCheck">
+              I acknowledge the explicit clinical boundaries and agree to institutional auditing of logged query IDs.
+            </label>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="px-space-md py-1.5 rounded bg-slate-100 hover:bg-slate-200 border border-border-subtle font-headline-sm text-body-sm text-slate-dark transition-colors font-medium" data-path="institutional-sources" href="#">
+              Inspect Source Corpus
+            </a>
+<a class="px-space-md py-1.5 rounded bg-primary text-white font-headline-sm text-body-sm font-semibold shadow-sm hover:bg-teal-700 transition-all" data-path="clinical-rag-query-engine" href="#">
+              Proceed to Clinical Engine
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inline Sandbox Script for Reactive Feedback -->
+<script>
+    const slider = document.getElementById('ageSlider');
+    const display = document.getElementById('ageDisplay');
+    const guardStatus = document.getElementById('guardStatusText');
+    const lookupTable = document.getElementById('lookupTableText');
+    const dispatchStatus = document.getElementById('queryDispatchText');
+    const badgeState = document.getElementById('badgeState');
+    const inspectorContent = document.getElementById('inspectorContent');
+    const inspectorIcon = document.getElementById('inspectorIcon');
+
+    function updateAgeSandbox(val) {
+      const age = parseFloat(val);
+      display.textContent = age.toFixed(1);
+      slider.value = age;
+
+      if (age < 5.0) {
+        // Infant refusal state
+        guardStatus.textContent = 'REFUSED (UNDER_AGE_INFANT_BOUND)';
+        guardStatus.className = 'text-confidence-low font-bold';
+        lookupTable.textContent = 'N/A (SCOPE_EXCLUSION)';
+        dispatchStatus.textContent = 'INTERCEPTED & ABORTED';
+        dispatchStatus.className = 'text-confidence-low font-bold';
+        
+        badgeState.textContent = 'HTTP 422 • REFUSAL TRIGGERED';
+        badgeState.className = 'px-2.5 py-0.5 rounded font-label-code text-label-tabular bg-rose-50 text-confidence-low border border-rose-200 font-semibold';
+        inspectorIcon.textContent = 'report';
+        inspectorIcon.className = 'material-symbols-outlined text-[20px] text-confidence-low';
+
+        inspectorContent.innerHTML = `
+          <div class="p-space-md rounded-lg bg-rose-50/60 border border-rose-200 flex flex-col gap-space-xs">
+            <span class="font-label-provenance text-label-provenance text-confidence-low uppercase font-semibold">Clinical Safety Trigger: Infant Exclusion</span>
+            <h4 class="font-headline-sm text-headline-sm text-slate-dark font-bold">Age ${age.toFixed(1)} years is Below the 5.0 Year Validation Threshold</h4>
+            <p class="font-body-md text-body-md text-slate-muted">
+              The NutriKid corpus explicitly rejects subjects under 5.0 years. Infant and toddler metabolic dynamics require unique fluid balance, weaning formulas, and lactation protocols governed by distinct WHO Infant Feeding matrices not present in this general pediatric school-age RAG corpus.
+            </p>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-provenance text-label-provenance text-slate-muted uppercase font-semibold">Refusal Engine Trace</span>
+            <div class="p-space-sm rounded-lg bg-slate-900 font-label-code text-label-code text-rose-300 flex flex-col gap-1 overflow-x-auto shadow-inner">
+              <span>[PRE_GUARD] Parsing age token: '${age.toFixed(1)}'</span>
+              <span>[FAIL] Invariant assertion 5.0 &lt;= ${age.toFixed(1)} &lt;= 15.0 evaluated FALSE</span>
+              <span class="text-slate-400">[DISPATCH_HALT] Vector similarity search terminated before token ingestion</span>
+              <span class="text-amber-300">[EMIT_REFUSAL] Returning code NK_ERR_AGE_UNDERFLOW: "Please consult neonatal/toddler specialized nutrition guidance."</span>
+            </div>
+          </div>
+        `;
+      } else if (age > 15.0) {
+        // Adult refusal state
+        guardStatus.textContent = 'REFUSED (OVER_AGE_ADULT_BOUND)';
+        guardStatus.className = 'text-confidence-low font-bold';
+        lookupTable.textContent = 'N/A (SCOPE_EXCLUSION)';
+        dispatchStatus.textContent = 'INTERCEPTED & ABORTED';
+        dispatchStatus.className = 'text-confidence-low font-bold';
+        
+        badgeState.textContent = 'HTTP 422 • REFUSAL TRIGGERED';
+        badgeState.className = 'px-2.5 py-0.5 rounded font-label-code text-label-tabular bg-rose-50 text-confidence-low border border-rose-200 font-semibold';
+        inspectorIcon.textContent = 'report';
+        inspectorIcon.className = 'material-symbols-outlined text-[20px] text-confidence-low';
+
+        inspectorContent.innerHTML = `
+          <div class="p-space-md rounded-lg bg-rose-50/60 border border-rose-200 flex flex-col gap-space-xs">
+            <span class="font-label-provenance text-label-provenance text-confidence-low uppercase font-semibold">Clinical Safety Trigger: Adult Cohort Exclusion</span>
+            <h4 class="font-headline-sm text-headline-sm text-slate-dark font-bold">Age ${age.toFixed(1)} years Exceeds the 15.0 Year Pediatric Boundary</h4>
+            <p class="font-body-md text-body-md text-slate-muted">
+              NutriKid scope terminates at 15.0 years. Adolescents and adults above 15.0 years exhibit ceased skeletal growth velocity curves and altered endocrine baseline references that deviate from pediatric ICMR-NIN 2020 cohorts.
+            </p>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-provenance text-label-provenance text-slate-muted uppercase font-semibold">Refusal Engine Trace</span>
+            <div class="p-space-sm rounded-lg bg-slate-900 font-label-code text-label-code text-rose-300 flex flex-col gap-1 overflow-x-auto shadow-inner">
+              <span>[PRE_GUARD] Parsing age token: '${age.toFixed(1)}'</span>
+              <span>[FAIL] Invariant assertion 5.0 &lt;= ${age.toFixed(1)} &lt;= 15.0 evaluated FALSE</span>
+              <span class="text-slate-400">[DISPATCH_HALT] Vector similarity search terminated before token ingestion</span>
+              <span class="text-amber-300">[EMIT_REFUSAL] Returning code NK_ERR_AGE_OVERFLOW: "Adult guidelines require ICMR adult sedentary/active reference frameworks."</span>
+            </div>
+          </div>
+        `;
+      } else {
+        // Valid pediatric state
+        guardStatus.textContent = 'PASS (IN_RANGE)';
+        guardStatus.className = 'text-confidence-high font-bold';
+        
+        let subcohort = 'ICMR-2020-TAB-4A (5-6y)';
+        if (age >= 7.0 && age < 10.0) subcohort = 'ICMR-2020-TAB-4B (7-9y)';
+        else if (age >= 10.0 && age < 13.0) subcohort = 'ICMR-2020-TAB-4C (10-12y)';
+        else if (age >= 13.0) subcohort = 'ICMR-2020-TAB-4D (13-15y)';
+        
+        lookupTable.textContent = subcohort;
+        dispatchStatus.textContent = 'ALLOWED';
+        dispatchStatus.className = 'text-primary font-bold';
+
+        badgeState.textContent = 'HTTP 200 • RETRIEVAL ENGAGED';
+        badgeState.className = 'px-2.5 py-0.5 rounded font-label-code text-label-tabular bg-emerald-50 text-confidence-high border border-emerald-200 font-semibold';
+        inspectorIcon.textContent = 'verified';
+        inspectorIcon.className = 'material-symbols-outlined text-[20px] text-confidence-high';
+
+        inspectorContent.innerHTML = `
+          <div class="p-space-md rounded-lg bg-slate-50 border border-border-subtle flex flex-col gap-space-xs">
+            <span class="font-label-provenance text-label-provenance text-primary uppercase font-semibold">Cohort Match Verified</span>
+            <h4 class="font-headline-sm text-headline-sm text-slate-dark font-bold">Pediatric Demographics: Active Target for ${age.toFixed(1)} Years</h4>
+            <p class="font-body-md text-body-md text-slate-muted">
+              In-scope query verified. System routes vector query to the appropriate ICMR-NIN RDA age bucket table: ${subcohort}. Dynamic bounding boxes for energy, protein, calcium, and iron limits engaged.
+            </p>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-provenance text-label-provenance text-slate-muted uppercase font-semibold">Raw Execution Trace</span>
+            <div class="p-space-sm rounded-lg bg-slate-900 font-label-code text-label-code text-slate-100 flex flex-col gap-1 overflow-x-auto shadow-inner">
+              <span class="text-sky-300">[PRE_GUARD] Parsing age token: '${age.toFixed(1)}' -> float parsed ${age.toFixed(1)}</span>
+              <span class="text-emerald-400">[PASS] Invariant assertion 5.0 &lt;= ${age.toFixed(1)} &lt;= 15.0 evaluated TRUE</span>
+              <span class="text-slate-400">[SEARCH] Vector index filtered by sub-cohort: ${subcohort}</span>
+              <span class="text-sky-200">[PROVENANCE] Authoritative excerpts confirmed available from ICMR NIN 2020 PDF cache</span>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    slider.addEventListener('input', (e) => updateAgeSandbox(e.target.value));
+    window.setTestAge = function(val) {
+      updateAgeSandbox(val);
+    };
+  </script>
+</div></main><footer class="w-full bg-slate-50 border-t border-border-subtle"><div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-margin-md"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-margin-md border-b border-border-subtle"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded bg-teal-50 border border-teal-200 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[15px]">vital_signs</span></div><span class="font-headline-sm text-headline-sm font-semibold text-slate-dark">NutriKid RAG</span></div><p class="font-body-sm text-body-sm text-slate-muted">Retrieval-Augmented Generation decision-support platform engineered strictly for pediatric nutrition guidelines, cohort RDA calculations, and micronutrient surveillance.</p><div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-surgical-blue font-medium"><span class="material-symbols-outlined text-[14px] text-primary">verified</span><span>DETERMINISTIC CITATION FRAMEWORK</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-slate-dark font-semibold uppercase tracking-wider text-xs">Research Corpus Specs</span><div class="grid grid-cols-3 gap-space-xs"><div class="p-space-sm rounded bg-white border border-border-subtle shadow-sm"><span class="font-label-tabular text-headline-sm text-primary font-bold block">22</span><span class="font-label-provenance text-[10px] text-slate-muted uppercase">Documents</span></div><div class="p-space-sm rounded bg-white border border-border-subtle shadow-sm"><span class="font-label-tabular text-headline-sm text-surgical-blue font-bold block">2,403</span><span class="font-label-provenance text-[10px] text-slate-muted uppercase">Pages</span></div><div class="p-space-sm rounded bg-white border border-border-subtle shadow-sm"><span class="font-label-tabular text-headline-sm text-slate-dark font-bold block">6,429</span><span class="font-label-provenance text-[10px] text-slate-muted uppercase">Chunks</span></div></div><p class="font-label-code text-[11px] text-slate-muted">Embedding: BAAI/bge-large-en-v1.5 • Chunk size: 512t / 64 overlap</p></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-slate-dark font-semibold uppercase tracking-wider text-xs">Institutional Corpus</span><ul class="flex flex-col gap-1 font-body-sm text-body-sm text-slate-muted"><li>ICMR-National Institute of Nutrition (NIN 2020/2024)</li><li>World Health Organization (WHO Child Growth Standards)</li><li>Food and Agriculture Organization (FAO / INFOODS)</li><li>Food Safety and Standards Authority of India (FSSAI)</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-slate-dark font-semibold uppercase tracking-wider text-xs">Provenance Pledge &amp; Scope</span><p class="font-body-sm text-body-sm text-slate-muted">All clinical outputs link directly to page-indexed PDF coordinates. For pediatric populations aged 5.0–15.0 years. Does not substitute for specialized PICU/NICU metabolic protocols.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="font-label-code text-[12px] text-primary hover:underline transition-colors" data-path="safety-scope" href="#">Protocol Scope</a><span class="text-outline">•</span><a class="font-label-code text-[12px] text-surgical-blue hover:underline transition-colors" data-path="institutional-sources" href="#">Audited Index</a><span class="text-outline">•</span><a class="font-label-code text-[12px] text-slate-muted hover:text-slate-dark transition-colors" data-path="evaluation-benchmarks" href="#">RAG Triad Metrics</a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-tabular text-label-tabular text-slate-muted"><p>© 2025 NutriKid Clinical AI Consortium. Open Research &amp; Clinical Decision Support Architecture.</p><p class="font-label-code text-[11px] text-slate-subtle">Strict Regulatory Adherence: Non-Diagnostic Clinical Reference Engine</p></div></div></footer></body></html>

@@ -1,0 +1,22 @@
+==================================================
+PHASE 2 TEACHER DEMONSTRATION COMMANDS
+==================================================
+
+1. Execute Document Parser:
+python preprocessing/parse_documents.py
+
+2. Execute Phase 2 Contract Test Suite:
+python preprocessing/test_phase2_parser.py
+
+3. Inspect Representative Parsed JSON Files:
+# Inspect normal prose journal article (NK-001)
+python -c "import json; d=json.load(open('data/processed/parsed/NK-001_parsed.json')); print('Source:', d['source_id'], '| Pages:', len(d['pages']), '| Sample:', d['pages'][0]['text'][:200])"
+
+# Inspect Dietary Guidelines for Indians (NK-008)
+python -c "import json; d=json.load(open('data/processed/parsed/NK-008_parsed.json')); print('Source:', d['source_id'], '| Metadata:', d['metadata']); print('Sample Page 10:', d['pages'][9]['text'][:200])"
+
+# Inspect Indian Food Composition Tables 2017 (NK-010 - Table heavy)
+python -c "import json; d=json.load(open('data/processed/parsed/NK-010_parsed.json')); print('Source:', d['source_id'], '| Total Pages:', d['metadata']['total_pages'], '| Sample Food Table Page:', d['pages'][10]['text'][:300])"
+
+4. Inspect Parser Summary Report:
+type data\processed\parser_summary.txt

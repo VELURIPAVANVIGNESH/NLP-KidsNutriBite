@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"provenance-tag":"#e0f2fe","on-primary-fixed":"#00201c","on-surface-variant":"#475569","surface-container-highest":"#e2e8f0","outline":"#64748b","border-subtle":"#e2e8f0","surface-bright":"#ffffff","on-tertiary":"#ffffff","surface":"#ffffff","confidence-high":"#059669","tertiary-container":"#f1f5f9","secondary-container":"#e0f2fe","ice-glow":"#f0fdfa","secondary-fixed-dim":"#bae6fd","surface-base":"#ffffff","surface-dim":"#f1f5f9","surface-overlay":"#ffffff","on-secondary":"#ffffff","inverse-primary":"#00685e","on-tertiary-fixed":"#0f172a","surface-container-high":"#edf2f7","outline-variant":"#cbd5e1","border-highlight":"rgba(0, 104, 94, 0.2)","tertiary":"#475569","surface-container-lowest":"#ffffff","on-background":"#0f172a","primary":"#008377","inverse-on-surface":"#f8fafc","chart-accent":"#65a30d","on-primary-fixed-variant":"#005048","surgical-blue":"#0284c7","error":"#dc2626","surface-raised":"#f8fafc","surface-variant":"#f1f5f9","error-container":"#fee2e2","on-tertiary-fixed-variant":"#334155","surface-tint":"#00685e","confidence-medium":"#d97706","on-secondary-fixed-variant":"#0369a1","secondary":"#0284c7","on-surface":"#0f172a","on-tertiary-container":"#0f172a","on-secondary-container":"#0369a1","inverse-surface":"#0f172a","primary-container":"#008377","secondary-fixed":"#e0f2fe","on-error":"#ffffff","tertiary-fixed-dim":"#cbd5e1","confidence-low":"#e11d48","on-primary":"#ffffff","tertiary-fixed":"#f1f5f9","surface-container":"#f8fafc","on-error-container":"#991b1b","on-primary-container":"#ffffff","on-secondary-fixed":"#0c4a6e","surface-container-low":"#ffffff","citation-text":"#0369a1","background":"#ffffff","primary-fixed-dim":"#99f6e4","primary-fixed":"#ccfbf1"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","gutter-lg":"1.5rem","margin":"1rem","margin-lg":"2.5rem","space-md":"0.75rem","space-lg":"1.25rem","margin-md":"1.5rem"},fontFamily:{"label-code":["JetBrains Mono","monospace"],"body-sm":["Inter","sans-serif"],"headline-lg":["Plus Jakarta Sans","sans-serif"],"body-lg":["Inter","sans-serif"],"headline-xl":["Plus Jakarta Sans","sans-serif"],"headline-xl-mobile":["Plus Jakarta Sans","sans-serif"],"headline-sm":["Plus Jakarta Sans","sans-serif"],"label-provenance":["JetBrains Mono","monospace"],"label-tabular":["JetBrains Mono","monospace"],"headline-lg-mobile":["Plus Jakarta Sans","sans-serif"],"body-md":["Inter","sans-serif"],"headline-md":["Plus Jakarta Sans","sans-serif"]},fontSize:{"label-code":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"500"}],"label-provenance":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-tabular":["12px",{"lineHeight":"16px","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface-base font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-white"><header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-border-subtle"><div class="h-16 w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-emerald-50 border border-primary/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">vital_signs</span></div><span class="font-headline-md text-headline-md font-semibold tracking-tight text-on-surface">Nutri<span class="text-primary">Kid</span></span></div><div class="hidden xl:flex items-center gap-space-xs"><span class="px-2 py-0.5 rounded bg-sky-50 text-surgical-blue font-label-provenance text-label-provenance uppercase tracking-wider border border-sky-200">Pediatric Nutrition RAG System</span></div></div><nav class="hidden lg:flex items-center gap-1 xl:gap-space-xs" data-active-classes="bg-emerald-50 text-primary border border-primary/30 font-semibold"><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="overview" href="#">Overview</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="pipeline" href="#">How It Works</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="clinical-rag-query-engine" href="#">Ask NutriKid</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="institutional-sources" href="#">Institutional Sources</a><a aria-current="page" class="px-2.5 py-1.5 rounded font-body-sm transition-colors whitespace-nowrap bg-emerald-50 text-primary border border-primary/30 font-semibold" data-path="retrieval-lab" href="#">Retrieval Lab</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="evaluation-benchmarks" href="#">Evaluation &amp; Benchmarks</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface hover:bg-slate-50 transition-colors whitespace-nowrap" data-path="safety-scope" href="#">Safety &amp; Scope</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-sky-50 border border-sky-200 text-citation-text font-label-provenance text-label-provenance"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high animate-pulse"></span><span>SCOPE: 5.0–15.0 YRS</span></div><div class="w-8 h-8 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-screen bg-surface-base"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-space-xl flex flex-col gap-space-xl">
+<!-- Top System Header Block (Technical RAG Diagnostics Bar) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container border border-border-subtle shadow-sm p-space-lg flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs max-w-4xl relative z-10">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-sky-50 text-citation-text border border-sky-200 font-label-provenance text-label-provenance uppercase tracking-widest font-semibold">Diagnostics Suite v2.8</span>
+<span class="px-2 py-0.5 rounded bg-emerald-50 text-primary border border-primary/20 font-label-code text-[11px] font-semibold">EMBED: bge-large-en-v1.5 [1024-D]</span>
+<span class="px-2 py-0.5 rounded bg-emerald-50 text-confidence-high border border-emerald-200 font-label-code text-[11px] flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-confidence-high animate-pulse"></span> HNSW INDEX ONLINE
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1 font-bold">Retrieval Lab: Comparative Vector Search &amp; Index Evaluation</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Benchmarking dense embeddings, sparse lexical retrieval, and neural cross-encoder reranking across FAISS and ChromaDB backends.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0 relative z-10 w-full xl:w-auto justify-start xl:justify-end">
+<div class="px-space-md py-space-xs rounded bg-white border border-border-subtle text-right shadow-2xs">
+<span class="block font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">Index Nodes</span>
+<span class="font-label-tabular text-headline-sm text-primary font-bold">6,429 Chunks</span>
+</div>
+<div class="px-space-md py-space-xs rounded bg-white border border-border-subtle text-right shadow-2xs">
+<span class="block font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">Quantization</span>
+<span class="font-label-tabular text-headline-sm text-secondary font-bold">FP32 Uncompressed</span>
+</div>
+<button class="px-3.5 py-2 rounded bg-white border border-slate-300 text-on-surface font-headline-sm text-headline-sm hover:bg-slate-50 transition-colors flex items-center gap-1.5 shadow-xs font-semibold" id="resetDefaultsBtn">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">tune</span>
+<span>Reset Weights</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Interactive Query & Vector Search Testbed (Bento Split) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Query Control Panel (5 Cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container border border-border-subtle shadow-sm p-space-lg flex flex-col gap-space-lg relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs border-b border-border-subtle">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">manage_search</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase tracking-wide text-xs">Query Testbed &amp; Pipeline Tuner</span>
+</div>
+<span class="font-label-code text-[11px] text-surgical-blue font-semibold bg-sky-50 px-2 py-0.5 rounded border border-sky-200">PIPELINE: HYBRID-RERANK-V2</span>
+</div>
+<!-- Clinical Query Formulation -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-provenance text-label-provenance text-on-surface-variant uppercase flex items-center justify-between font-semibold">
+<span>Pediatric Target Query</span>
+<span class="text-primary font-label-code text-[11px] font-bold">L2 Normalized</span>
+</label>
+<div class="relative">
+<textarea class="w-full rounded border border-slate-300 bg-white text-on-surface font-body-md text-body-md p-space-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none shadow-xs" id="labQueryInput" placeholder="Enter clinical retrieval query..." rows="3">Bioavailability of non-heme iron in Indian plant diets for adolescent girls</textarea>
+<div class="absolute bottom-2 right-2 flex items-center gap-1 font-label-code text-[10px] text-on-surface-variant bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">
+<span>TOKENS: 14</span>
+<span>•</span>
+<span class="text-primary font-bold">ENCODED</span>
+</div>
+</div>
+</div>
+<!-- Preset Clinical Anchors -->
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="font-label-provenance text-[10px] text-on-surface-variant uppercase mr-1 font-bold">Quick Benchmarks:</span>
+<button class="preset-btn px-2.5 py-1 rounded bg-white text-on-surface-variant border border-slate-200 hover:border-primary hover:text-primary font-label-code text-[11px] transition-colors shadow-2xs" data-query="Bioavailability of non-heme iron in Indian plant diets for adolescent girls">Iron Bioavailability (Girls)</button>
+<button class="preset-btn px-2.5 py-1 rounded bg-white text-on-surface-variant border border-slate-200 hover:border-primary hover:text-primary font-label-code text-[11px] transition-colors shadow-2xs" data-query="ICMR 2024 recommended dietary zinc intake in protein-deficient toddler">Zinc RDA (ICMR 2024)</button>
+<button class="preset-btn px-2.5 py-1 rounded bg-white text-on-surface-variant border border-slate-200 hover:border-primary hover:text-primary font-label-code text-[11px] transition-colors shadow-2xs" data-query="Severe acute malnutrition refeeding syndrome electrolyte thresholds phosphorus">Refeeding Hypophosphatemia</button>
+</div>
+<!-- Parametric Controls -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Index Backend Architecture -->
+<div class="p-space-sm rounded-lg bg-white border border-border-subtle flex flex-col gap-space-xs shadow-2xs">
+<label class="font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">Index Engine Compare</label>
+<div class="grid grid-cols-2 gap-1 p-0.5 bg-slate-100 rounded border border-slate-200">
+<button class="px-2 py-1 rounded bg-white text-primary border border-border-subtle font-label-code text-[11px] text-center font-bold shadow-2xs" id="engineDual">Dual Run</button>
+<button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-code text-[11px] text-center" id="engineFaissOnly">FAISS Solo</button>
+</div>
+</div>
+<!-- Top-K Selection -->
+<div class="p-space-sm rounded-lg bg-white border border-border-subtle flex flex-col gap-space-xs shadow-2xs">
+<div class="flex items-center justify-between">
+<label class="font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">Retrieval Depth (K)</label>
+<span class="font-label-tabular text-[12px] text-primary font-bold" id="topKValue">5 Chunks</span>
+</div>
+<div class="grid grid-cols-3 gap-1">
+<button class="topk-btn py-1 rounded bg-primary text-white font-label-code text-[11px] text-center font-bold shadow-2xs" data-k="5">Top 5</button>
+<button class="topk-btn py-1 rounded bg-slate-100 text-on-surface-variant border border-slate-200 font-label-code text-[11px] text-center hover:text-on-surface hover:bg-slate-200 transition-colors" data-k="10">Top 10</button>
+<button class="topk-btn py-1 rounded bg-slate-100 text-on-surface-variant border border-slate-200 font-label-code text-[11px] text-center hover:text-on-surface hover:bg-slate-200 transition-colors" data-k="20">Top 20</button>
+</div>
+</div>
+</div>
+<!-- Hybrid Search Balance: BM25 vs Dense Vector -->
+<div class="p-space-md rounded-lg bg-white border border-border-subtle flex flex-col gap-space-sm shadow-2xs">
+<div class="flex items-center justify-between font-label-provenance text-label-provenance uppercase font-semibold">
+<span class="text-secondary flex items-center gap-1 font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> BM25 Sparse (<span id="bm25ValText">0.40</span>)
+            </span>
+<span class="text-primary flex items-center gap-1 font-bold">
+              Dense bge-large (<span id="denseValText">0.60</span>) <span class="w-2 h-2 rounded-full bg-primary"></span>
+</span>
+</div>
+<div class="relative w-full flex items-center">
+<input class="w-full accent-primary h-2 bg-slate-200 rounded cursor-pointer" id="hybridSlider" max="1" min="0" step="0.05" type="range" value="0.60"/>
+</div>
+<div class="flex justify-between font-label-code text-[10px] text-on-surface-variant font-medium">
+<span>Pure Lexical (Exact)</span>
+<span>Balanced Reciprocal Rank</span>
+<span>Pure Semantic (Dense)</span>
+</div>
+</div>
+<!-- Neural Cross-Encoder Reranker Toggle -->
+<div class="p-space-md rounded-lg bg-white border border-border-subtle flex items-center justify-between shadow-2xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span>BAAI/bge-reranker-base</span>
+<span class="px-1.5 py-0.5 rounded bg-lime-100 text-lime-800 border border-lime-200 font-label-code text-[10px] font-bold">Cross-Attn</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rescores top candidates through bidirectional token cross-attention</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="rerankToggle" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Execute Action Button -->
+<button class="w-full py-3 rounded bg-primary text-white font-headline-sm text-headline-sm font-semibold hover:bg-primary/95 hover:shadow-md transition-all flex items-center justify-center gap-2 group shadow-sm" id="executeRetrievalBtn">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-45 transition-transform">bolt</span>
+<span>Execute Comparative Retrieval</span>
+<span class="font-label-code text-[12px] opacity-90">(~6.5ms)</span>
+</button>
+</div>
+<!-- Real-Time Metrics & Latency Profiler (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Latency & Efficiency Scorecards (Bento Strip) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="rounded-xl bg-surface-container border border-border-subtle p-space-md shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">FAISS Index HNSW</span>
+<span class="px-1.5 py-0.5 rounded bg-emerald-100 text-confidence-high border border-emerald-200 font-label-code text-[10px] font-bold">STABLE</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-label-tabular text-headline-xl text-primary font-bold" id="faissLatencyDisplay">4.2</span>
+<span class="font-label-code text-body-sm text-on-surface-variant font-medium">ms / query</span>
+</div>
+<div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 32%"></div>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-1 font-medium">RAM Resident • Flat L2 Search</span>
+</div>
+<div class="rounded-xl bg-surface-container border border-border-subtle p-space-md shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">ChromaDB Cosine</span>
+<span class="px-1.5 py-0.5 rounded bg-sky-100 text-secondary border border-sky-200 font-label-code text-[10px] font-bold">PERSISTENT</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-label-tabular text-headline-xl text-secondary font-bold" id="chromaLatencyDisplay">8.9</span>
+<span class="font-label-code text-body-sm text-on-surface-variant font-medium">ms / query</span>
+</div>
+<div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 68%"></div>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-1 font-medium">SQLite + DuckDB WAL storage</span>
+</div>
+<div class="rounded-xl bg-surface-container border border-border-subtle p-space-md shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">BGE Rerank Overhead</span>
+<span class="px-1.5 py-0.5 rounded bg-amber-100 text-confidence-medium border border-amber-200 font-label-code text-[10px] font-bold">GPU ACCEL</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-label-tabular text-headline-xl text-chart-accent font-bold" id="rerankLatencyDisplay">14.1</span>
+<span class="font-label-code text-body-sm text-on-surface-variant font-medium">ms (5 docs)</span>
+</div>
+<div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-chart-accent h-full rounded-full" style="width: 55%"></div>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-1 font-medium">Precision Gain: +28.4% MRR@5</span>
+</div>
+</div>
+<!-- Similarity Distribution & Distance Divergence Chart -->
+<div class="rounded-xl bg-surface-container border border-border-subtle p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-border-subtle pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Similarity Score Distribution &amp; Cosine Spread</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous distribution curves of candidate similarities across retrieved candidate set (n=20)</p>
+</div>
+<div class="flex items-center gap-space-sm font-label-code text-[11px]">
+<span class="flex items-center gap-1.5 text-primary font-bold">
+<span class="w-3 h-1.5 rounded-full bg-primary inline-block"></span> FAISS Cosine
+              </span>
+<span class="flex items-center gap-1.5 text-secondary font-bold">
+<span class="w-3 h-1.5 rounded-full bg-secondary inline-block"></span> Chroma Cosine
+              </span>
+<span class="flex items-center gap-1.5 text-chart-accent font-bold">
+<span class="w-3 h-1.5 rounded-full bg-chart-accent inline-block"></span> BGE Cross-Score
+              </span>
+</div>
+</div>
+<!-- Technical Inline SVG Histogram & Kernel Density -->
+<div class="relative w-full h-48 bg-white border border-border-subtle rounded-lg p-space-sm flex items-end justify-between overflow-hidden shadow-inner">
+<!-- Background Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between p-3 opacity-30 pointer-events-none">
+<div class="w-full h-px bg-slate-200"></div>
+<div class="w-full h-px bg-slate-200"></div>
+<div class="w-full h-px bg-slate-200"></div>
+<div class="w-full h-px bg-slate-200"></div>
+</div>
+<!-- Distribution Vector Chart (SVG) -->
+<svg class="absolute inset-0 w-full h-full p-2 overflow-visible" preserveaspectratio="none" viewbox="0 0 500 150">
+<defs>
+<lineargradient id="faissGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#008377" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#008377" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="chromaGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#0284c7" stop-opacity="0.20"></stop>
+<stop offset="100%" stop-color="#0284c7" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Chroma Area & Curve -->
+<path d="M 0,140 Q 60,135 120,95 T 240,65 T 360,35 T 460,80 L 460,150 L 0,150 Z" fill="url(#chromaGrad)"></path>
+<path d="M 0,140 Q 60,135 120,95 T 240,65 T 360,35 T 460,80" fill="none" stroke="#0284c7" stroke-dasharray="4 2" stroke-width="2"></path>
+<!-- FAISS Area & Curve -->
+<path d="M 0,145 Q 70,140 140,80 T 270,40 T 380,18 T 480,50 L 480,150 L 0,150 Z" fill="url(#faissGrad)"></path>
+<path d="M 0,145 Q 70,140 140,80 T 270,40 T 380,18 T 480,50" fill="none" stroke="#008377" stroke-width="2.5"></path>
+<!-- Peak Marker Pin -->
+<circle class="animate-ping" cx="380" cy="18" fill="#008377" opacity="0.5" r="4"></circle>
+<circle cx="380" cy="18" fill="#008377" r="4"></circle>
+<text fill="#008377" font-family="JetBrains Mono" font-size="10" font-weight="600" x="390" y="24">Max sim: 0.892 (ICMR-NIN-C14)</text>
+</svg>
+<!-- Bottom Metric X-Axis -->
+<div class="relative z-10 w-full flex justify-between font-label-code text-[10px] text-on-surface-variant pt-2 font-medium">
+<span>0.30 (Weak Semantic)</span>
+<span>0.50</span>
+<span>0.70 (Pass Threshold)</span>
+<span>0.85 (High Precision)</span>
+<span>1.00 (Exact Latent Match)</span>
+</div>
+</div>
+<!-- Metric Summary Footnote -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-space-xs font-label-tabular text-[11px] text-on-surface-variant">
+<div class="flex items-center gap-1.5 p-1.5 rounded bg-white border border-border-subtle">
+<span class="w-2 h-2 rounded bg-primary"></span>
+<span>FAISS Peak: <strong class="text-on-surface">0.892</strong></span>
+</div>
+<div class="flex items-center gap-1.5 p-1.5 rounded bg-white border border-border-subtle">
+<span class="w-2 h-2 rounded bg-secondary"></span>
+<span>Chroma Peak: <strong class="text-on-surface">0.887</strong></span>
+</div>
+<div class="flex items-center gap-1.5 p-1.5 rounded bg-white border border-border-subtle">
+<span class="w-2 h-2 rounded bg-chart-accent"></span>
+<span>Rerank Delta: <strong class="text-chart-accent">+0.142</strong></span>
+</div>
+<div class="flex items-center gap-1.5 p-1.5 rounded bg-white border border-border-subtle">
+<span class="w-2 h-2 rounded bg-confidence-high"></span>
+<span>Hallucination Risk: <strong class="text-confidence-high">0.03%</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2 & 3: Side-by-Side Index Comparison Matrix & Neural Rerank Shift -->
+<div class="rounded-xl bg-surface-container border border-border-subtle shadow-sm p-space-lg flex flex-col gap-space-lg">
+<!-- Comparative Matrix Header -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between pb-space-sm gap-space-sm border-b border-border-subtle">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">compare_arrows</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Side-by-Side Index Retrieval Matrix (Top-5 Passages)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct comparison of retrieved chunks, cosine distances, and semantic promotion trajectories.</p>
+</div>
+<div class="flex items-center gap-space-sm font-label-code text-[12px]">
+<span class="px-2.5 py-1 rounded bg-white border border-border-subtle text-on-surface-variant font-medium shadow-2xs">Metric: Cosine Dot-Product + BM25 Reciprocal Rank Fusion</span>
+</div>
+</div>
+<!-- Comparative Dual Columns -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-gutter-lg">
+<!-- FAISS (HNSW flat) Column -->
+<div class="rounded-lg bg-white border border-border-subtle p-space-md flex flex-col gap-space-md shadow-2xs">
+<div class="flex items-center justify-between pb-space-xs border-b border-border-subtle">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-emerald-50 border border-primary/20 flex items-center justify-center text-primary font-label-code text-[11px] font-bold">F1</div>
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">FAISS (HNSW IndexFlatIP)</span>
+<span class="block font-label-code text-[11px] text-primary font-semibold">Latency: 4.2ms • M=32 • efSearch=64</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-sky-50 text-citation-text border border-sky-200 font-label-provenance text-label-provenance font-semibold">EXACT L2 DOT</span>
+</div>
+<!-- FAISS Passage Stack -->
+<div class="flex flex-col gap-space-sm" id="faissPassageList">
+<!-- Chunk 1 -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-primary/50 hover:bg-emerald-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="NIN-2024-CH-882">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-primary text-white font-bold">#1</span>
+<span class="text-citation-text font-bold">ICMR_NIN_2024_RDA.pdf [p.142]</span>
+<span class="text-outline">chunk_id: NIN-2024-CH-882</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-primary">0.892</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...In Indian plant-based staple diets rich in cereals and pulses, the bioavailability of <span class="bg-emerald-100 text-primary font-semibold px-1 rounded">non-heme iron</span> in adolescent girls is severely restricted (typically <span class="bg-emerald-100 text-primary font-semibold px-1 rounded">3% to 8%</span>) due to elevated molar ratios of <span class="bg-sky-100 text-secondary font-semibold px-1 rounded">phytates</span> and polyphenols..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>SECTION: Micronutrient Absorption Inhibitors</span>
+<span class="text-confidence-high flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high"></span> 98.4% Confidence</span>
+</div>
+</div>
+<!-- Chunk 2 -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-primary/50 hover:bg-emerald-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="WHO-SER-IRON-402">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#2</span>
+<span class="text-citation-text font-bold">WHO_IDA_Adolescent_Guideline.pdf [p.38]</span>
+<span class="text-outline">chunk_id: WHO-SER-IRON-402</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-primary">0.865</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Enhancement of <span class="bg-emerald-100 text-primary font-semibold px-1 rounded">non-heme iron</span> absorption requires concurrent ingestion of ascorbic acid (Vitamin C:Iron molar ratio &gt; 2:1) when phytate-to-iron molar ratios exceed 1.0 in <span class="bg-emerald-100 text-primary font-semibold px-1 rounded">adolescent vegetarian cohorts</span>..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>SECTION: Global Anaemia Reduction Interventions</span>
+<span class="text-confidence-high flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high"></span> 94.1% Confidence</span>
+</div>
+</div>
+<!-- Chunk 3 -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-primary/50 hover:bg-emerald-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="FSSAI-FORT-2022-19">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#3</span>
+<span class="text-citation-text font-bold">FSSAI_Fortified_Foods_Standards.pdf [p.19]</span>
+<span class="text-outline">chunk_id: FSSAI-FORT-19</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-primary">0.814</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Fortification with sodium iron EDTA (NaFeEDTA) overcomes dietary inhibition by plant tannins, retaining bio-accessibility above 10% in high-phytate wheat and rice flour matrixes targeted for school-age feeding..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>SECTION: Bioavailable Chelates &amp; Fortificants</span>
+<span class="text-confidence-medium flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-medium"></span> 82.0% Confidence</span>
+</div>
+</div>
+<!-- Chunk 4 -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-primary/50 hover:bg-emerald-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="FAO-INFOODS-NUT-104">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#4</span>
+<span class="text-citation-text font-bold">FAO_INFOODS_Asia_Tables.pdf [p.84]</span>
+<span class="text-outline">chunk_id: FAO-NUT-104</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-primary">0.781</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Total iron content in Indian finger millet (Ragi) and pulses frequently exhibits high analytical values (3.9–11.0 mg/100g); however, fractional absorption remains suppressed under 5% without thermal dephytinization..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>SECTION: Regional Cereal Bioactive Profiles</span>
+<span class="text-confidence-medium flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-medium"></span> 79.5% Confidence</span>
+</div>
+</div>
+<!-- Chunk 5 -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-primary/50 hover:bg-emerald-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="NIN-PHY-BIO-312">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#5</span>
+<span class="text-citation-text font-bold">ICMR_NIN_Clinical_Physiology.pdf [p.312]</span>
+<span class="text-outline">chunk_id: NIN-PHY-312</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-primary">0.749</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Hepcidin upregulation in inflammatory states secondary to chronic undernutrition impairs ferroportin transport, compounding low oral bioavailability in rural pubertal female groups..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>SECTION: Hepcidin Regulatory Axis &amp; Puberty</span>
+<span class="text-confidence-low flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-low"></span> 68.2% Confidence</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ChromaDB (HNSW Cosine) Column -->
+<div class="rounded-lg bg-white border border-border-subtle p-space-md flex flex-col gap-space-md shadow-2xs">
+<div class="flex items-center justify-between pb-space-xs border-b border-border-subtle">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-sky-50 border border-secondary/20 flex items-center justify-center text-secondary font-label-code text-[11px] font-bold">C2</div>
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">ChromaDB (HNSW space=cosine)</span>
+<span class="block font-label-code text-[11px] text-secondary font-semibold">Latency: 8.9ms • M=16 • Construction=100</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-slate-100 text-secondary border border-slate-200 font-label-provenance text-label-provenance font-semibold">NORMALIZED DIST</span>
+</div>
+<!-- ChromaDB Passage Stack -->
+<div class="flex flex-col gap-space-sm" id="chromaPassageList">
+<!-- Chunk 1 in Chroma -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-secondary/50 hover:bg-sky-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="NIN-2024-CH-882">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-secondary text-white font-bold">#1</span>
+<span class="text-citation-text font-bold">ICMR_NIN_2024_RDA.pdf [p.142]</span>
+<span class="text-outline">chunk_id: NIN-2024-CH-882</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-secondary">0.887</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...In Indian plant-based staple diets rich in cereals and pulses, the bioavailability of <span class="bg-sky-100 text-secondary font-semibold px-1 rounded">non-heme iron</span> in adolescent girls is severely restricted (typically <span class="bg-sky-100 text-secondary font-semibold px-1 rounded">3% to 8%</span>)..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>METADATA: cohort=pediatric_adolescent_female</span>
+<span class="text-confidence-high flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high"></span> Match: 1.00 Rank-Overlap</span>
+</div>
+</div>
+<!-- Chunk 2 in Chroma -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-secondary/50 hover:bg-sky-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="WHO-SER-IRON-402">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#2</span>
+<span class="text-citation-text font-bold">WHO_IDA_Adolescent_Guideline.pdf [p.38]</span>
+<span class="text-outline">chunk_id: WHO-SER-IRON-402</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-secondary">0.859</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Enhancement of <span class="bg-sky-100 text-secondary font-semibold px-1 rounded">non-heme iron</span> absorption requires concurrent ingestion of ascorbic acid (Vitamin C:Iron molar ratio &gt; 2:1)..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>METADATA: agency=WHO • pub_year=2021</span>
+<span class="text-confidence-high flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high"></span> Match: 1.00 Rank-Overlap</span>
+</div>
+</div>
+<!-- Chunk 3 in Chroma -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-secondary/50 hover:bg-sky-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="FAO-INFOODS-NUT-104">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#3</span>
+<span class="text-citation-text font-bold">FAO_INFOODS_Asia_Tables.pdf [p.84]</span>
+<span class="text-outline">chunk_id: FAO-NUT-104</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-secondary">0.798</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Total iron content in Indian finger millet (Ragi) and pulses frequently exhibits high analytical values; however, fractional absorption remains suppressed under 5% without thermal dephytinization..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>METADATA: country_profile=SouthAsia_IN</span>
+<span class="text-confidence-medium flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-medium"></span> Permuted +1 Position</span>
+</div>
+</div>
+<!-- Chunk 4 in Chroma -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-secondary/50 hover:bg-sky-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="FSSAI-FORT-2022-19">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#4</span>
+<span class="text-citation-text font-bold">FSSAI_Fortified_Foods_Standards.pdf [p.19]</span>
+<span class="text-outline">chunk_id: FSSAI-FORT-19</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-secondary">0.776</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Fortification with sodium iron EDTA (NaFeEDTA) overcomes dietary inhibition by plant tannins, retaining bio-accessibility above 10% in high-phytate wheat and rice flour matrixes..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>METADATA: regulatory_authority=FSSAI</span>
+<span class="text-confidence-medium flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-medium"></span> Permuted -1 Position</span>
+</div>
+</div>
+<!-- Chunk 5 in Chroma -->
+<div class="chunk-card group p-space-md rounded-lg bg-surface-container border border-border-subtle hover:border-secondary/50 hover:bg-sky-50/30 transition-all cursor-pointer relative shadow-2xs" data-chunk-id="ICMR-BIO-TEA-098">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="px-1.5 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">#5</span>
+<span class="text-citation-text font-bold">ICMR_Tea_Tannins_Bioavailability.pdf [p.11]</span>
+<span class="text-outline">chunk_id: ICMR-TEA-098</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold text-secondary">0.732</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+                "...Postprandial consumption of black tea within 60 minutes of meals further reduces plant iron bioavailability by 60% due to galloyl tannin precipitation in the duodenum..."
+              </p>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 font-label-provenance text-[10px] text-on-surface-variant font-medium">
+<span>METADATA: interactor=polyphenols</span>
+<span class="text-confidence-low flex items-center gap-1 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-confidence-low"></span> Novel Candidate (Lexical)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Neural Reranking Impact Visualization (Before vs After BGE Cross-Encoder) -->
+<div class="rounded-xl bg-surface-container border border-border-subtle shadow-sm p-space-lg flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm border-b border-border-subtle pb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-chart-accent text-[22px]">swap_vertical_circle</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Neural Reranking Trajectory: BAAI/bge-reranker-base</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tracking candidate promotion, demotion, and precision drift from initial bi-encoder vector retrieval to cross-attention scoring.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-lime-100 text-lime-800 border border-lime-200 font-label-code text-[12px] font-bold">Max Promotion: +6 Ranks (Passage #7 → #1)</span>
+</div>
+</div>
+<!-- Ranking Trajectory Interactive Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left: Stage 1 Bi-Encoder Dense + BM25 Rank (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase pb-1 flex items-center justify-between font-semibold">
+<span>Stage 1: Bi-Encoder Candidate List</span>
+<span>Cosine Raw</span>
+</span>
+<div class="flex flex-col gap-1.5 font-label-code text-[12px]">
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface-variant font-medium">Rank 1 • NIN-2024-CH-882</span>
+<span class="text-primary font-label-tabular font-bold">0.892</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface-variant font-medium">Rank 2 • WHO-SER-IRON-402</span>
+<span class="text-primary font-label-tabular font-bold">0.865</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface-variant font-medium">Rank 3 • FSSAI-FORT-19</span>
+<span class="text-primary font-label-tabular font-bold">0.814</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface-variant font-medium">Rank 4 • FAO-NUT-104</span>
+<span class="text-primary font-label-tabular font-bold">0.781</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface-variant font-medium">Rank 5 • NIN-PHY-312</span>
+<span class="text-primary font-label-tabular font-bold">0.749</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface-variant font-medium">Rank 6 • WHO-SER-ANEMIA-12</span>
+<span class="text-primary font-label-tabular font-bold">0.718</span>
+</div>
+<!-- Out-of-top-5 hidden gem promoted by semantic understanding -->
+<div class="p-2.5 rounded-lg bg-lime-50 border border-lime-300 text-on-surface flex items-center justify-between font-semibold shadow-xs">
+<span class="text-lime-800 font-bold">Rank 7 • ICMR-ADO-FER-07 (Indian Girls Non-Heme)</span>
+<span class="text-chart-accent font-label-tabular font-bold">0.702</span>
+</div>
+</div>
+</div>
+<!-- Center: Flow Connectors / Trajectory Graphic (4 Cols) -->
+<div class="lg:col-span-4 hidden lg:flex flex-col items-center justify-center p-space-md">
+<div class="w-full flex flex-col gap-space-md text-center">
+<span class="font-label-provenance text-label-provenance text-primary uppercase font-bold">Cross-Encoder Self-Attention Rescore</span>
+<div class="relative w-full h-44 flex items-center justify-center">
+<svg class="w-full h-full" fill="none" viewbox="0 0 260 180">
+<!-- Rank 7 -> Rank 1 Jump Vector -->
+<path class="animate-pulse" d="M 20,155 C 100,155 140,25 240,25" stroke="#65a30d" stroke-dasharray="3 3" stroke-linecap="round" stroke-width="3"></path>
+<circle cx="20" cy="155" fill="#65a30d" r="4"></circle>
+<circle cx="240" cy="25" fill="#65a30d" r="5"></circle>
+<!-- Rank 1 -> Rank 2 Vector -->
+<path d="M 20,25 C 80,25 150,55 240,55" opacity="0.7" stroke="#008377" stroke-width="2"></path>
+<!-- Rank 2 -> Rank 3 Vector -->
+<path d="M 20,55 C 80,55 150,85 240,85" opacity="0.7" stroke="#0284c7" stroke-width="2"></path>
+<!-- Label over arrow -->
+<rect fill="#ffffff" height="24" rx="4" stroke="#cbd5e1" stroke-width="1" width="104" x="78" y="70"></rect>
+<text fill="#65a30d" font-family="JetBrains Mono" font-size="10" font-weight="700" text-anchor="middle" x="130" y="86">+6 PROMOTION</text>
+</svg>
+</div>
+<p class="font-label-code text-[11px] text-on-surface-variant font-medium">Cross-Encoder evaluates full (query, document) token interaction matrix rather than pooled cosine vector dot-product.</p>
+</div>
+</div>
+<!-- Right: Stage 2 Post-Rerank Rank (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<span class="font-label-provenance text-label-provenance text-chart-accent uppercase pb-1 flex items-center justify-between font-bold">
+<span>Stage 2: BGE Reranked High-Concordance</span>
+<span>Reranker Logits</span>
+</span>
+<div class="flex flex-col gap-1.5 font-label-code text-[12px]">
+<!-- Promoted to Rank 1 -->
+<div class="p-2.5 rounded-lg bg-lime-500 text-white flex items-center justify-between font-bold shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span>Rank 1 • ICMR-ADO-FER-07</span>
+</div>
+<span class="font-label-tabular text-[13px] font-bold">+9.84 logit</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface font-medium">Rank 2 • NIN-2024-CH-882 (was #1)</span>
+<span class="text-chart-accent font-label-tabular font-bold">+8.91 logit</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface font-medium">Rank 3 • WHO-SER-IRON-402 (was #2)</span>
+<span class="text-chart-accent font-label-tabular font-bold">+8.12 logit</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface font-medium">Rank 4 • FSSAI-FORT-19 (was #3)</span>
+<span class="text-chart-accent font-label-tabular font-bold">+6.45 logit</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface flex items-center justify-between shadow-2xs">
+<span class="text-on-surface font-medium">Rank 5 • FAO-NUT-104 (was #4)</span>
+<span class="text-chart-accent font-label-tabular font-bold">+5.11 logit</span>
+</div>
+<div class="p-2.5 rounded-lg bg-white border border-border-subtle text-on-surface-variant flex items-center justify-between opacity-75 shadow-2xs">
+<span>Rank 6 • NIN-PHY-312 (was #5)</span>
+<span class="font-label-tabular font-medium">+3.40 logit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Promoted Chunk Semantic Deep Dive -->
+<div class="p-space-md rounded-lg bg-white border border-border-subtle flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-2xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-lime-100 border border-lime-200 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lime-700 text-[24px]">verified</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Why passage ICMR-ADO-FER-07 was promoted to #1:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The query contains high clinical specialization (<em class="text-chart-accent font-semibold">"non-heme iron"</em> + <em class="text-chart-accent font-semibold">"adolescent girls"</em>). The bi-encoder ranked general iron bioavailability passages higher due to high keyword frequency, but the cross-encoder isolated this cohort-exact clinical RCT fragment on 12-14yo Indian females.</p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 border border-slate-300 text-primary font-headline-sm text-headline-sm shrink-0 flex items-center gap-2 font-semibold transition-colors shadow-2xs" id="inspectPromotedChunkBtn">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Inspect Chunk JSON</span>
+</button>
+</div>
+</div>
+<!-- Section 5: Chunk Inspector & Cosine Distance Matrix Modal / Drawer Area -->
+<div class="rounded-xl bg-surface-container border border-border-subtle shadow-sm p-space-lg flex flex-col gap-space-md" id="inspectorPanel">
+<!-- Panel Header -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-space-xs gap-2 border-b border-border-subtle">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">data_object</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Vector Chunk Inspector &amp; High-Dimensional Embedding Preview</h2>
+</div>
+<div class="flex items-center gap-2 font-label-code text-[11px]">
+<span class="text-on-surface-variant font-semibold">SELECTED:</span>
+<span class="px-2 py-0.5 rounded bg-primary text-white font-bold" id="selectedChunkIdBadge">ICMR-ADO-FER-07</span>
+<span class="text-outline">•</span>
+<span class="text-secondary font-bold">INDEX_LOC: [CLUSTER_42 : NODE_8821]</span>
+</div>
+</div>
+<!-- Inspector Bento Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Metadata & Schema Inspector (5 Cols) -->
+<div class="lg:col-span-5 rounded-lg bg-white border border-border-subtle p-space-md flex flex-col gap-space-sm font-label-code text-[12px] shadow-2xs">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">Structured Metadata &amp; Extraction Provenance</span>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="p-2 rounded bg-surface-container border border-border-subtle">
+<span class="text-[10px] text-on-surface-variant block uppercase font-semibold">Document Title</span>
+<span class="text-on-surface font-bold truncate block" id="metaDoc">ICMR NIN Adolescent Micronutrients 2024</span>
+</div>
+<div class="p-2 rounded bg-surface-container border border-border-subtle">
+<span class="text-[10px] text-on-surface-variant block uppercase font-semibold">Source URI</span>
+<span class="text-citation-text font-bold truncate block" id="metaUri">icmr.nic.in/guidelines/ad-iron.pdf</span>
+</div>
+<div class="p-2 rounded bg-surface-container border border-border-subtle">
+<span class="text-[10px] text-on-surface-variant block uppercase font-semibold">Target Cohort</span>
+<span class="text-confidence-high font-bold block" id="metaCohort">Female Adolescents (10.0-16.0y)</span>
+</div>
+<div class="p-2 rounded bg-surface-container border border-border-subtle">
+<span class="text-[10px] text-on-surface-variant block uppercase font-semibold">Token Count</span>
+<span class="text-primary font-bold block" id="metaTokens">384 tokens (Overlap: 64)</span>
+</div>
+</div>
+<div class="mt-2 flex flex-col gap-1">
+<span class="text-[10px] text-on-surface-variant uppercase font-semibold">Passage Verbatim Excerpt</span>
+<div class="p-space-sm rounded bg-surface-container border border-border-subtle text-on-surface font-body-sm text-body-sm leading-relaxed max-h-36 overflow-y-auto" id="metaExcerpt">
+              "Cohort evaluation of 420 adolescent girls in southern India consuming millet and pulse staple diets demonstrated an average non-heme iron absorption of only 4.2% ± 1.1%. Phytate-to-iron molar ratios averaged 14.6:1, far exceeding the WHO critical inhibitory threshold of 1.0:1. Co-administration of 50mg guava extract (ascorbic acid donor) elevated net bioavailability to 9.8% (p &lt; 0.001)."
+            </div>
+</div>
+</div>
+<!-- Embedding Vector Matrix & Cosine Dot Breakdown (7 Cols) -->
+<div class="lg:col-span-7 rounded-lg bg-white border border-border-subtle p-space-md flex flex-col gap-space-sm font-label-code text-[12px] shadow-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-provenance text-label-provenance text-on-surface-variant uppercase font-semibold">Vector Embedding Tensor [1024 Float32 Values]</span>
+<button class="px-2.5 py-1 rounded bg-slate-100 hover:bg-slate-200 border border-slate-300 text-on-surface font-label-code text-[11px] transition-colors flex items-center gap-1 font-semibold" id="copyVectorBtn">
+<span class="material-symbols-outlined text-[14px] text-primary">content_copy</span>
+<span>Copy Tensor</span>
+</button>
+</div>
+<!-- Raw Embedding Float Array Visualizer -->
+<div class="p-space-sm rounded bg-slate-50 border border-slate-200 text-slate-800 font-label-code text-[11px] h-28 overflow-y-auto leading-relaxed select-all">
+<span class="text-primary font-semibold">[0..15]:</span> [<span class="text-secondary">-0.042189</span>, <span class="text-primary">0.081921</span>, <span class="text-secondary">-0.012904</span>, <span class="text-primary">0.003412</span>, <span class="text-secondary">-0.098124</span>, <span class="text-primary">0.041289</span>, <span class="text-primary">0.061294</span>, <span class="text-secondary">-0.038102</span>, <span class="text-primary">0.019482</span>, <span class="text-secondary">-0.057391</span>, <span class="text-primary">0.082103</span>, <span class="text-secondary">-0.021039</span>, <span class="text-primary">0.049182</span>, <span class="text-primary">0.010293</span>, <span class="text-secondary">-0.071923</span>, <span class="text-primary">0.033481</span>]<br/>
+<span class="text-primary font-semibold">[16..31]:</span> [<span class="text-primary">0.012481</span>, <span class="text-secondary">-0.049182</span>, <span class="text-primary">0.078129</span>, <span class="text-secondary">-0.031940</span>, <span class="text-primary">0.061092</span>, <span class="text-secondary">-0.009482</span>, <span class="text-primary">0.024918</span>, <span class="text-primary">0.084192</span>, <span class="text-secondary">-0.019284</span>, <span class="text-primary">0.044192</span>, <span class="text-secondary">-0.061029</span>, <span class="text-primary">0.039102</span>, <span class="text-primary">0.012903</span>, <span class="text-secondary">-0.048192</span>, <span class="text-primary">0.071924</span>, <span class="text-secondary">-0.029481</span>]<br/>
+<span class="text-primary font-semibold">[32..47]:</span> [<span class="text-secondary">-0.039102</span>, <span class="text-primary">0.051928</span>, <span class="text-primary">0.014920</span>, <span class="text-secondary">-0.082103</span>, <span class="text-primary">0.033910</span>, <span class="text-primary">0.064192</span>, <span class="text-secondary">-0.019482</span>, <span class="text-primary">0.041029</span>, <span class="text-secondary">-0.072918</span>, <span class="text-primary">0.018492</span>, <span class="text-primary">0.059102</span>, <span class="text-secondary">-0.032910</span>, <span class="text-primary">0.081924</span>, <span class="text-secondary">-0.044192</span>, <span class="text-primary">0.020194</span>, <span class="text-secondary">-0.067192</span>]<br/>
+<span class="text-slate-400 font-medium">[... 976 additional dimensions truncated for visual brevity ...]</span>
+</div>
+<!-- Cosine Distance Kernel Heatmap Strip -->
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex items-center justify-between font-label-provenance text-[10px] text-on-surface-variant uppercase font-semibold">
+<span>Embedding Vector Dimension Weights (Heatmap preview)</span>
+<span class="text-on-surface font-bold">L2 Norm: 1.00000</span>
+</div>
+<!-- Mini Heatmap Tensor Bars -->
+<div class="grid grid-cols-32 gap-0.5 h-4 w-full rounded overflow-hidden border border-slate-200" id="tensorHeatmapBar">
+<!-- Dynamically populated 32 tiles -->
+</div>
+<div class="flex justify-between font-label-code text-[10px] text-slate-500 pt-0.5 font-medium">
+<span class="text-secondary font-semibold">-0.10 (Negative Projection)</span>
+<span>0.00 (Orthogonal)</span>
+<span class="text-primary font-semibold">+0.10 (Positive Projection)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // DOM Interactivity for Retrieval Lab Screen
+  (function initRetrievalLab() {
+    const hybridSlider = document.getElementById('hybridSlider');
+    const bm25ValText = document.getElementById('bm25ValText');
+    const denseValText = document.getElementById('denseValText');
+    const executeBtn = document.getElementById('executeRetrievalBtn');
+    const resetDefaultsBtn = document.getElementById('resetDefaultsBtn');
+    const topkButtons = document.querySelectorAll('.topk-btn');
+    const topKValue = document.getElementById('topKValue');
+    const presetButtons = document.querySelectorAll('.preset-btn');
+    const queryInput = document.getElementById('labQueryInput');
+    const tensorHeatmapBar = document.getElementById('tensorHeatmapBar');
+    const copyVectorBtn = document.getElementById('copyVectorBtn');
+    const inspectPromotedChunkBtn = document.getElementById('inspectPromotedChunkBtn');
+    const rerankToggle = document.getElementById('rerankToggle');
+
+    // 1. Slider Weight Adjustment
+    if (hybridSlider && bm25ValText && denseValText) {
+      hybridSlider.addEventListener('input', (e) => {
+        const dense = parseFloat(e.target.value);
+        const sparse = (1.0 - dense).toFixed(2);
+        denseValText.textContent = dense.toFixed(2);
+        bm25ValText.textContent = sparse;
+      });
+    }
+
+    // 2. Top-K Switcher
+    topkButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        topkButtons.forEach(b => {
+          b.className = 'topk-btn py-1 rounded bg-slate-100 text-on-surface-variant border border-slate-200 font-label-code text-[11px] text-center hover:text-on-surface hover:bg-slate-200 transition-colors';
+        });
+        btn.className = 'topk-btn py-1 rounded bg-primary text-white font-label-code text-[11px] text-center font-bold shadow-2xs';
+        const k = btn.getAttribute('data-k');
+        if (topKValue) topKValue.textContent = `${k} Chunks`;
+      });
+    });
+
+    // 3. Preset Query Injection
+    presetButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const q = btn.getAttribute('data-query');
+        if (queryInput && q) {
+          queryInput.value = q;
+          simulateRetrieval();
+        }
+      });
+    });
+
+    // 4. Generate 32 Heatmap Blocks for Tensor Visualization
+    if (tensorHeatmapBar) {
+      tensorHeatmapBar.innerHTML = '';
+      const sampleWeights = [
+        0.8, 0.2, 0.4, 0.9, 0.1, 0.6, 0.7, 0.3, 0.5, 0.95, 0.4, 0.2, 0.85, 0.6, 0.3, 0.1,
+        0.7, 0.4, 0.2, 0.9, 0.8, 0.5, 0.1, 0.65, 0.3, 0.85, 0.4, 0.2, 0.95, 0.7, 0.4, 0.6
+      ];
+      sampleWeights.forEach(weight => {
+        const tile = document.createElement('div');
+        tile.className = 'h-full w-full';
+        const opacity = Math.max(0.2, weight);
+        tile.style.backgroundColor = weight > 0.5 ? `rgba(0, 131, 119, ${opacity})` : `rgba(2, 132, 199, ${opacity})`;
+        tensorHeatmapBar.appendChild(tile);
+      });
+    }
+
+    // 5. Execute Retrieval Simulation (Button Click)
+    function simulateRetrieval() {
+      if (!executeBtn) return;
+      const originalText = executeBtn.innerHTML;
+      executeBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] animate-spin">refresh</span>
+        <span>Querying HNSW &amp; Rescoring...</span>
+      `;
+      executeBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+      setTimeout(() => {
+        executeBtn.innerHTML = originalText;
+        executeBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+
+        // Random jitter for simulation
+        const faissTime = (4.0 + Math.random() * 0.5).toFixed(1);
+        const chromaTime = (8.5 + Math.random() * 0.9).toFixed(1);
+        const rerankTime = (13.5 + Math.random() * 1.5).toFixed(1);
+
+        const fElem = document.getElementById('faissLatencyDisplay');
+        const cElem = document.getElementById('chromaLatencyDisplay');
+        const rElem = document.getElementById('rerankLatencyDisplay');
+
+        if (fElem) fElem.textContent = faissTime;
+        if (cElem) cElem.textContent = chromaTime;
+        if (rElem) rElem.textContent = rerankTime;
+      }, 450);
+    }
+
+    if (executeBtn) {
+      executeBtn.addEventListener('click', simulateRetrieval);
+    }
+
+    // 6. Reset Defaults
+    if (resetDefaultsBtn) {
+      resetDefaultsBtn.addEventListener('click', () => {
+        if (hybridSlider) {
+          hybridSlider.value = "0.60";
+          denseValText.textContent = "0.60";
+          bm25ValText.textContent = "0.40";
+        }
+        if (rerankToggle) rerankToggle.checked = true;
+        if (queryInput) queryInput.value = "Bioavailability of non-heme iron in Indian plant diets for adolescent girls";
+        simulateRetrieval();
+      });
+    }
+
+    // 7. Interactive Chunk Card Inspector Loading
+    const chunkCards = document.querySelectorAll('.chunk-card');
+    const selectedBadge = document.getElementById('selectedChunkIdBadge');
+    const metaDoc = document.getElementById('metaDoc');
+    const metaExcerpt = document.getElementById('metaExcerpt');
+
+    chunkCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-chunk-id') || 'CHUNK-REF';
+        if (selectedBadge) selectedBadge.textContent = id;
+        
+        // Highlight active card
+        chunkCards.forEach(c => c.classList.remove('ring-2', 'ring-primary', 'bg-white'));
+        card.classList.add('ring-2', 'ring-primary', 'bg-white');
+
+        // Scroll smoothly to inspector if off-screen
+        const panel = document.getElementById('inspectorPanel');
+        if (panel && window.innerWidth < 1024) {
+          panel.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // 8. Jump to Promoted Chunk in Inspector
+    if (inspectPromotedChunkBtn) {
+      inspectPromotedChunkBtn.addEventListener('click', () => {
+        if (selectedBadge) selectedBadge.textContent = 'ICMR-ADO-FER-07';
+        if (metaDoc) metaDoc.textContent = 'ICMR NIN Adolescent Micronutrients 2024 (Cohort RCT)';
+        const panel = document.getElementById('inspectorPanel');
+        if (panel) panel.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+
+    // 9. Copy Vector Simulation
+    if (copyVectorBtn) {
+      copyVectorBtn.addEventListener('click', () => {
+        const originalText = copyVectorBtn.innerHTML;
+        navigator.clipboard?.writeText("[-0.042189, 0.081921, -0.012904, 0.003412, ...]");
+        copyVectorBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[14px] text-confidence-high">check</span>
+          <span class="text-confidence-high font-bold">Tensor Copied</span>
+        `;
+        setTimeout(() => {
+          copyVectorBtn.innerHTML = originalText;
+        }, 1800);
+      });
+    }
+
+  })();
+</script></main><footer class="w-full bg-slate-50 border-t border-border-subtle"><div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-margin-md"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-margin-md border-b border-border-subtle"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded bg-emerald-50 border border-primary/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[15px]">vital_signs</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">NutriKid RAG</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Retrieval-Augmented Generation decision-support platform engineered strictly for pediatric nutrition guidelines, cohort RDA calculations, and micronutrient surveillance.</p><div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-citation-text font-bold"><span class="material-symbols-outlined text-[14px] text-primary">verified</span><span>DETERMINISTIC CITATION FRAMEWORK</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-wider text-xs">Research Corpus Specs</span><div class="grid grid-cols-3 gap-space-xs"><div class="p-space-sm rounded-lg bg-white border border-border-subtle shadow-2xs"><span class="font-label-tabular text-headline-sm text-primary font-bold block">22</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase font-semibold">Documents</span></div><div class="p-space-sm rounded-lg bg-white border border-border-subtle shadow-2xs"><span class="font-label-tabular text-headline-sm text-secondary font-bold block">2,403</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase font-semibold">Pages</span></div><div class="p-space-sm rounded-lg bg-white border border-border-subtle shadow-2xs"><span class="font-label-tabular text-headline-sm text-chart-accent font-bold block">6,429</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase font-semibold">Chunks</span></div></div><p class="font-label-code text-[11px] text-on-surface-variant font-medium">Embedding: BAAI/bge-large-en-v1.5 • Chunk size: 512t / 64 overlap</p></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-wider text-xs">Institutional Corpus</span><ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant font-medium"><li>• ICMR-National Institute of Nutrition (NIN 2020/2024)</li><li>• World Health Organization (WHO Child Growth Standards)</li><li>• Food and Agriculture Organization (FAO / INFOODS)</li><li>• Food Safety and Standards Authority of India (FSSAI)</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-wider text-xs">Provenance Pledge &amp; Scope</span><p class="font-body-sm text-body-sm text-on-surface-variant">All clinical outputs link directly to page-indexed PDF coordinates. For pediatric populations aged 5.0–15.0 years. Does not substitute for specialized PICU/NICU metabolic protocols.</p><div class="flex items-center gap-space-sm pt-space-xs font-semibold"><a class="font-label-code text-[12px] text-primary hover:underline transition-colors" data-path="safety-scope" href="#">Protocol Scope</a><span class="text-slate-300">•</span><a class="font-label-code text-[12px] text-secondary hover:underline transition-colors" data-path="institutional-sources" href="#">Audited Index</a><span class="text-slate-300">•</span><a class="font-label-code text-[12px] text-citation-text hover:underline transition-colors" data-path="evaluation-benchmarks" href="#">RAG Triad Metrics</a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-tabular text-label-tabular text-on-surface-variant"><p>© 2025 NutriKid Clinical AI Consortium. Open Research &amp; Clinical Decision Support Architecture.</p><p class="font-label-code text-[11px] text-outline font-medium">Strict Regulatory Adherence: Non-Diagnostic Clinical Reference Engine</p></div></div></footer></body></html>

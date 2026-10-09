@@ -1,0 +1,206 @@
+============================================================
+NUTRIKID DOCUMENT CHUNKER SUMMARY REPORT (PHASE 3.2)
+============================================================
+Active Documents Processed:          22
+Raw Chunks Generated Before Filter:  6438
+Structural/Orphan Chunks Excluded:   16
+Final Retrieval-Eligible Chunks:     6422
+
+============================================================
+CHUNK LENGTH DISTINCTION STATISTICS
+============================================================
+General Prose Chunks (target <= 1000, max <= 1400):
+  - Count:                           4872
+  - Average Length:                  1091.8 characters
+  - Maximum Length:                  4869 characters
+  - Minimum Length:                  11 characters
+
+IFCT Structured Table Chunks (grouped by ifct_rows_per_chunk=6):
+  - Count:                           1550
+  - Average Length:                  428.1 characters
+  - Maximum Length:                  1351 characters
+  - Minimum Length:                  10 characters
+
+============================================================
+PROSE CHUNKS >1400 DIAGNOSTICS
+============================================================
+Single Indivisible Text Units (Huge Sentence/Block): 109 chunks
+Genuinely Oversized Multi-sentence Chunks:           0 chunks
+
+Single Indivisible Sentence Units (first 10):
+  - NK-001-C00024: length=1673 characters (1 sentence)
+  - NK-002-C00007: length=1925 characters (1 sentence)
+  - NK-002-C00065: length=1516 characters (1 sentence)
+  - NK-002-C00072: length=2067 characters (1 sentence)
+  - NK-002-C00074: length=2135 characters (1 sentence)
+  - NK-002-C00157: length=2390 characters (1 sentence)
+  - NK-002-C00158: length=1751 characters (1 sentence)
+  - NK-002-C00160: length=1845 characters (1 sentence)
+  - NK-002-C00163: length=1607 characters (1 sentence)
+  - NK-002-C00186: length=1733 characters (1 sentence)
+
+============================================================
+IFCT DIAGNOSTIC RESULTS
+============================================================
+Audit Success:                       True
+Total IFCT Pages Inspected:          585
+Pages with Food Row Codes:           514
+Total Food Rows Detected:             8351
+Table Section Gaps (No Codes):       30
+Fallback Pages Count:                71
+
+============================================================
+REPRESENTATIVE IFCT 3-CHUNK VALIDATION RESULTS
+============================================================
+  [+] Chunk NK-010-C00170: PASSED (Category context verified, food rows contain codes, page provenance=[43, 44], numerical integrity preserved)
+  [+] Chunk NK-010-C00837: PASSED (Category context verified, food rows contain codes, page provenance=[260, 266, 267], numerical integrity preserved)
+  [+] Chunk NK-010-C01452: PASSED (Category context verified, food rows contain codes, page provenance=[470, 474], numerical integrity preserved)
+
+============================================================
+COMPLETENESS DIAGNOSTIC AUDIT RESULTS
+============================================================
+Source: NK-001 (07-043497.pdf):
+  - Parsed Pages Containing Any Text:              8
+  - Meaningful Retrieval Content Pages Covered:    8
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 36503, Generated chunk text chars: 38595
+  - Excluded Structural Page List:                 None
+Source: NK-002 (9789240073593-engCarbohydrate intake for adults and childrenWHO guideline.pdf):
+  - Parsed Pages Containing Any Text:              96
+  - Meaningful Retrieval Content Pages Covered:    96
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 266886, Generated chunk text chars: 284696
+  - Excluded Structural Page List:                 None
+Source: NK-003 (9789240073616-engUse of non-sugar sweetenersWHO guideline.pdf):
+  - Parsed Pages Containing Any Text:              86
+  - Meaningful Retrieval Content Pages Covered:    86
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 257571, Generated chunk text chars: 274553
+  - Excluded Structural Page List:                 None
+Source: NK-004 (9789240101876-eng.What are healthy diets.pdf):
+  - Parsed Pages Containing Any Text:              21
+  - Meaningful Retrieval Content Pages Covered:    21
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 45613, Generated chunk text chars: 50046
+  - Excluded Structural Page List:                 None
+Source: NK-005 (9789241504829_engGuidelinepotassium intake for adults and children.pdf):
+  - Parsed Pages Containing Any Text:              50
+  - Meaningful Retrieval Content Pages Covered:    50
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 126397, Generated chunk text chars: 134543
+  - Excluded Structural Page List:                 None
+Source: NK-006 (9789241504836_engGuidelinesodium intake for adults and children.pdf):
+  - Parsed Pages Containing Any Text:              55
+  - Meaningful Retrieval Content Pages Covered:    55
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 136411, Generated chunk text chars: 147042
+  - Excluded Structural Page List:                 None
+Source: NK-007 (9789241549028_engGuidelinesugars intake for adults and children.pdf):
+  - Parsed Pages Containing Any Text:              58
+  - Meaningful Retrieval Content Pages Covered:    58
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 151040, Generated chunk text chars: 159702
+  - Excluded Structural Page List:                 None
+Source: NK-008 (DGI_07th_May_2024_fin.pdf):
+  - Parsed Pages Containing Any Text:              137
+  - Meaningful Retrieval Content Pages Covered:    137
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 306029, Generated chunk text chars: 333234
+  - Excluded Structural Page List:                 None
+Source: NK-009 (Food_Safety_School_Childrens.pdf):
+  - Parsed Pages Containing Any Text:              8
+  - Meaningful Retrieval Content Pages Covered:    8
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 5984, Generated chunk text chars: 6329
+  - Excluded Structural Page List:                 None
+Source: NK-010 (IFCT_BOOK.pdf):
+  - Parsed Pages Containing Any Text:              582
+  - Meaningful Retrieval Content Pages Covered:    566
+  - Structural/Orphan Pages Intentionally Excluded: 16
+  - Source text chars: 1107514, Generated chunk text chars: 663491
+  - Excluded Structural Page List:                 37, 40, 70, 100, 130, 148, 150, 208, 226, 294 (+6 more)
+Source: NK-011 (Implementing effective-adolscent.pdf):
+  - Parsed Pages Containing Any Text:              65
+  - Meaningful Retrieval Content Pages Covered:    65
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 172794, Generated chunk text chars: 184418
+  - Excluded Structural Page List:                 None
+Source: NK-012 (PoliciesandinterventionstocreatehealthyschoolfoodenvironmentsWHOguideline.pdf):
+  - Parsed Pages Containing Any Text:              104
+  - Meaningful Retrieval Content Pages Covered:    104
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 297613, Generated chunk text chars: 320851
+  - Excluded Structural Page List:                 None
+Source: NK-013 (Totalfatintakefortheadults.pdf):
+  - Parsed Pages Containing Any Text:              62
+  - Meaningful Retrieval Content Pages Covered:    62
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 186490, Generated chunk text chars: 197090
+  - Excluded Structural Page List:                 None
+Source: NK-015 (brief_note.pdf):
+  - Parsed Pages Containing Any Text:              6
+  - Meaningful Retrieval Content Pages Covered:    6
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 14354, Generated chunk text chars: 15306
+  - Excluded Structural Page List:                 None
+Source: NK-017 (9789240074828-engRed and processed meat in the context of h.pdf):
+  - Parsed Pages Containing Any Text:              54
+  - Meaningful Retrieval Content Pages Covered:    54
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 161587, Generated chunk text chars: 177828
+  - Excluded Structural Page List:                 None
+Source: NK-018 (9789240105591-engUse of lower-sodium salt substitutesWHO guideline ﻿.pdf):
+  - Parsed Pages Containing Any Text:              78
+  - Meaningful Retrieval Content Pages Covered:    78
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 220909, Generated chunk text chars: 236276
+  - Excluded Structural Page List:                 None
+Source: NK-019 (Dietary protein quality.pdf):
+  - Parsed Pages Containing Any Text:              76
+  - Meaningful Retrieval Content Pages Covered:    76
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 176797, Generated chunk text chars: 189406
+  - Excluded Structural Page List:                 None
+Source: NK-020 (Global Accelerated Action for the Health of Adolescents (AA-HA!) - Second edition.pdf):
+  - Parsed Pages Containing Any Text:              255
+  - Meaningful Retrieval Content Pages Covered:    255
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 854590, Generated chunk text chars: 928404
+  - Excluded Structural Page List:                 None
+Source: NK-021 (Human Vitamin .pdf):
+  - Parsed Pages Containing Any Text:              303
+  - Meaningful Retrieval Content Pages Covered:    303
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 885891, Generated chunk text chars: 979065
+  - Excluded Structural Page List:                 None
+Source: NK-022 (WHO-NMH-NHD-18.4-engREPLACE trans fa an action package to eliminate industrially produced trans-fatty acids.pdf):
+  - Parsed Pages Containing Any Text:              8
+  - Meaningful Retrieval Content Pages Covered:    8
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 28063, Generated chunk text chars: 29268
+  - Excluded Structural Page List:                 None
+Source: NK-023 (WHO_TRS_916Diet, nutrition and the prevention of chronic diseases.pdf):
+  - Parsed Pages Containing Any Text:              159
+  - Meaningful Retrieval Content Pages Covered:    159
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 414898, Generated chunk text chars: 461160
+  - Excluded Structural Page List:                 None
+Source: NK-024 (ref-2-txt-book-1.pdf):
+  - Parsed Pages Containing Any Text:              83
+  - Meaningful Retrieval Content Pages Covered:    83
+  - Structural/Orphan Pages Intentionally Excluded: 0
+  - Source text chars: 160295, Generated chunk text chars: 171489
+  - Excluded Structural Page List:                 None
+
+============================================================
+NUMERICAL EXTRACTION CORRUPTION DIAGNOSTICS
+============================================================
+Phase 3.1 PDF Text Extraction Limitations:
+  - Total replacement chars () in parsed source: 0
+  - Total replacement chars () in generated chunks: 0
+  - Phase 3.2 modification check: PASS (No additional corruption introduced)
+
+============================================================
+VALIDATION VERIFICATION STATUS
+============================================================
+[+] VALIDATION STATUS: PASSED (0 errors found)

@@ -1,0 +1,22 @@
+category_id,category_name,mode,query_count,recall@1,recall@3,recall@5,recall@10,precision@1,precision@3,precision@5,precision@10,ndcg@1,ndcg@3,ndcg@5,ndcg@10,mrr,map
+CAT1,Macronutrient Requirements,bm25,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT1,Macronutrient Requirements,dense,4,0.0,0.125,0.125,0.125,0.0,0.08333333333333333,0.05,0.025,0.0,0.09839432537387148,0.09839432537387148,0.09839432537387148,0.08333333333333333,0.041666666666666664
+CAT1,Macronutrient Requirements,hybrid,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT2,Micronutrient & Mineral Requirements,bm25,5,0.0,0.3,0.3,0.3,0.0,0.2,0.12000000000000002,0.06000000000000001,0.0,0.21177850950768531,0.21177850950768531,0.21177850950768531,0.16666666666666666,0.14999999999999997
+CAT2,Micronutrient & Mineral Requirements,dense,5,0.0,0.0,0.1,0.2,0.0,0.0,0.04,0.04,0.0,0.0,0.06090259357892971,0.08339272509295748,0.04,0.04857142857142857
+CAT2,Micronutrient & Mineral Requirements,hybrid,5,0.1,0.2,0.2,0.2,0.2,0.13333333333333333,0.08,0.04,0.2,0.2,0.2,0.2,0.2,0.2
+CAT3,WHO Dietary Guidelines,bm25,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT3,WHO Dietary Guidelines,dense,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT3,WHO Dietary Guidelines,hybrid,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT4,Food Safety & Additives,bm25,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT4,Food Safety & Additives,dense,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT4,Food Safety & Additives,hybrid,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT5,Clinical Nutrition & Deficiency,bm25,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT5,Clinical Nutrition & Deficiency,dense,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT5,Clinical Nutrition & Deficiency,hybrid,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT6,Age-Specific Nuances (5–15 yrs),bm25,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT6,Age-Specific Nuances (5–15 yrs),dense,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT6,Age-Specific Nuances (5–15 yrs),hybrid,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT7,School Feeding & Programs,bm25,4,0.0,0.0,0.125,0.125,0.0,0.0,0.05,0.025,0.0,0.0,0.08475225877194498,0.08475225877194498,0.0625,0.03125
+CAT7,School Feeding & Programs,dense,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAT7,School Feeding & Programs,hybrid,4,0.0,0.0,0.125,0.125,0.0,0.0,0.05,0.025,0.0,0.0,0.07612824197366214,0.07612824197366214,0.05,0.025

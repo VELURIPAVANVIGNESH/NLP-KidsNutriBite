@@ -1,0 +1,49 @@
+============================================================
+NUTRIKID DOCUMENT PARSER SUMMARY REPORT (PHASE 3.1)
+============================================================
+Active Documents Discovered (in Manifest):   22
+Active Documents Successfully Parsed:        22
+Active Documents Failed to Parse:            0
+Total Pages Processed:                       2403
+Total Pages with Extracted Text (>=10 char): 2335
+Total Empty Pages (0 char):                  47
+Total Low-Text Pages (<10 char):             21
+Total Characters Extracted:                  6014229
+Total Words Extracted:                       884020
+Total Extraction Warnings:                   21
+Total Extraction Errors:                     4
+
+============================================================
+DOCUMENTS REQUIRING MANUAL INSPECTION
+============================================================
+The following pages are empty or contain very low text content:
+  - NK-002 (9789240073593-engCarbohydrate intake for adults and childrenWHO guideline.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 6 (empty, chars=0), Page 51 (low_text, chars=7), Page 52 (empty, chars=0), Page 99 (empty, chars=0)
+  - NK-003 (9789240073616-engUse of non-sugar sweetenersWHO guideline.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 6 (empty, chars=0), Page 47 (low_text, chars=7), Page 48 (empty, chars=0), Page 89 (empty, chars=0)
+  - NK-004 (9789240101876-eng.What are healthy diets.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 22 (empty, chars=0)
+  - NK-005 (9789241504829_engGuidelinepotassium intake for adults and children.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 51 (empty, chars=0)
+  - NK-006 (9789241504836_engGuidelinesodium intake for adults and children.pdf):
+    Suspect pages: Page 2 (empty, chars=0)
+  - NK-007 (9789241549028_engGuidelinesugars intake for adults and children.pdf):
+    Suspect pages: Page 2 (empty, chars=0)
+  - NK-008 (DGI_07th_May_2024_fin.pdf):
+    Suspect pages: Page 1 (empty, chars=0), Page 2 (empty, chars=0), Page 8 (empty, chars=0), Page 10 (empty, chars=0), Page 11 (empty, chars=0), Page 12 (empty, chars=0), Page 13 (empty, chars=0), Page 14 (empty, chars=0), Page 18 (empty, chars=0), Page 88 (empty, chars=0), Page 89 (empty, chars=0)
+  - NK-010 (IFCT_BOOK.pdf):
+    Suspect pages: Page 1 (low_text, chars=2), Page 37 (low_text, chars=6), Page 40 (low_text, chars=1), Page 70 (low_text, chars=2), Page 100 (low_text, chars=2), Page 130 (low_text, chars=2), Page 148 (low_text, chars=3), Page 150 (low_text, chars=3), Page 208 (low_text, chars=3), Page 226 (low_text, chars=3), Page 294 (low_text, chars=3), Page 296 (low_text, chars=3), ... (+7 more pages)
+  - NK-011 (Implementing effective-adolscent.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 3 (empty, chars=0), Page 67 (empty, chars=0)
+  - NK-012 (PoliciesandinterventionstocreatehealthyschoolfoodenvironmentsWHOguideline.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 18 (empty, chars=0)
+  - NK-013 (Totalfatintakefortheadults.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 6 (empty, chars=0), Page 42 (empty, chars=0), Page 43 (low_text, chars=7), Page 44 (empty, chars=0)
+  - NK-017 (9789240074828-engRed and processed meat in the context of h.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 12 (empty, chars=0)
+  - NK-018 (9789240105591-engUse of lower-sodium salt substitutesWHO guideline ﻿.pdf):
+    Suspect pages: Page 2 (empty, chars=0), Page 16 (empty, chars=0), Page 54 (empty, chars=0), Page 81 (empty, chars=0)
+  - NK-023 (WHO_TRS_916Diet, nutrition and the prevention of chronic diseases.pdf):
+    Suspect pages: Page 160 (empty, chars=0)
+  - NK-024 (ref-2-txt-book-1.pdf):
+    Suspect pages: Page 1 (empty, chars=0), Page 2 (empty, chars=0), Page 3 (empty, chars=0), Page 4 (empty, chars=0), Page 5 (empty, chars=0)

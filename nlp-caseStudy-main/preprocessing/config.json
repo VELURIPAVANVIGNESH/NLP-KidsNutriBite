@@ -1,0 +1,30 @@
+{
+  "manifest_path": "data/metadata/corpus_manifest.csv",
+  "corpus_dir": "knowledge_corpus",
+  "parsed_dir": "data/processed/parsed",
+  "chunks_dir": "data/processed/chunks",
+  "chunk_report_path": "data/processed/chunker_report.csv",
+  "chunk_summary_path": "data/processed/chunker_summary.txt",
+  
+  "preprocessed_corpus_path": "data/processed/preprocessed_corpus.json",
+  "bm25_index_path": "data/processed/bm25_index.json",
+  "dense_index_path": "data/processed/dense_index.faiss",
+  "dense_map_path": "data/processed/dense_index_map.json",
+  "preprocessor_report_path": "data/processed/preprocessor_report.csv",
+  "preprocessor_summary_path": "data/processed/preprocessor_summary.txt",
+  
+  "min_character_threshold": 10,
+  "chunk_size_target": 1000,
+  "chunk_size_max": 1400,
+  "chunk_overlap": 200,
+  "ifct_rows_per_chunk": 6,
+  
+  "embedding_model_name": "BAAI/bge-small-en-v1.5",
+  "reranker_model_name": "BAAI/bge-reranker-base",
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  
+  "retrieval_candidate_k": 100,
+  "retrieval_final_top_k": 5,
+  "rrf_k": 60
+}

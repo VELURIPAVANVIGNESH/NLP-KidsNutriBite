@@ -1,0 +1,121 @@
+query_id,category_id,category_name,mode_key,mode_label,recall@1,recall@3,recall@5,recall@10,precision@1,precision@3,precision@5,precision@10,ndcg@1,ndcg@3,ndcg@5,ndcg@10,mrr,map
+Q001,CAT1,Macronutrient Requirements,bm25,BM25 (Frozen),0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.2128453970090281,0.2128453970090281,0.2128453970090281,0.5,0.25
+Q001,CAT1,Macronutrient Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q001,CAT1,Macronutrient Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.5,0.5,0.0,0.0,0.2,0.1,0.0,0.0,0.1305055576691351,0.1305055576691351,0.2,0.1
+Q001,CAT1,Macronutrient Requirements,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q002,CAT1,Macronutrient Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q002,CAT1,Macronutrient Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.11245065757013882,0.14285714285714285,0.07142857142857142
+Q002,CAT1,Macronutrient Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.5,1.0,0.0,0.0,0.2,0.2,0.0,0.0,0.14528958646619142,0.3936092163100576,0.25,0.25
+Q002,CAT1,Macronutrient Requirements,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.280390126950546,0.16666666666666666,0.08333333333333333
+Q003,CAT1,Macronutrient Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q003,CAT1,Macronutrient Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q003,CAT1,Macronutrient Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q003,CAT1,Macronutrient Requirements,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q004,CAT1,Macronutrient Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q004,CAT1,Macronutrient Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q004,CAT1,Macronutrient Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.23695714672525509,0.1111111111111111,0.05555555555555555
+Q004,CAT1,Macronutrient Requirements,reranker_bge,BAAI/bge-reranker-base,0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.3935773014954859,0.3935773014954859,0.3935773014954859,0.3333333333333333,0.16666666666666666
+Q005,CAT2,Micronutrient & Mineral Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q005,CAT2,Micronutrient & Mineral Requirements,dense,Dense BGE-Small (Frozen),0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,1.0,0.7871546029909718,0.7871546029909718,0.7871546029909718,1.0,0.5
+Q005,CAT2,Micronutrient & Mineral Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.24831962984386616,0.125,0.0625
+Q005,CAT2,Micronutrient & Mineral Requirements,reranker_bge,BAAI/bge-reranker-base,0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,1.0,0.7871546029909718,0.7871546029909718,0.7871546029909718,1.0,0.5
+Q006,CAT2,Micronutrient & Mineral Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q006,CAT2,Micronutrient & Mineral Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q006,CAT2,Micronutrient & Mineral Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q006,CAT2,Micronutrient & Mineral Requirements,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q007,CAT2,Micronutrient & Mineral Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q007,CAT2,Micronutrient & Mineral Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q007,CAT2,Micronutrient & Mineral Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q007,CAT2,Micronutrient & Mineral Requirements,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q008,CAT2,Micronutrient & Mineral Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q008,CAT2,Micronutrient & Mineral Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q008,CAT2,Micronutrient & Mineral Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q008,CAT2,Micronutrient & Mineral Requirements,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q009,CAT2,Micronutrient & Mineral Requirements,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q009,CAT2,Micronutrient & Mineral Requirements,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.26238486766365726,0.14285714285714285,0.07142857142857142
+Q009,CAT2,Micronutrient & Mineral Requirements,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q009,CAT2,Micronutrient & Mineral Requirements,reranker_bge,BAAI/bge-reranker-base,0.5,0.5,0.5,1.0,1.0,0.3333333333333333,0.2,0.2,1.0,0.7871546029909718,0.7871546029909718,0.888707665873224,1.0,0.6111111111111112
+Q010,CAT3,WHO Dietary Guidelines,bm25,BM25 (Frozen),0.0,0.0,1.0,1.0,0.0,0.0,0.4,0.2,0.0,0.0,0.469514592756915,0.469514592756915,0.25,0.325
+Q010,CAT3,WHO Dietary Guidelines,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q010,CAT3,WHO Dietary Guidelines,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.5,1.0,1.0,0.0,0.3333333333333333,0.4,0.2,0.0,0.3935773014954859,0.5388668879616774,0.5388668879616774,0.3333333333333333,0.41666666666666663
+Q010,CAT3,WHO Dietary Guidelines,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q011,CAT3,WHO Dietary Guidelines,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q011,CAT3,WHO Dietary Guidelines,dense,Dense BGE-Small (Frozen),0.0,0.5,1.0,1.0,0.0,0.3333333333333333,0.4,0.2,0.0,0.2128453970090281,0.5518544320968081,0.5518544320968081,0.5,0.5
+Q011,CAT3,WHO Dietary Guidelines,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.5,1.0,1.0,0.0,0.3333333333333333,0.4,0.2,0.0,0.16867598635520825,0.5076850214429881,0.5076850214429881,0.3333333333333333,0.41666666666666663
+Q011,CAT3,WHO Dietary Guidelines,reranker_bge,BAAI/bge-reranker-base,0.0,0.5,1.0,1.0,0.0,0.3333333333333333,0.4,0.2,0.0,0.16867598635520825,0.5076850214429881,0.5076850214429881,0.3333333333333333,0.41666666666666663
+Q012,CAT3,WHO Dietary Guidelines,bm25,BM25 (Frozen),0.0,0.5,1.0,1.0,0.0,0.3333333333333333,0.4,0.2,0.0,0.2128453970090281,0.5518544320968081,0.5518544320968081,0.5,0.5
+Q012,CAT3,WHO Dietary Guidelines,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q012,CAT3,WHO Dietary Guidelines,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.5,1.0,1.0,0.0,0.3333333333333333,0.4,0.2,0.0,0.3935773014954859,0.5240828591646209,0.5240828591646209,0.3333333333333333,0.3666666666666667
+Q012,CAT3,WHO Dietary Guidelines,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.09751658939953338,0.1,0.05
+Q013,CAT3,WHO Dietary Guidelines,bm25,BM25 (Frozen),0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,1.0,0.7871546029909718,0.7871546029909718,0.7871546029909718,1.0,0.5
+Q013,CAT3,WHO Dietary Guidelines,dense,Dense BGE-Small (Frozen),0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,1.0,0.7871546029909718,0.7871546029909718,0.7871546029909718,1.0,0.5
+Q013,CAT3,WHO Dietary Guidelines,hybrid,Hybrid RRF (Frozen Baseline),0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,1.0,0.7871546029909718,0.7871546029909718,0.7871546029909718,1.0,0.5
+Q013,CAT3,WHO Dietary Guidelines,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.5,0.5,0.0,0.0,0.2,0.1,0.0,0.0,0.30451296789464855,0.30451296789464855,0.2,0.1
+Q014,CAT4,Food Safety & Additives,bm25,BM25 (Frozen),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.24831962984386616,0.125,0.0625
+Q014,CAT4,Food Safety & Additives,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q014,CAT4,Food Safety & Additives,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.09751658939953338,0.1,0.05
+Q014,CAT4,Food Safety & Additives,reranker_bge,BAAI/bge-reranker-base,0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.3935773014954859,0.3935773014954859,0.3935773014954859,0.3333333333333333,0.16666666666666666
+Q015,CAT4,Food Safety & Additives,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q015,CAT4,Food Safety & Additives,dense,Dense BGE-Small (Frozen),0.0,0.5,0.5,1.0,0.0,0.3333333333333333,0.2,0.2,0.0,0.4966392596877323,0.4966392596877323,0.616806456952252,0.5,0.41666666666666663
+Q015,CAT4,Food Safety & Additives,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.3935773014954859,0.3935773014954859,0.3935773014954859,0.3333333333333333,0.16666666666666666
+Q015,CAT4,Food Safety & Additives,reranker_bge,BAAI/bge-reranker-base,0.5,1.0,1.0,1.0,1.0,0.6666666666666666,0.4,0.2,0.42857142857142855,0.7309292742059024,0.7309292742059024,0.7309292742059024,1.0,0.8333333333333333
+Q016,CAT4,Food Safety & Additives,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q016,CAT4,Food Safety & Additives,dense,Dense BGE-Small (Frozen),0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.16867598635520825,0.16867598635520825,0.16867598635520825,0.3333333333333333,0.16666666666666666
+Q016,CAT4,Food Safety & Additives,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q016,CAT4,Food Safety & Additives,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.5,1.0,0.0,0.0,0.2,0.2,0.0,0.0,0.3390090350877799,0.44056209797003215,0.25,0.2361111111111111
+Q017,CAT4,Food Safety & Additives,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q017,CAT4,Food Safety & Additives,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q017,CAT4,Food Safety & Additives,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q017,CAT4,Food Safety & Additives,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q018,CAT5,Clinical Nutrition & Deficiency,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q018,CAT5,Clinical Nutrition & Deficiency,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q018,CAT5,Clinical Nutrition & Deficiency,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q018,CAT5,Clinical Nutrition & Deficiency,reranker_bge,BAAI/bge-reranker-base,0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.4966392596877323,0.4966392596877323,0.4966392596877323,0.5,0.25
+Q019,CAT5,Clinical Nutrition & Deficiency,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q019,CAT5,Clinical Nutrition & Deficiency,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q019,CAT5,Clinical Nutrition & Deficiency,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q019,CAT5,Clinical Nutrition & Deficiency,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q020,CAT5,Clinical Nutrition & Deficiency,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q020,CAT5,Clinical Nutrition & Deficiency,dense,Dense BGE-Small (Frozen),0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.4966392596877323,0.4966392596877323,0.4966392596877323,0.5,0.25
+Q020,CAT5,Clinical Nutrition & Deficiency,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.24831962984386616,0.125,0.0625
+Q020,CAT5,Clinical Nutrition & Deficiency,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.26238486766365726,0.14285714285714285,0.07142857142857142
+Q021,CAT5,Clinical Nutrition & Deficiency,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q021,CAT5,Clinical Nutrition & Deficiency,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.280390126950546,0.16666666666666666,0.08333333333333333
+Q021,CAT5,Clinical Nutrition & Deficiency,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.24831962984386616,0.125,0.0625
+Q021,CAT5,Clinical Nutrition & Deficiency,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.5,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.26238486766365726,0.14285714285714285,0.07142857142857142
+Q022,CAT6,Age-Specific Nuances (5–15 yrs),bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q022,CAT6,Age-Specific Nuances (5–15 yrs),dense,Dense BGE-Small (Frozen),0.0,0.0,0.5,0.5,0.0,0.0,0.2,0.1,0.0,0.0,0.30451296789464855,0.30451296789464855,0.2,0.1
+Q022,CAT6,Age-Specific Nuances (5–15 yrs),hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q022,CAT6,Age-Specific Nuances (5–15 yrs),reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.5,0.5,0.0,0.0,0.2,0.1,0.0,0.0,0.3390090350877799,0.3390090350877799,0.25,0.125
+Q023,CAT6,Age-Specific Nuances (5–15 yrs),bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q023,CAT6,Age-Specific Nuances (5–15 yrs),dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q023,CAT6,Age-Specific Nuances (5–15 yrs),hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.5,0.5,0.0,0.0,0.2,0.1,0.0,0.0,0.30451296789464855,0.30451296789464855,0.2,0.1
+Q023,CAT6,Age-Specific Nuances (5–15 yrs),reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q024,CAT6,Age-Specific Nuances (5–15 yrs),bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q024,CAT6,Age-Specific Nuances (5–15 yrs),dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.2,0.0,0.0,0.0,0.3684868271083859,0.16666666666666666,0.20833333333333331
+Q024,CAT6,Age-Specific Nuances (5–15 yrs),hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.5,0.5,0.0,0.0,0.2,0.1,0.0,0.0,0.30451296789464855,0.30451296789464855,0.2,0.1
+Q024,CAT6,Age-Specific Nuances (5–15 yrs),reranker_bge,BAAI/bge-reranker-base,0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.2128453970090281,0.2128453970090281,0.2128453970090281,0.5,0.25
+Q025,CAT6,Age-Specific Nuances (5–15 yrs),bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q025,CAT6,Age-Specific Nuances (5–15 yrs),dense,Dense BGE-Small (Frozen),0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,0.42857142857142855,0.3373519727104165,0.3373519727104165,0.3373519727104165,1.0,0.5
+Q025,CAT6,Age-Specific Nuances (5–15 yrs),hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q025,CAT6,Age-Specific Nuances (5–15 yrs),reranker_bge,BAAI/bge-reranker-base,0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,1.0,0.7871546029909718,0.7871546029909718,0.7871546029909718,1.0,0.5
+Q026,CAT6,Age-Specific Nuances (5–15 yrs),bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q026,CAT6,Age-Specific Nuances (5–15 yrs),dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q026,CAT6,Age-Specific Nuances (5–15 yrs),hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q026,CAT6,Age-Specific Nuances (5–15 yrs),reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q027,CAT7,School Feeding & Programs,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q027,CAT7,School Feeding & Programs,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q027,CAT7,School Feeding & Programs,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q027,CAT7,School Feeding & Programs,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q028,CAT7,School Feeding & Programs,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q028,CAT7,School Feeding & Programs,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q028,CAT7,School Feeding & Programs,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q028,CAT7,School Feeding & Programs,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q029,CAT7,School Feeding & Programs,bm25,BM25 (Frozen),0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.4966392596877323,0.4966392596877323,0.4966392596877323,0.5,0.25
+Q029,CAT7,School Feeding & Programs,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q029,CAT7,School Feeding & Programs,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.5,0.5,0.5,0.0,0.3333333333333333,0.2,0.1,0.0,0.4966392596877323,0.4966392596877323,0.4966392596877323,0.5,0.25
+Q029,CAT7,School Feeding & Programs,reranker_bge,BAAI/bge-reranker-base,0.5,0.5,0.5,0.5,1.0,0.3333333333333333,0.2,0.1,1.0,0.7871546029909718,0.7871546029909718,0.7871546029909718,1.0,0.5
+Q030,CAT7,School Feeding & Programs,bm25,BM25 (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q030,CAT7,School Feeding & Programs,dense,Dense BGE-Small (Frozen),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q030,CAT7,School Feeding & Programs,hybrid,Hybrid RRF (Frozen Baseline),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Q030,CAT7,School Feeding & Programs,reranker_bge,BAAI/bge-reranker-base,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

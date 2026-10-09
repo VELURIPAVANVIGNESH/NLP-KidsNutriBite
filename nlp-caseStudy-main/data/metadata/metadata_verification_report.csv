@@ -1,0 +1,19 @@
+source_id,file_name,field,previous_value,verified_value,verification_status,evidence,notes
+NK-004,9789240101876-eng.What are healthy diets.pdf,age_min,2,2,verified,Page 11 line 14 explicitly mentions '(2-19 years of age)',Updated in manifest
+NK-004,9789240101876-eng.What are healthy diets.pdf,age_max,19,19,verified,Page 11 line 14 explicitly mentions '(2-19 years of age)',Updated in manifest
+NK-010,IFCT_BOOK.pdf,age_min,,,not_found,General food database listing nutrients in Indian foods (Page 27),"Population-wide reference, age-range is not applicable"
+NK-010,IFCT_BOOK.pdf,age_max,,,not_found,General food database listing nutrients in Indian foods (Page 27),"Population-wide reference, age-range is not applicable"
+NK-017,9789240074828-engRed and processed meat in the context of h.pdf,age_min,,,not_found,Broad informational brief addressing red/processed meat consumption for all age groups (Page 14),"Population-wide reference, age-range is not applicable"
+NK-017,9789240074828-engRed and processed meat in the context of h.pdf,age_max,,,not_found,Broad informational brief addressing red/processed meat consumption for all age groups (Page 14),"Population-wide reference, age-range is not applicable"
+NK-019,Dietary protein quality.pdf,age_min,,,not_found,"Proposes protein scoring patterns for all age groups (infants, children, adults) (Page 21, 24)","Population-wide reference, age-range is not applicable"
+NK-019,Dietary protein quality.pdf,age_max,,,not_found,"Proposes protein scoring patterns for all age groups (infants, children, adults) (Page 21, 24)","Population-wide reference, age-range is not applicable"
+NK-021,Human Vitamin .pdf,age_min,,,not_found,Details nutrient recommendations for all age groups of the human population (Page 27),"Population-wide reference, age-range is not applicable"
+NK-021,Human Vitamin .pdf,age_max,,,not_found,Details nutrient recommendations for all age groups of the human population (Page 27),"Population-wide reference, age-range is not applicable"
+NK-022,WHO-NMH-NHD-18.4-engREPLACE trans fa an action package to eliminate industrially produced trans-fatty acids.pdf,age_min,,,not_found,Global policy action package targeting elimination of trans-fatty acids for all consumers (Page 6),"Population-wide reference, age-range is not applicable"
+NK-022,WHO-NMH-NHD-18.4-engREPLACE trans fa an action package to eliminate industrially produced trans-fatty acids.pdf,age_max,,,not_found,Global policy action package targeting elimination of trans-fatty acids for all consumers (Page 6),"Population-wide reference, age-range is not applicable"
+NK-023,"WHO_TRS_916Diet, nutrition and the prevention of chronic diseases.pdf",age_min,,,not_found,Broad guidelines for population-level diet and chronic disease prevention (Page 17),"Population-wide reference, age-range is not applicable"
+NK-023,"WHO_TRS_916Diet, nutrition and the prevention of chronic diseases.pdf",age_max,,,not_found,Broad guidelines for population-level diet and chronic disease prevention (Page 17),"Population-wide reference, age-range is not applicable"
+NK-025,FR375.pdf,age_min,,,not_found,Demographic national survey containing indicators for all household members (Page 8),"Population-wide evaluation survey data, age-range is not applicable"
+NK-025,FR375.pdf,age_max,,,not_found,Demographic national survey containing indicators for all household members (Page 8),"Population-wide evaluation survey data, age-range is not applicable"
+NK-026,NFHS-5_Phase-II_0.pdf,age_min,,,not_found,"Compendium of demographic survey fact sheets covering all household indicators (Page 5, 22)","Population-wide evaluation survey data, age-range is not applicable"
+NK-026,NFHS-5_Phase-II_0.pdf,age_max,,,not_found,"Compendium of demographic survey fact sheets covering all household indicators (Page 5, 22)","Population-wide evaluation survey data, age-range is not applicable"

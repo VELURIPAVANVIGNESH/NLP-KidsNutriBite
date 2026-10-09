@@ -1,0 +1,44 @@
+============================================================
+NUTRIKID KNOWLEDGE PREPROCESSOR SUMMARY REPORT (PHASE 3.3)
+============================================================
+Timestamp:                           2026-10-07T16:34:55Z
+Input Chunks Loaded:                 6422
+Preprocessed Output Chunks:          6422
+
+============================================================
+CLEANING AND NORMALIZATION STATISTICS
+============================================================
+Chunks Modified (Whitespace/Newline): 2507
+Total Characters Changed (Diff):     16702 characters
+Plus-Minus (±) Chunks Verified:       886 chunks
+Unexpected Replacement Chars Added:  0
+
+============================================================
+BM25 SPARSE RETRIEVAL INDEX STATISTICS
+============================================================
+BM25 Corpus Document Count:          6422
+Vocabulary size:                     33038 terms
+BM25 Serialized Mapping Entries:     6422
+BM25 Parameter k1:                   1.5
+BM25 Parameter b:                    0.75
+
+============================================================
+DENSE FAISS EMBEDDING INDEX STATISTICS
+============================================================
+Embedding Model:                     BAAI/bge-small-en-v1.5
+Programmatic Dimension:              384
+Dense Embedding Vector Count:        6422
+FAISS Index Type:                    IndexFlatIP (Exact Cosine Inner Product)
+Similarity Method:                   Cosine Similarity (Normalized Inner Product)
+Dense Index Mapping Count:           6422
+NaN / Inf Embeddings Detected:       FALSE
+
+============================================================
+FROZEN ASSETS INTEGRITY GATE
+============================================================
+[+] INTEGRITY STATUS: PASSED (Zero frozen assets modified)
+
+============================================================
+VALIDATION VERIFICATION STATUS
+============================================================
+[+] VALIDATION STATUS: PASSED (0 errors found)

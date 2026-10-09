@@ -1,0 +1,41 @@
+# Phase 3.2 — Structure-Aware Chunking Validation Report
+
+1. Input Documents
+Active Documents Processed: 22 (Expected: 22)
+Disabled Documents Excluded: 10 (Expected: 10)
+
+2. Chunk Accounting
+Raw Chunks Generated: 6438
+Structural/Orphan Chunks Excluded: 16
+Final Retrieval-Eligible Chunks: 6422
+Accounting Check (Raw = Eligible + Excluded): PASSED (6438 = 6422 + 16)
+
+3. Chunk Length & Oversized Diagnostics
+Prose Chunks Count: 4872 (Avg: 1091.8 chars, Min: 11, Max: 4869)
+IFCT Table Chunks Count: 1550 (Avg: 428.1 chars, Min: 10, Max: 1351)
+Single Indivisible Sentence Units > 1400: 109
+Multi-Sentence Chunks > 1400 (Bugs): 0 (MUST BE ZERO)
+
+4. IFCT Structural Statistics
+IFCT Total Pages: 585
+Pages with Food Rows: 514
+Total Food Rows Detected: 8266
+Category-Prefixed Table Chunks: 1226
+Category Resets (>15 Page Gaps): 3 (Page 162, Page 204, Page 486)
+
+5. Metadata & Provenance Validation
+Metadata Inheritance Errors: 0
+Page Provenance Errors: 0
+Meaningful Content Page Coverage: 100.0% (Uncovered Content Pages = 0)
+
+6. Unicode & Integrity Diagnostics
+U+FFFD Replacement Characters Added: 0
+Unicode ± Preservation: PASSED
+Deterministic Chunking Reproducibility: PASS
+Frozen Asset Modifications: 0 (Raw PDFs, Manifest, Parsed JSONs untouched)
+
+7. Test Suite Summary
+Total Test Cases: 18
+Passed Test Cases: 18
+Failed Test Cases: 0
+Overall Phase 3.2 Status: PASS

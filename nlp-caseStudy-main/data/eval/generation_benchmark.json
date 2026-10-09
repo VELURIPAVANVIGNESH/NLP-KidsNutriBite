@@ -1,0 +1,102 @@
+[
+  {
+    "query_id": "GEN001",
+    "question": "What is the recommended dietary allowance for protein for a 10-year-old child?",
+    "age": 10.0,
+    "relevant_chunk_ids": [
+      "NK-015-C00013",
+      "NK-019-C00072"
+    ],
+    "reference_answer": "For a 10-year-old child, the ICMR-NIN 2020 Recommended Dietary Allowances specify protein requirements of approximately 31.8 g/day for boys aged 10-12 years (0.91 g/kg/day) and 32.8 g/day for girls aged 10-12 years (0.90 g/kg/day). These values are derived from factorial methods accounting for growth, maintenance, and protein digestibility-corrected amino acid scores (PDCAAS). Adequate protein intake is essential during this period to support growth and skeletal muscle development."
+  },
+  {
+    "query_id": "GEN002",
+    "question": "What are the WHO guidelines on added sugar intake for school-age children?",
+    "age": 9.0,
+    "relevant_chunk_ids": [
+      "NK-007-C00018",
+      "NK-008-C00123"
+    ],
+    "reference_answer": "The WHO 2015 guideline on sugars intake recommends that free sugars should constitute less than 10% of total energy intake for both adults and children. A conditional recommendation further suggests reducing free sugars to below 5% of total energy intake. Free sugars include monosaccharides and disaccharides added to foods and beverages, as well as sugars naturally present in honey, syrups, fruit juices, and fruit juice concentrates. Reducing free sugar intake is associated with lower risk of dental caries and unhealthy weight gain in children."
+  },
+  {
+    "query_id": "GEN003",
+    "question": "What is the recommended calcium intake for a 12-year-old child?",
+    "age": 12.0,
+    "relevant_chunk_ids": [
+      "NK-021-C00891",
+      "NK-015-C00013"
+    ],
+    "reference_answer": "According to ICMR-NIN 2020 recommendations, the calcium requirement for children aged 10-12 years is 800-1000 mg/day. Calcium is critical during puberty and adolescence for peak bone mass accumulation. Adequate dietary calcium, together with vitamin D, supports skeletal mineralization. Good food sources include dairy products, calcium-fortified foods, and green leafy vegetables. The WHO/FAO joint expert group similarly recommends higher calcium intakes during the pubertal growth spurt."
+  },
+  {
+    "query_id": "GEN004",
+    "question": "How much iron does a 7-year-old child need per day?",
+    "age": 7.0,
+    "relevant_chunk_ids": [
+      "NK-021-C00895",
+      "NK-015-C00013"
+    ],
+    "reference_answer": "The ICMR-NIN 2020 Recommended Dietary Allowances for iron in children aged 5-9 years are approximately 13 mg/day for both boys and girls. Iron is essential for hemoglobin synthesis, oxygen transport, and cognitive development. Iron deficiency anemia is one of the most prevalent nutritional deficiencies in school-age children. Dietary sources include lean meats, legumes, fortified cereals, and dark green vegetables. Consuming vitamin C alongside iron-rich foods enhances non-heme iron absorption."
+  },
+  {
+    "query_id": "GEN005",
+    "question": "What are the WHO sodium intake recommendations for children?",
+    "age": 8.0,
+    "relevant_chunk_ids": [
+      "NK-006-C00015",
+      "NK-008-C00456"
+    ],
+    "reference_answer": "The WHO 2012 guideline on sodium intake recommends that children consume less sodium than adults, with the recommended maximum adjusted downward based on energy requirements relative to adults. For adults, the WHO recommends less than 2 g/day of sodium (5 g/day salt). For children, this limit should be proportionally reduced based on their lower energy needs. High sodium intake is associated with elevated blood pressure even in children, increasing long-term cardiovascular risk. The Dietary Guidelines for Indians (2024) similarly advise restricting salt intake in school-age children."
+  },
+  {
+    "query_id": "GEN006",
+    "question": "What foods are recommended for school feeding programs for children aged 6-12?",
+    "age": 9.0,
+    "relevant_chunk_ids": [
+      "NK-012-C00034",
+      "NK-008-C00789"
+    ],
+    "reference_answer": "WHO guidelines on school food and nutrition programs recommend that school meals should provide approximately one-third of a child's daily energy and nutrient needs. Meals should be diverse, including whole grains, legumes, fruits, vegetables, and adequate protein sources. Ultra-processed foods and sugar-sweetened beverages should be restricted or eliminated. Nutritious school meals improve attendance, cognitive performance, and overall health outcomes in children. The Dietary Guidelines for Indians (2024) recommend traditional whole foods, locally available vegetables, and fortified staples for school meal programs."
+  },
+  {
+    "query_id": "GEN007",
+    "question": "What is the recommended fat intake for a 6-year-old child?",
+    "age": 6.0,
+    "relevant_chunk_ids": [
+      "NK-013-C00021",
+      "NK-002-C00024"
+    ],
+    "reference_answer": "The WHO recommends that total fat intake should provide 25-35% of total energy for school-age children, with saturated fat restricted to less than 10% of total energy. Trans fats should be minimized or eliminated. Essential fatty acids, particularly omega-3 (alpha-linolenic acid) and omega-6 (linoleic acid), are critical for brain development and immune function. The ICMR-NIN 2020 RDA recommends a total fat intake of 25-30% of energy for children, emphasizing unsaturated fat sources such as vegetable oils, nuts, seeds, and oily fish."
+  },
+  {
+    "query_id": "GEN008",
+    "question": "What is the recommended iodine intake for a 9-year-old child?",
+    "age": 9.0,
+    "relevant_chunk_ids": [
+      "NK-021-C00891",
+      "NK-015-C00013"
+    ],
+    "reference_answer": "The ICMR-NIN 2020 Recommended Dietary Allowances specify an iodine requirement of 90 µg/day for children aged 5-12 years. Iodine is essential for thyroid hormone synthesis, which regulates growth, metabolism, and brain development. Iodine deficiency during childhood can impair cognitive development and school performance. The primary source of dietary iodine is iodized salt, along with seafood, dairy products, and eggs. Universal salt iodization programs are the principal public health intervention to address iodine deficiency in India and globally."
+  },
+  {
+    "query_id": "GEN009",
+    "question": "What energy requirements are recommended for a 13-year-old boy?",
+    "age": 13.0,
+    "relevant_chunk_ids": [
+      "NK-015-C00013",
+      "NK-008-C00123"
+    ],
+    "reference_answer": "The ICMR-NIN 2020 Recommended Dietary Allowances specify total energy requirements for boys aged 13-15 years at approximately 2240-2450 kcal/day depending on activity level. Energy requirements during early adolescence increase significantly due to pubertal growth, increased muscle mass, and higher physical activity. The Dietary Guidelines for Indians (2024) recommend that adolescent energy needs be met through a balanced diet emphasizing whole grains, pulses, vegetables, fruits, and adequate fat and protein. Micronutrient density of the diet is particularly important alongside total energy adequacy."
+  },
+  {
+    "query_id": "GEN010",
+    "question": "Are red and processed meat consumption recommendations different for children compared to adults?",
+    "age": 11.0,
+    "relevant_chunk_ids": [
+      "NK-017-C00011",
+      "NK-008-C00456"
+    ],
+    "reference_answer": "The WHO 2015 evaluation by the International Agency for Research on Cancer (IARC) classified processed meat as Group 1 carcinogen and red meat as Group 2A (probably carcinogenic). While these classifications are primarily based on adult evidence, WHO dietary guidelines recommend limiting processed and red meat consumption across all age groups. The Dietary Guidelines for Indians (2024) recommend that meat, if consumed, should be lean, and processed meat should be minimized. For children, plant-based protein sources such as legumes, lentils, and nuts are preferred alongside appropriate amounts of lean animal protein to meet essential amino acid and micronutrient requirements."
+  }
+]

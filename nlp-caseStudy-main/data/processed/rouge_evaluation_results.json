@@ -1,0 +1,295 @@
+{
+  "n_queries": 5,
+  "avg_rouge1": 0.4011,
+  "avg_rouge2": 0.1424,
+  "avg_rougeL": 0.2583,
+  "per_query": [
+    {
+      "query_id": "GEN001",
+      "question": "What is the recommended dietary allowance for protein for a 10-year-old child?",
+      "age": 10.0,
+      "generated_answer": "For a 10-year-old child, the recommended dietary allowance for protein is between 90 and 120 micrograms (µg) per day. This recommendation aligns with the FAO/WHO expert consultation's findings that iodine requirements decrease progressively with age, suggesting an intake of 60 to 100 µg/day for children aged 1 to 10 years, equivalent to 3 µg/kg/day in an average-sized 10-year-old child. Given the average body weight of a 10-year-old child is 25 kg, this translates to an intake of 60 to 100 µg/day, which is within the range of 90 to 120 µg/day. Additionally, the dietary guidelines suggest including cereals, pulses, vegetables, oils, nuts, curd, and fruits in the diet, providing approximately 1710 Kcal/day and 13.8% of calories from protein.",
+      "reference_answer": "For a 10-year-old child, the ICMR-NIN 2020 Recommended Dietary Allowances specify protein requirements of approximately 31.8 g/day for boys aged 10-12 years (0.91 g/kg/day) and 32.8 g/day for girls aged 10-12 years (0.90 g/kg/day). These values are derived from factorial methods accounting for growth, maintenance, and protein digestibility-corrected amino acid scores (PDCAAS). Adequate protein intake is essential during this period to support growth and skeletal muscle development.",
+      "rouge": {
+        "rouge1": {
+          "precision": 0.3209,
+          "recall": 0.5181,
+          "fmeasure": 0.3963
+        },
+        "rouge2": {
+          "precision": 0.1053,
+          "recall": 0.1707,
+          "fmeasure": 0.1302
+        },
+        "rougeL": {
+          "precision": 0.2164,
+          "recall": 0.3494,
+          "fmeasure": 0.2673
+        }
+      },
+      "grounding": {
+        "grounded": true,
+        "overlap_score": 0.4286,
+        "method": "heuristic_token_overlap"
+      },
+      "citations": {
+        "all_citations_valid": true,
+        "cited_ids": [],
+        "invalid_citations": [],
+        "method": "heuristic_regex"
+      },
+      "numerics": {
+        "preserved": false,
+        "ev_numbers": [
+          "126 Kcal",
+          "20g",
+          "8.02g",
+          "100g",
+          "1.34mg",
+          "120 µg/day",
+          "0.93mg",
+          "0.31mg",
+          "9.58g",
+          "1.28mg",
+          "60g",
+          "152 Kcal",
+          "1110 Kcal/day",
+          "133 Kcal",
+          "1.68mg",
+          "0.43mg",
+          "10g",
+          "15g",
+          "50g",
+          "1110 Kcal",
+          "46 Kcal",
+          "25g",
+          "90g",
+          "60 µg/day",
+          "100ml",
+          "9.25g",
+          "3.61g",
+          "1.66mg",
+          "36.7g",
+          "150 µg/day"
+        ],
+        "found_in_answer": [
+          "120 µg/day"
+        ],
+        "preservation_rate": 0.0333,
+        "method": "heuristic_regex"
+      }
+    },
+    {
+      "query_id": "GEN002",
+      "question": "What are the WHO guidelines on added sugar intake for school-age children?",
+      "age": 9.0,
+      "generated_answer": "The World Health Organization (WHO) recommends a reduced intake of free sugars throughout the life course, with strong recommendations for adults and children. The guideline states that WHO recommends reducing the intake of free sugars to less than 10% of total energy intake (strong recommendation), and further suggests a reduction to below 5% of total energy intake (conditional recommendation). Free sugars include monosaccharides and disaccharides added to foods and beverages by manufacturers, processors, or consumers, as well as sugars naturally present in honey, syrups, fruit juices, and fruit juice concentrates. For countries with a low intake of free sugars, increasing these levels would not be advisable due to potential negative impacts on dietary quality and risk of dental caries. The recommendations were based on the totality of evidence regarding the relationship between free sugars intake and body weight and dental caries.",
+      "reference_answer": "The WHO 2015 guideline on sugars intake recommends that free sugars should constitute less than 10% of total energy intake for both adults and children. A conditional recommendation further suggests reducing free sugars to below 5% of total energy intake. Free sugars include monosaccharides and disaccharides added to foods and beverages, as well as sugars naturally present in honey, syrups, fruit juices, and fruit juice concentrates. Reducing free sugar intake is associated with lower risk of dental caries and unhealthy weight gain in children.",
+      "rouge": {
+        "rouge1": {
+          "precision": 0.5177,
+          "recall": 0.869,
+          "fmeasure": 0.6489
+        },
+        "rouge2": {
+          "precision": 0.3429,
+          "recall": 0.5783,
+          "fmeasure": 0.4305
+        },
+        "rougeL": {
+          "precision": 0.4113,
+          "recall": 0.6905,
+          "fmeasure": 0.5156
+        }
+      },
+      "grounding": {
+        "grounded": true,
+        "overlap_score": 0.3871,
+        "method": "heuristic_token_overlap"
+      },
+      "citations": {
+        "all_citations_valid": true,
+        "cited_ids": [],
+        "invalid_citations": [],
+        "method": "heuristic_regex"
+      },
+      "numerics": {
+        "preserved": true,
+        "ev_numbers": [],
+        "found_in_answer": [],
+        "method": "heuristic_regex"
+      }
+    },
+    {
+      "query_id": "GEN003",
+      "question": "What is the recommended calcium intake for a 12-year-old child?",
+      "age": 12.0,
+      "generated_answer": "For a 12-year-old child, the recommended calcium intake according to the sources provided is 600 mg per day. This recommendation aligns with the general guidelines for adolescents aiming to achieve optimal peak bone mass, emphasizing the importance of consuming calcium-rich foods like milk and dairy products, along with other nutritious options such as legumes, nuts, seeds, and fruits. The sources indicate that while there may be variations in specific recommendations across different regions, the overall consensus suggests that adolescents require around 600 mg of calcium daily to support healthy bone development.",
+      "reference_answer": "According to ICMR-NIN 2020 recommendations, the calcium requirement for children aged 10-12 years is 800-1000 mg/day. Calcium is critical during puberty and adolescence for peak bone mass accumulation. Adequate dietary calcium, together with vitamin D, supports skeletal mineralization. Good food sources include dairy products, calcium-fortified foods, and green leafy vegetables. The WHO/FAO joint expert group similarly recommends higher calcium intakes during the pubertal growth spurt.",
+      "rouge": {
+        "rouge1": {
+          "precision": 0.3298,
+          "recall": 0.4366,
+          "fmeasure": 0.3758
+        },
+        "rouge2": {
+          "precision": 0.0645,
+          "recall": 0.0857,
+          "fmeasure": 0.0736
+        },
+        "rougeL": {
+          "precision": 0.1915,
+          "recall": 0.2535,
+          "fmeasure": 0.2182
+        }
+      },
+      "grounding": {
+        "grounded": true,
+        "overlap_score": 0.4521,
+        "method": "heuristic_token_overlap"
+      },
+      "citations": {
+        "all_citations_valid": true,
+        "cited_ids": [],
+        "invalid_citations": [],
+        "method": "heuristic_regex"
+      },
+      "numerics": {
+        "preserved": false,
+        "ev_numbers": [
+          "220 mg",
+          "20 mg/day",
+          "100 mg",
+          "120 mg",
+          "40 mg",
+          "32 mg/day",
+          "1150 mg",
+          "40 g",
+          "60 mg",
+          "300 mg",
+          "400 mg",
+          "680\nmg",
+          "1050mg/day"
+        ],
+        "found_in_answer": [],
+        "preservation_rate": 0.0,
+        "method": "heuristic_regex"
+      }
+    },
+    {
+      "query_id": "GEN004",
+      "question": "How much iron does a 7-year-old child need per day?",
+      "age": 7.0,
+      "generated_answer": "A 7-year-old child requires approximately 700 milligrams (mg) of iron per day according to the information provided in the evidence passages. The passage states that for adolescents aged 10-18 years, the recommended daily intake of iron is 700 mg. Since the question specifically asks for the amount needed for a 7-year-old, we can conclude that the 700 mg figure applies to this age group as well.",
+      "reference_answer": "The ICMR-NIN 2020 Recommended Dietary Allowances for iron in children aged 5-9 years are approximately 13 mg/day for both boys and girls. Iron is essential for hemoglobin synthesis, oxygen transport, and cognitive development. Iron deficiency anemia is one of the most prevalent nutritional deficiencies in school-age children. Dietary sources include lean meats, legumes, fortified cereals, and dark green vegetables. Consuming vitamin C alongside iron-rich foods enhances non-heme iron absorption.",
+      "rouge": {
+        "rouge1": {
+          "precision": 0.2394,
+          "recall": 0.2267,
+          "fmeasure": 0.2329
+        },
+        "rouge2": {
+          "precision": 0.0143,
+          "recall": 0.0135,
+          "fmeasure": 0.0139
+        },
+        "rougeL": {
+          "precision": 0.1408,
+          "recall": 0.1333,
+          "fmeasure": 0.137
+        }
+      },
+      "grounding": {
+        "grounded": true,
+        "overlap_score": 0.3725,
+        "method": "heuristic_token_overlap"
+      },
+      "citations": {
+        "all_citations_valid": true,
+        "cited_ids": [],
+        "invalid_citations": [],
+        "method": "heuristic_regex"
+      },
+      "numerics": {
+        "preserved": false,
+        "ev_numbers": [
+          "220 mg",
+          "126 Kcal",
+          "20g",
+          "8.02g",
+          "1.34mg",
+          "0.93mg",
+          "40 mg",
+          "0.31mg",
+          "9.58g",
+          "1.28mg",
+          "152 Kcal",
+          "133 Kcal",
+          "1.68mg",
+          "0.43mg",
+          "10g",
+          "0.9 mg/day",
+          "46 Kcal",
+          "60 mg",
+          "120 mg",
+          "9.25g",
+          "3.61g",
+          "1.66mg"
+        ],
+        "found_in_answer": [],
+        "preservation_rate": 0.0,
+        "method": "heuristic_regex"
+      }
+    },
+    {
+      "query_id": "GEN005",
+      "question": "What are the WHO sodium intake recommendations for children?",
+      "age": 8.0,
+      "generated_answer": "The World Health Organization (WHO) recommends a reduction in sodium intake to <2 grams per day (approximately 5 grams of salt) in both adults and children. This recommendation aims to help control blood pressure and reduce the risk of cardiovascular diseases, stroke, and coronary heart disease. For children, WHO emphasizes the importance of reducing sodium intake while ensuring adequate potassium intake, as these nutrients work synergistically to support overall health. The goal is to achieve a molar ratio of sodium to potassium of approximately one to one, maintaining this ratio even at higher sodium intakes. However, it's important to note that these recommendations do not address specific periods of exclusive breastfeeding or complementary feeding with continued breastfeeding, nor do they provide detailed guidance on the optimal ratio of sodium to potassium.",
+      "reference_answer": "The WHO 2012 guideline on sodium intake recommends that children consume less sodium than adults, with the recommended maximum adjusted downward based on energy requirements relative to adults. For adults, the WHO recommends less than 2 g/day of sodium (5 g/day salt). For children, this limit should be proportionally reduced based on their lower energy needs. High sodium intake is associated with elevated blood pressure even in children, increasing long-term cardiovascular risk. The Dietary Guidelines for Indians (2024) similarly advise restricting salt intake in school-age children.",
+      "rouge": {
+        "rouge1": {
+          "precision": 0.2955,
+          "recall": 0.4333,
+          "fmeasure": 0.3514
+        },
+        "rouge2": {
+          "precision": 0.0534,
+          "recall": 0.0787,
+          "fmeasure": 0.0636
+        },
+        "rougeL": {
+          "precision": 0.1288,
+          "recall": 0.1889,
+          "fmeasure": 0.1532
+        }
+      },
+      "grounding": {
+        "grounded": true,
+        "overlap_score": 0.4388,
+        "method": "heuristic_token_overlap"
+      },
+      "citations": {
+        "all_citations_valid": true,
+        "cited_ids": [],
+        "invalid_citations": [],
+        "method": "heuristic_regex"
+      },
+      "numerics": {
+        "preserved": false,
+        "ev_numbers": [
+          "5 g/day",
+          "2.0 g",
+          "2 g",
+          "2 g/day",
+          "1.2 g"
+        ],
+        "found_in_answer": [
+          "2 g"
+        ],
+        "preservation_rate": 0.2,
+        "method": "heuristic_regex"
+      }
+    }
+  ]
+}

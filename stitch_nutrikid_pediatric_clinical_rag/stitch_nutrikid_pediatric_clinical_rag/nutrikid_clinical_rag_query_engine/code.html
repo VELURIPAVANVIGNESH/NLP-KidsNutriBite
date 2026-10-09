@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"provenance-tag":"#082F49","on-primary-fixed":"#00201b","on-surface-variant":"#b9cac5","surface-container-highest":"#2f353f","outline":"#84948f","border-subtle":"rgba(255, 255, 255, 0.08)","surface-bright":"#343944","on-tertiary":"#003730","surface":"#0e141d","confidence-high":"#10B981","tertiary-container":"#99d8ca","secondary-container":"#00a6e0","ice-glow":"#E2F9FB","secondary-fixed-dim":"#7bd0ff","surface-base":"#070C13","surface-dim":"#0e141d","surface-overlay":"#152233","on-secondary":"#00354a","inverse-primary":"#006b5d","on-tertiary-fixed":"#00201b","surface-container-high":"#242a34","outline-variant":"#3b4a46","border-highlight":"rgba(0, 229, 201, 0.25)","tertiary":"#b5f5e6","surface-container-lowest":"#080e17","on-background":"#dde2f0","primary":"#70ffe5","inverse-on-surface":"#2b313b","chart-accent":"#A5D334","on-primary-fixed-variant":"#005046","surgical-blue":"#0284C7","error":"#ffb4ab","surface-raised":"#0E1724","surface-variant":"#2f353f","error-container":"#93000a","on-tertiary-fixed-variant":"#075046","surface-tint":"#00dfc4","confidence-medium":"#F59E0B","on-secondary-fixed-variant":"#004c69","secondary":"#7bd0ff","on-surface":"#dde2f0","on-tertiary-container":"#1f6055","on-secondary-container":"#00374d","inverse-surface":"#dde2f0","primary-container":"#00e5c9","secondary-fixed":"#c4e7ff","on-error":"#690005","tertiary-fixed-dim":"#94d3c5","confidence-low":"#EF4444","on-primary":"#00372f","tertiary-fixed":"#b0efe1","surface-container":"#1a2029","on-error-container":"#ffdad6","on-primary-container":"#006155","on-secondary-fixed":"#001e2c","surface-container-low":"#161c25","citation-text":"#93C5FD","background":"#0e141d","primary-fixed-dim":"#00dfc4","primary-fixed":"#41fcdf"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","gutter-lg":"1.5rem","margin":"1rem","margin-lg":"2.5rem","space-md":"0.75rem","space-lg":"1.25rem","margin-md":"1.5rem"},fontFamily:{"label-code":["JetBrains Mono"],"body-sm":["Inter"],"headline-lg":["Geist"],"body-lg":["Inter"],"headline-xl":["Geist"],"headline-xl-mobile":["Geist"],"headline-sm":["Geist"],"label-provenance":["JetBrains Mono"],"label-tabular":["JetBrains Mono"],"headline-lg-mobile":["Geist"],"body-md":["Inter"],"headline-md":["Geist"]},fontSize:{"label-code":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"500"}],"label-provenance":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-tabular":["12px",{"lineHeight":"16px","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface-base font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-base/85 backdrop-blur-xl border-b border-border-subtle"><div class="h-16 w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-high border border-border-highlight flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">vital_signs</span></div><span class="font-headline-md text-headline-md font-semibold tracking-tight text-on-surface">Nutri<span class="text-primary">Kid</span></span></div><div class="hidden xl:flex items-center gap-space-xs"><span class="px-2 py-0.5 rounded bg-surface-container text-surgical-blue font-label-provenance text-label-provenance uppercase tracking-wider border border-border-subtle">Pediatric Nutrition RAG System</span></div></div><nav class="hidden lg:flex items-center gap-1 xl:gap-space-xs" data-active-classes="bg-surface-container-high text-primary border border-border-highlight"><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="overview" href="#">Overview</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="pipeline" href="#">How It Works</a><a aria-current="page" class="px-2.5 py-1.5 rounded font-body-sm transition-colors whitespace-nowrap bg-surface-container-high text-primary border border-border-highlight" data-path="clinical-rag-query-engine" href="#">Ask NutriKid</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="institutional-sources" href="#">Institutional Sources</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="retrieval-lab" href="#">Retrieval Lab</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="evaluation-benchmarks" href="#">Evaluation &amp; Benchmarks</a><a class="px-2.5 py-1.5 rounded text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface transition-colors whitespace-nowrap" data-path="safety-scope" href="#">Safety &amp; Scope</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-provenance-tag/40 border border-surgical-blue/30 text-citation-text font-label-provenance text-label-provenance"><span class="w-1.5 h-1.5 rounded-full bg-confidence-high animate-pulse"></span><span>SCOPE: 5.0–15.0 YRS</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-screen bg-surface-base"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-space-md">
+<!-- Top System Breadcrumb & Latency HUD -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md bg-surface-raised/80 rounded-xl p-space-sm shadow-sm backdrop-blur-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></div>
+<span class="font-label-provenance text-label-provenance text-primary tracking-widest uppercase">WORKSPACE READY</span>
+<span class="text-outline/40">/</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ask NutriKid — Clinical RAG Query Engine</span>
+<span class="hidden md:inline-block px-2 py-0.5 rounded bg-surface-container-high text-citation-text font-label-provenance text-label-provenance">Session ID: #NK-SESSION-9942</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 font-label-code text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">memory</span>
+<span>Local Engine: <strong class="text-on-surface">Qwen2.5-1.5B (4-bit FP16)</strong></span>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 font-label-code text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">database</span>
+<span>Index: <strong class="text-on-surface">FAISS-HNSW + BM25Okapi</strong></span>
+</div>
+<div class="px-2 py-0.5 rounded bg-surface-container font-label-tabular text-[11px] text-confidence-high">
+          Vector Sync: 100%
+        </div>
+</div>
+</div>
+<!-- Main Dual Panel Scientific Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-start">
+<!-- ================= LEFT PANEL / QUERY INPUT & CONTROLS (5 Cols) ================= -->
+<section class="xl:col-span-5 flex flex-col gap-space-md">
+<!-- Query Specification Card -->
+<div class="bg-surface-raised rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Query Header -->
+<div class="flex items-start justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="flex items-center gap-1.5 text-primary font-label-provenance text-label-provenance uppercase">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Pediatric Parameters &amp; Query Vector</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Clinical Retrieval Engine</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-provenance-tag font-label-provenance text-label-provenance text-citation-text uppercase tracking-wider">
+              Dual-Grounded
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Corpus: <span class="text-on-surface font-medium">ICMR-NIN 2020 &amp; IFCT 2017</span> Active • Engine: <span class="text-on-surface font-medium">Local Qwen2.5-1.5B</span>
+</p>
+<!-- Child Age Input Specifier -->
+<div class="bg-surface-container-low rounded-lg p-space-md mb-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<label class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-1.5" for="child-age-range">
+<span class="material-symbols-outlined text-secondary text-[18px]">child_care</span>
+                Child Chronological Age
+              </label>
+<div class="flex items-center gap-space-xs">
+<input class="w-16 h-7 text-center bg-surface-base text-primary font-label-code text-[13px] rounded px-1 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="age-number-input" max="18.0" min="1.0" step="0.5" type="number" value="10.0"/>
+<span class="font-label-code text-[12px] text-on-surface-variant">YRS</span>
+</div>
+</div>
+<!-- Custom Slider Track -->
+<div class="relative py-2">
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary focus:outline-none" id="child-age-range" max="15.0" min="5.0" step="0.5" type="range" value="10.0"/>
+<div class="flex justify-between items-center text-[10px] font-label-code text-on-surface-variant/70 mt-1">
+<span>5.0 Y (Lower Limit)</span>
+<span class="text-primary font-medium">10.0 Y (Selected)</span>
+<span>15.0 Y (Upper Limit)</span>
+</div>
+</div>
+<!-- Range Cohort Validation Indicator -->
+<div class="mt-space-xs flex items-center justify-between text-[11px] font-label-provenance px-space-sm py-1 rounded bg-surface-container text-confidence-high" id="cohort-tag">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>VALID AGE COHORT: SCHOOL-AGE (10.0 YRS)</span>
+</div>
+<span class="text-on-surface-variant font-label-code">PEDIATRIC TIER-2</span>
+</div>
+</div>
+<!-- Clinical Question Area -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<label class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-1.5" for="clinical-prompt">
+<span class="material-symbols-outlined text-primary text-[18px]">clinical_notes</span>
+                Clinical Question &amp; Constraints
+              </label>
+<span class="font-label-provenance text-[11px] text-on-surface-variant">SYNTAX: NATURAL CLINICAL TEXT</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-base shadow-inner">
+<textarea class="w-full bg-transparent p-space-md text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/40 focus:outline-none resize-none" id="clinical-prompt" placeholder="Enter clinical nutritional query for deterministic guideline synthesis..." rows="4">Recommended protein intake for 10-year-old child (ICMR-NIN)</textarea>
+<div class="bg-surface-container-low px-space-md py-1.5 flex items-center justify-between text-[11px] font-label-code text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-confidence-high"></span>
+<span>Target: ICMR-NIN 2020 RDA Standard</span>
+</div>
+<span>Char Count: 62</span>
+</div>
+</div>
+</div>
+<!-- Preset Query Template Chips -->
+<div class="mb-space-md">
+<span class="font-label-provenance text-[11px] text-on-surface-variant uppercase tracking-wider block mb-space-xs">
+              Preset Benchmark Queries &amp; Edge Scenarios
+            </span>
+<div class="flex flex-wrap gap-1.5" id="query-chips-container">
+<button class="preset-chip text-left px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-body-sm text-body-sm transition-all shadow-sm" data-age="10.0" data-query="Recommended protein intake for 10-year-old child (ICMR-NIN)" type="button">
+                Protein intake for 10y (ICMR-NIN)
+              </button>
+<button class="preset-chip text-left px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-all shadow-sm" data-age="12.0" data-query="Calcium RDA for 12-year-old girl and rich dietary sources" type="button">
+                Calcium RDA for 12y girl &amp; dietary sources
+              </button>
+<button class="preset-chip text-left px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-all shadow-sm" data-age="7.0" data-query="Iron requirements and bioavailability factors for 7-year-old" type="button">
+                Iron requirements &amp; bioavailability for 7y
+              </button>
+<button class="preset-chip text-left px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-all shadow-sm" data-age="14.0" data-query="Vitamin A safe upper limit vs RDA for 14-year-old boy" type="button">
+                Vitamin A UL vs RDA for 14y boy
+              </button>
+<button class="preset-chip text-left px-2.5 py-1.5 rounded-lg bg-error-container/20 hover:bg-error-container/40 text-error font-body-sm text-body-sm transition-all shadow-sm flex items-center gap-1" data-age="2.0" data-query="[Trigger Out-of-Scope Refusal] Protein for 2-year-old toddler" type="button">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                [Test Refusal] 2-year-old toddler
+              </button>
+</div>
+</div>
+<!-- Retrieval Parameter Controls (Collapsible) -->
+<details class="group bg-surface-container-low rounded-lg p-space-sm mb-space-lg shadow-sm" open="">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none text-on-surface font-headline-sm text-[13px] font-semibold py-1">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+                Hybrid Retrieval &amp; Inference Controls
+              </span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+</summary>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-sm mt-space-xs">
+<div class="bg-surface-base p-2 rounded">
+<label class="font-label-provenance text-[10px] text-on-surface-variant block uppercase">Retrieval Mode</label>
+<div class="font-label-code text-[11px] text-primary mt-1 font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  BM25 + FAISS Dense
+                </div>
+</div>
+<div class="bg-surface-base p-2 rounded">
+<label class="font-label-provenance text-[10px] text-on-surface-variant block uppercase">Neural Reranker</label>
+<div class="font-label-code text-[11px] text-secondary mt-1 font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  bge-reranker-base
+                </div>
+</div>
+<div class="bg-surface-base p-2 rounded">
+<label class="font-label-provenance text-[10px] text-on-surface-variant block uppercase">Passages (Top-K)</label>
+<div class="font-label-code text-[11px] text-chart-accent mt-1 font-semibold">
+                  Max: 5 Chunks
+                </div>
+</div>
+</div>
+</details>
+<!-- Primary CTA Button -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="w-full sm:flex-1 py-3 px-space-lg rounded-xl bg-primary-container text-on-primary-fixed font-headline-sm text-headline-sm font-semibold hover:shadow-[0_0_24px_rgba(0,229,201,0.45)] active:scale-[0.99] transition-all flex items-center justify-center gap-2 group" id="btn-synthesize" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-12">query_stats</span>
+<span>Retrieve Evidence &amp; Synthesize</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 text-[11px] font-label-code text-on-surface-variant px-3 py-2 rounded bg-surface-container">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface shadow-xs">⌘</kbd>
+<span>+</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface shadow-xs">↵</kbd>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-provenance text-outline mt-3 px-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-confidence-high">lock</span>
+              Zero Cloud Egress • 100% On-Premise Audit
+            </span>
+<span>Latency SLA: &lt; 500ms</span>
+</div>
+</div>
+<!-- In-Scope Protocol Card with Rich Graphic -->
+<div class="bg-surface-raised rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div>
+<span class="font-label-provenance text-[11px] text-secondary uppercase tracking-widest">Cohort Distribution</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">ICMR-NIN Target Age Demographics</h3>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">analytics</span>
+</div>
+<!-- Mini SVG Data Visualization: Age Segment Weights -->
+<div class="p-space-sm bg-surface-base rounded-lg mb-space-sm">
+<div class="flex justify-between text-[11px] font-label-code text-on-surface-variant mb-1">
+<span>5.0 - 9.9 Y (Childhood)</span>
+<span>10.0 - 12.9 Y (Pre-Pubertal)</span>
+<span>13.0 - 15.0 Y (Adolescent)</span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary-container/80 w-[35%]" title="5.0 - 9.9 Y"></div>
+<div class="h-full bg-primary-container w-[35%] relative" title="10.0 - 12.9 Y (Active Target)">
+<span class="absolute inset-0 bg-white/20 animate-pulse"></span>
+</div>
+<div class="h-full bg-tertiary-container/80 w-[30%]" title="13.0 - 15.0 Y"></div>
+</div>
+<div class="flex justify-between items-center mt-2 text-[10px] font-label-provenance text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-secondary-container"></span> 5.0–9.9 Y</span>
+<span class="flex items-center gap-1 font-semibold text-primary"><span class="w-2 h-2 rounded bg-primary-container"></span> 10.0–12.9 Y (Active)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-tertiary-container"></span> 13.0–15.0 Y</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs text-[11px] font-body-sm text-on-surface-variant">
+<div class="p-2 rounded bg-surface-container-low flex flex-col">
+<span class="text-outline uppercase text-[10px]">Reference Weight (Boys 10y)</span>
+<span class="font-label-code text-on-surface font-semibold text-[13px] mt-0.5">34.3 kg</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col">
+<span class="text-outline uppercase text-[10px]">Reference Weight (Girls 10y)</span>
+<span class="font-label-code text-on-surface font-semibold text-[13px] mt-0.5">35.0 kg</span>
+</div>
+</div>
+</div>
+<!-- Clinical Context Placeholder Image -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-40 bg-surface-container-low">
+<img class="w-full h-full object-cover opacity-60 mix-blend-luminosity hover:opacity-80 transition-opacity" data-alt="A focused clinical pediatric dietitian in surgical navy scrubs reviewing medical nutrition laboratory charts and metabolic growth tables on an illuminated high-resolution tablet, cold cinematic lighting, clean clinical tech room with slate teal ambient glow, hyperrealistic documentary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRWpBzBKnB-RGawN3pAinOOQ6Xd8EM_LkqWTWtLgStB0EnrtTDiy2B3BeIt0ErjuxzT3qvo9XuS1cFTslRtv-rU5KLvAIkb14sIwUkwex6a8kYBmKUvKVtd6bdUZtVMfLCWD9tLs-3GzeRArS6Le--Gq0FSY7IWau3HWFmJUpzjsIGSMj2mptiMSsrhbN8DIuk2nH4tr9egfw5f35TYs_LgRy4rWkIMch-IyXTkek"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-base via-surface-base/50 to-transparent p-space-md flex flex-col justify-end">
+<span class="font-label-provenance text-[10px] text-primary uppercase">Institutional Trust Protocol</span>
+<p class="font-headline-sm text-[13px] text-on-surface font-medium leading-tight">National Institute of Nutrition (NIN) Hyderabad Deterministic Evidence Alignment</p>
+</div>
+</div>
+</section>
+<!-- ================= RIGHT PANEL / RETRIEVAL & SYNTHESIS RESULTS (7 Cols) ================= -->
+<section class="xl:col-span-7 flex flex-col gap-space-md">
+<!-- Status Execution Strip -->
+<div class="bg-surface-raised rounded-xl p-space-sm px-space-md shadow-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-2 h-2 rounded-full bg-confidence-high"></div>
+<span class="font-label-code text-[12px] text-on-surface font-medium">Latency: <span class="text-primary">384ms</span></span>
+<span class="text-outline/30">•</span>
+<span class="font-label-code text-[12px] text-on-surface font-medium">Retrieved: <span class="text-secondary">5 Chunks</span></span>
+<span class="text-outline/30">•</span>
+<span class="font-label-code text-[12px] text-on-surface font-medium">Top Rerank: <span class="text-chart-accent">0.941</span></span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-confidence-high/10 text-confidence-high font-label-provenance text-[11px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+<span>Safety Checks: ALL PASSED</span>
+</div>
+</div>
+<!-- Card 1: GROUNDED CLINICAL SYNTHESIS -->
+<div class="bg-surface-raised rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-center justify-between mb-space-sm pl-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">verified_user</span>
+<div>
+<span class="font-label-provenance text-label-provenance text-primary tracking-widest uppercase">Verified Clinical Output</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Grounded Clinical Synthesis</h3>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded text-citation-text font-label-code text-[11px]">
+<span class="material-symbols-outlined text-[14px]">fact_check</span>
+<span>100% Deterministic</span>
+</div>
+</div>
+<!-- Synthesis Body -->
+<div class="pl-2 space-y-space-sm">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+              Based on the <span class="text-citation-text underline decoration-citation-text/50 underline-offset-4 cursor-pointer font-medium">[ICMR-NIN 2020 Guidelines]</span>, the Recommended Dietary Allowance (RDA) for daily dietary protein in a <strong class="text-primary font-semibold">10.0-year-old school-age child</strong> is stratified by sex and calculated against reference Indian anthropometric weights:
+            </p>
+<!-- Stratified Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm my-space-md">
+<!-- 10y Boys Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-on-surface-variant font-label-provenance text-[11px] mb-1">
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]">male</span>
+                    10-YEAR-OLD BOYS
+                  </span>
+<span class="bg-provenance-tag text-citation-text px-1.5 py-0.5 rounded font-label-code text-[10px]">P-ICMR-4.2</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">31.8</span>
+<span class="font-label-code text-on-surface-variant text-[13px]">g/day</span>
+</div>
+<div class="mt-space-xs pt-space-xs text-[11px] font-body-sm text-on-surface-variant flex items-center justify-between">
+<span>Ref Weight: <strong class="text-on-surface font-label-code">34.3 kg</strong></span>
+<span class="text-confidence-high font-label-code">0.93 g/kg/day</span>
+</div>
+</div>
+<!-- 10y Girls Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-on-surface-variant font-label-provenance text-[11px] mb-1">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]">female</span>
+                    10-YEAR-OLD GIRLS
+                  </span>
+<span class="bg-provenance-tag text-citation-text px-1.5 py-0.5 rounded font-label-code text-[10px]">P-ICMR-4.2</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">32.8</span>
+<span class="font-label-code text-on-surface-variant text-[13px]">g/day</span>
+</div>
+<div class="mt-space-xs pt-space-xs text-[11px] font-body-sm text-on-surface-variant flex items-center justify-between">
+<span>Ref Weight: <strong class="text-on-surface font-label-code">35.0 kg</strong></span>
+<span class="text-confidence-high font-label-code">0.94 g/kg/day</span>
+</div>
+</div>
+</div>
+<!-- Energy Ratio Recommendation Banner -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-chart-accent text-[20px] shrink-0 mt-0.5">pie_chart</span>
+<div class="font-body-md text-body-md text-on-surface-variant">
+<strong class="text-on-surface font-semibold">Protein Energy Ratio (PE%):</strong> ICMR-NIN mandates a target contribution of <span class="text-chart-accent font-semibold">8% to 10%</span> of total daily caloric expenditure derived from proteins, emphasizing complementary cereal-pulse amino acid profiles (minimum 3:1 or 4:1 ratio for vegetarian diets).
+              </div>
+</div>
+<!-- High Bioavailability Food Matrix -->
+<div class="mt-space-sm pt-space-sm bg-surface-base/60 rounded-lg p-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-provenance text-[11px] text-on-surface uppercase">IFCT 2017 Dietary Translators (Per 100g Cooked Equivalent)</span>
+<span class="font-label-code text-[10px] text-secondary">PDCAAS Score Adjusted</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="bg-surface-container-low p-2 rounded">
+<span class="font-body-sm text-[11px] text-on-surface-variant block">Bengal Gram (Chana)</span>
+<span class="font-label-code text-headline-sm text-primary font-bold">19.0g</span>
+<span class="font-label-provenance text-[9px] text-outline block">Protein / 100g</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="font-body-sm text-[11px] text-on-surface-variant block">Red Gram Lentils (Tur Dal)</span>
+<span class="font-label-code text-headline-sm text-secondary font-bold">22.3g</span>
+<span class="font-label-provenance text-[9px] text-outline block">Protein / 100g</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="font-body-sm text-[11px] text-on-surface-variant block">Toned Cow Milk (200mL)</span>
+<span class="font-label-code text-headline-sm text-chart-accent font-bold">6.4g</span>
+<span class="font-label-provenance text-[9px] text-outline block">High Digestibility</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: PROVENANCE & CITATION CARDS -->
+<div class="bg-surface-raised rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">menu_book</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Institutional Provenance &amp; Citations</h4>
+</div>
+<span class="font-label-provenance text-[10px] text-on-surface-variant uppercase">Corpus Coordinates</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Citation 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-sm shadow-sm flex flex-col justify-between hover:bg-surface-container transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded bg-provenance-tag text-citation-text font-label-code text-[11px] font-semibold">NK-015</span>
+<span class="font-label-provenance text-[10px] text-confidence-high flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-confidence-high"></span> Primary Mandate
+                  </span>
+</div>
+<h5 class="font-headline-sm text-[13px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  ICMR-NIN (2020) "Nutrient Requirements for Indians"
+                </h5>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">
+                  Section 4.2: Protein Requirements of Children &amp; Adolescents. Reference body weights and safe protein levels for Indian cohorts.
+                </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-code text-[11px] text-outline">
+<span class="text-on-surface">Pages 45–48</span>
+<button class="text-primary hover:underline flex items-center gap-0.5" type="button">
+<span>View PDF Chunk</span>
+<span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Citation 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-sm shadow-sm flex flex-col justify-between hover:bg-surface-container transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded bg-provenance-tag text-citation-text font-label-code text-[11px] font-semibold">NK-008</span>
+<span class="font-label-provenance text-[10px] text-confidence-high flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-confidence-high"></span> Food Matrix
+                  </span>
+</div>
+<h5 class="font-headline-sm text-[13px] text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                  Indian Food Composition Tables (IFCT 2017)
+                </h5>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">
+                  Legumes &amp; Pulses Nutrient Matrix: Essential amino acid score, proximate principles, raw vs cooked bioavailability indexes.
+                </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-code text-[11px] text-outline">
+<span class="text-on-surface">Pages 112–115</span>
+<button class="text-secondary hover:underline flex items-center gap-0.5" type="button">
+<span>Inspect Matrix</span>
+<span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: RETRIEVED EVIDENCE PASSAGES (RAW CHUNKS) -->
+<div class="bg-surface-raised rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">terminal</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Retrieved Evidence Passages (Raw Chunks)</h4>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">Top-2 / 5 Shown</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Chunk 1 -->
+<div class="bg-surface-base rounded-lg p-space-sm shadow-inner">
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-space-xs pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-code text-[11px] font-bold">NK-015-C00014</span>
+<span class="text-on-surface-variant font-label-provenance text-[10px]">ICMR-NIN 2020 RDA Doc</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-code text-[10px]">
+<span class="text-chart-accent">Rerank: <strong>0.941</strong></span>
+<span class="text-on-surface-variant">BM25: 18.42</span>
+<span class="text-on-surface-variant">FAISS: 0.887</span>
+</div>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-normal bg-surface-container-low/50 p-2 rounded font-mono">
+                "...For children in the age group of 10-12 years, the recommended dietary allowances are formulated assuming reference body weight of <mark class="bg-primary-container text-on-primary-fixed px-1 rounded font-bold">34.3 kg</mark> for boys and <mark class="bg-primary-container text-on-primary-fixed px-1 rounded font-bold">35.0 kg</mark> for girls. The daily safe protein intake values are <mark class="bg-chart-accent text-surface-base px-1 rounded font-bold">31.8 g/day</mark> for boys and <mark class="bg-chart-accent text-surface-base px-1 rounded font-bold">32.8 g/day</mark> for girls, yielding an average requirement factor of 0.93 to 0.94 g/kg/day with quality corrections applied..."
+              </p>
+</div>
+<!-- Chunk 2 -->
+<div class="bg-surface-base rounded-lg p-space-sm shadow-inner">
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-space-xs pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-code text-[11px] font-bold">NK-008-C00342</span>
+<span class="text-on-surface-variant font-label-provenance text-[10px]">IFCT 2017 Table 3</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-code text-[10px]">
+<span class="text-chart-accent">Rerank: <strong>0.865</strong></span>
+<span class="text-on-surface-variant">BM25: 14.19</span>
+<span class="text-on-surface-variant">FAISS: 0.823</span>
+</div>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface leading-normal bg-surface-container-low/50 p-2 rounded font-mono">
+                "...Food Code B004: Bengal gram whole (Cicer arietinum). Moisture 9.8%, Protein <mark class="bg-secondary text-surface-base px-1 rounded font-bold">19.03 ± 0.42 g</mark>, Total fat 5.3g, Available carbohydrates 56.7g. Limiting amino acids: Methionine + Cysteine (1.2g/16g N). Lysine content: 6.8g/16g N. When blended with cereals at <mark class="bg-surface-container-highest text-citation-text px-1 rounded">3:1 proportion</mark>, net protein utilization index reaches parity with reference casein..."
+              </p>
+</div>
+</div>
+</div>
+<!-- Card 4: DETERMINISTIC VALIDATION & SAFETY AUDIT -->
+<div class="bg-surface-raised rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-confidence-high text-[18px]">gshield</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Deterministic Guardrails &amp; Safety Audit</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-confidence-high/15 text-confidence-high font-label-provenance text-[10px] font-bold">
+              3/3 GUARDS GREEN
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm text-[12px]">
+<div class="p-space-sm rounded-lg bg-surface-base flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-provenance text-[10px] text-outline uppercase">Age Boundary Guard</span>
+<span class="px-1.5 py-0.2 rounded bg-confidence-high text-surface-base font-label-code text-[10px] font-bold">PASS</span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface">10.0 ∈ [5.0, 15.0] Y</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant mt-1">Within audited pediatric pediatric school-age corpus bounds.</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-base flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-provenance text-[10px] text-outline uppercase">Nutrient Fidelity Guard</span>
+<span class="px-1.5 py-0.2 rounded bg-confidence-high text-surface-base font-label-code text-[10px] font-bold">PASS</span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface">Target Unit: g/day</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant mt-1">Extracted metric matches exact ICMR standardized units.</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-base flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-provenance text-[10px] text-outline uppercase">Hallucination Guard</span>
+<span class="px-1.5 py-0.2 rounded bg-confidence-high text-surface-base font-label-code text-[10px] font-bold">PASS</span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface">Zero Hallucinations</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant mt-1">All numeric values verbatim-matched against passage spans.</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Expandable Drawer: Generation & Sampling Metadata -->
+<details class="bg-surface-raised rounded-xl p-space-sm shadow-md group">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none text-on-surface-variant font-label-provenance text-[11px] uppercase tracking-wider py-1 px-space-xs">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">data_object</span>
+              Model Inference &amp; Generation Telemetry
+            </span>
+<span class="material-symbols-outlined text-[16px] group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-xs pt-space-sm mt-space-xs bg-surface-base p-space-sm rounded-lg font-label-code text-[11px]">
+<div>
+<span class="text-outline text-[10px] block">LLM Engine</span>
+<span class="text-primary">Qwen2.5-1.5B</span>
+</div>
+<div>
+<span class="text-outline text-[10px] block">Temperature</span>
+<span class="text-on-surface">0.10 (Deterministic)</span>
+</div>
+<div>
+<span class="text-outline text-[10px] block">Top-P / Top-K</span>
+<span class="text-on-surface">0.90 / 40</span>
+</div>
+<div>
+<span class="text-outline text-[10px] block">Context Tokens</span>
+<span class="text-secondary">1,842 Tokens</span>
+</div>
+<div>
+<span class="text-outline text-[10px] block">Output Length</span>
+<span class="text-chart-accent">286 Tokens</span>
+</div>
+</div>
+</details>
+</section>
+</div>
+<!-- Active Research Corpus Institutional Attribution Strip -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-raised/50 shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="font-label-provenance text-label-provenance text-outline uppercase tracking-wider">Governing Research Standards:</span>
+<div class="flex flex-wrap items-center gap-space-xs text-[11px] font-label-code text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">ICMR National Institute of Nutrition 2020</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">IFCT 2017 Composition DB</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">WHO Technical Report Series 935</span>
+</div>
+</div>
+<div class="flex items-center gap-1 font-label-provenance text-[11px] text-citation-text">
+<span class="material-symbols-outlined text-[14px]">lock_reset</span>
+<span>AUDITED VECTOR DB CHECKSUM: SHA-256: 4e91...d20a</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initClinicalWorkspace() {
+    const ageRange = document.getElementById('child-age-range');
+    const ageInput = document.getElementById('age-number-input');
+    const cohortTag = document.getElementById('cohort-tag');
+    const promptText = document.getElementById('clinical-prompt');
+    const synthesizeBtn = document.getElementById('btn-synthesize');
+    const chipsContainer = document.getElementById('query-chips-container');
+
+    function syncAge(val) {
+      const num = parseFloat(val);
+      if (isNaN(num)) return;
+      ageRange.value = num;
+      ageInput.value = num.toFixed(1);
+
+      if (num < 5.0 || num > 15.0) {
+        cohortTag.className = 'mt-space-xs flex items-center justify-between text-[11px] font-label-provenance px-space-sm py-1 rounded bg-error-container/30 text-error';
+        cohortTag.innerHTML = `
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[14px]">dangerous</span>
+            <span>OUT OF SCOPE REFUSAL: ${num.toFixed(1)} YRS IS OUTSIDE [5.0 - 15.0] CORPUS</span>
+          </div>
+          <span class="font-label-code">TRIGGER REFUSAL PROTOCOL</span>
+        `;
+      } else if (num >= 5.0 && num < 10.0) {
+        cohortTag.className = 'mt-space-xs flex items-center justify-between text-[11px] font-label-provenance px-space-sm py-1 rounded bg-surface-container text-secondary';
+        cohortTag.innerHTML = `
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[14px]">check_circle</span>
+            <span>VALID AGE COHORT: EARLY SCHOOL-AGE (${num.toFixed(1)} YRS)</span>
+          </div>
+          <span class="font-label-code text-on-surface-variant">PEDIATRIC TIER-1</span>
+        `;
+      } else {
+        cohortTag.className = 'mt-space-xs flex items-center justify-between text-[11px] font-label-provenance px-space-sm py-1 rounded bg-surface-container text-confidence-high';
+        cohortTag.innerHTML = `
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[14px]">check_circle</span>
+            <span>VALID AGE COHORT: SCHOOL-AGE (${num.toFixed(1)} YRS)</span>
+          </div>
+          <span class="font-label-code text-on-surface-variant">PEDIATRIC TIER-2</span>
+        `;
+      }
+    }
+
+    if (ageRange && ageInput) {
+      ageRange.addEventListener('input', (e) => syncAge(e.target.value));
+      ageInput.addEventListener('input', (e) => syncAge(e.target.value));
+    }
+
+    if (chipsContainer) {
+      chipsContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('button.preset-chip');
+        if (!btn) return;
+        const query = btn.getAttribute('data-query');
+        const age = btn.getAttribute('data-age');
+        if (query) promptText.value = query;
+        if (age) syncAge(age);
+      });
+    }
+
+    // Keyboard shortcut handler: CMD+Enter or CTRL+Enter
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+        e.preventDefault();
+        if (synthesizeBtn) synthesizeBtn.click();
+      }
+    });
+
+    if (synthesizeBtn) {
+      synthesizeBtn.addEventListener('click', () => {
+        const initialText = synthesizeBtn.innerHTML;
+        synthesizeBtn.disabled = true;
+        synthesizeBtn.classList.add('opacity-80');
+        synthesizeBtn.innerHTML = `
+          <span class="w-4 h-4 rounded-full border-2 border-surface-base border-t-transparent animate-spin mr-2"></span>
+          <span>Searching Index & Neural Reranking...</span>
+        `;
+
+        setTimeout(() => {
+          synthesizeBtn.disabled = false;
+          synthesizeBtn.classList.remove('opacity-80');
+          synthesizeBtn.innerHTML = initialText;
+        }, 420);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-dim border-t border-border-subtle"><div class="w-full max-w-[1800px] mx-auto px-margin lg:px-margin-lg py-margin-md"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-margin-md border-b border-border-subtle"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded bg-surface-container-high border border-border-highlight flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[15px]">vital_signs</span></div><span class="font-headline-sm text-headline-sm font-semibold text-on-surface">NutriKid RAG</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Retrieval-Augmented Generation decision-support platform engineered strictly for pediatric nutrition guidelines, cohort RDA calculations, and micronutrient surveillance.</p><div class="flex items-center gap-space-xs font-label-provenance text-label-provenance text-citation-text"><span class="material-symbols-outlined text-[14px] text-primary">verified</span><span>DETERMINISTIC CITATION FRAMEWORK</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider text-xs">Research Corpus Specs</span><div class="grid grid-cols-3 gap-space-xs"><div class="p-space-sm rounded bg-surface-container-low border border-border-subtle"><span class="font-label-tabular text-headline-sm text-primary block">22</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase">Documents</span></div><div class="p-space-sm rounded bg-surface-container-low border border-border-subtle"><span class="font-label-tabular text-headline-sm text-secondary block">2,403</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase">Pages</span></div><div class="p-space-sm rounded bg-surface-container-low border border-border-subtle"><span class="font-label-tabular text-headline-sm text-tertiary block">6,429</span><span class="font-label-provenance text-[10px] text-on-surface-variant uppercase">Chunks</span></div></div><p class="font-label-code text-[11px] text-on-surface-variant">Embedding: BAAI/bge-large-en-v1.5 • Chunk size: 512t / 64 overlap</p></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider text-xs">Institutional Corpus</span><ul class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant"><li>ICMR-National Institute of Nutrition (NIN 2020/2024)</li><li>World Health Organization (WHO Child Growth Standards)</li><li>Food and Agriculture Organization (FAO / INFOODS)</li><li>Food Safety and Standards Authority of India (FSSAI)</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider text-xs">Provenance Pledge &amp; Scope</span><p class="font-body-sm text-body-sm text-on-surface-variant">All clinical outputs link directly to page-indexed PDF coordinates. For pediatric populations aged 5.0–15.0 years. Does not substitute for specialized PICU/NICU metabolic protocols.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="font-label-code text-[12px] text-primary hover:text-primary-fixed-dim transition-colors" data-path="safety-scope" href="#">Protocol Scope</a><span class="text-outline">•</span><a class="font-label-code text-[12px] text-secondary hover:text-secondary-fixed-dim transition-colors" data-path="institutional-sources" href="#">Audited Index</a><span class="text-outline">•</span><a class="font-label-code text-[12px] text-citation-text hover:text-on-surface transition-colors" data-path="evaluation-benchmarks" href="#">RAG Triad Metrics</a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-tabular text-label-tabular text-on-surface-variant"><p>© 2025 NutriKid Clinical AI Consortium. Open Research &amp; Clinical Decision Support Architecture.</p><p class="font-label-code text-[11px] text-outline">Strict Regulatory Adherence: Non-Diagnostic Clinical Reference Engine</p></div></div></footer></body></html>
