@@ -1,0 +1,5 @@
+
+data/processed/chroma_db/
+*.png
+*.bin
+*.sqlite3
