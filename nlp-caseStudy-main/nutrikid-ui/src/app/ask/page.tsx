@@ -24,31 +24,79 @@ const LOADING_STAGES = [
 ];
 
 function CitationCard({ citation, index }: { citation: Citation; index: number }) {
-  const [expanded, setExpanded] = useState(false);
+  const pdfFileName = citation.file_name || (citation.title?.endsWith('.pdf') ? citation.title : null);
+  const page = citation.page_numbers && citation.page_numbers.length > 0 ? citation.page_numbers[0] : undefined;
+  const pdfUrl = pdfFileName ? api.getPdfUrl(pdfFileName, page) : null;
+
   return (
     <div
       className="citation-card-item"
-      onClick={() => setExpanded(!expanded)}
+      style={{
+        padding: '14px 16px',
+        borderRadius: 8,
+        backgroundColor: 'var(--surface-container-low)',
+        border: '1px solid var(--border-subtle)',
+      }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: expanded ? 8 : 0 }}>
-        <span className="badge badge-citation">[{citation.chunk_id || `REF-${index + 1}`}]</span>
-        {citation.source && (
-          <span className="font-mono text-label-code" style={{ fontSize: 11, color: 'var(--surgical-blue)', fontWeight: 600 }}>{citation.source}</span>
-        )}
-        {citation.page_numbers && citation.page_numbers.length > 0 && (
-          <span className="font-mono text-label-tabular" style={{ fontSize: 11, color: 'var(--on-surface-variant)' }}>
-            pp. {citation.page_numbers.join(', ')}
+      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, flex: 1 }}>
+          <span className="material-symbols-outlined" style={{ fontSize: 20, color: '#ef4444', marginTop: 1, flexShrink: 0 }}>
+            picture_as_pdf
           </span>
+          <div style={{ flex: 1 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
+              <span className="badge badge-citation">[{citation.chunk_id || `REF-${index + 1}`}]</span>
+              {citation.source && (
+                <span className="font-mono text-label-code" style={{ fontSize: 11, color: 'var(--surgical-blue)', fontWeight: 600 }}>
+                  {citation.source}
+                </span>
+              )}
+              {citation.page_numbers && citation.page_numbers.length > 0 && (
+                <span className="badge badge-primary" style={{ fontSize: 10, padding: '2px 8px' }}>
+                  Page {citation.page_numbers.join(', ')}
+                </span>
+              )}
+            </div>
+
+            <p className="text-body-sm" style={{ fontWeight: 600, color: 'var(--on-surface)', lineHeight: 1.4 }}>
+              {citation.title || citation.file_name || 'Clinical Reference Document'}
+            </p>
+
+            {pdfFileName && (
+              <p className="font-mono text-label-code" style={{ fontSize: 11, color: 'var(--primary-container)', marginTop: 4 }}>
+                📄 {pdfFileName}
+              </p>
+            )}
+          </div>
+        </div>
+
+        {pdfUrl && (
+          <a
+            href={pdfUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 4,
+              padding: '6px 12px',
+              fontSize: 11,
+              color: 'var(--primary-container)',
+              backgroundColor: 'var(--surface-container-high)',
+              border: '1px solid var(--border-subtle)',
+              borderRadius: 6,
+              textDecoration: 'none',
+              fontWeight: 600,
+              flexShrink: 0,
+            }}
+            title={`Open ${pdfFileName} at page ${page || 1}`}
+          >
+            <span>View PDF</span>
+            <span className="material-symbols-outlined" style={{ fontSize: 13 }}>open_in_new</span>
+          </a>
         )}
-        <span className="material-symbols-outlined" style={{ fontSize: 14, color: 'var(--on-surface-variant)', marginLeft: 'auto' }}>
-          {expanded ? 'expand_less' : 'expand_more'}
-        </span>
       </div>
-      {expanded && citation.title && (
-        <p className="text-body-sm" style={{ color: 'var(--on-surface-variant)', marginTop: 4 }}>
-          {citation.title}
-        </p>
-      )}
     </div>
   );
 }
@@ -57,6 +105,9 @@ function EvidenceCard({ ev, index }: { ev: Evidence; index: number }) {
   const [expanded, setExpanded] = useState(false);
   const PREVIEW_LENGTH = 300;
   const isLong = ev.text.length > PREVIEW_LENGTH;
+  const pdfFileName = ev.file_name || (ev.title?.endsWith('.pdf') ? ev.title : null);
+  const page = ev.page_numbers && ev.page_numbers.length > 0 ? ev.page_numbers[0] : undefined;
+  const pdfUrl = pdfFileName ? api.getPdfUrl(pdfFileName, page) : null;
 
   return (
     <div className="evidence-card animate-slide-up" style={{ animationDelay: `${index * 60}ms` }}>
@@ -67,10 +118,34 @@ function EvidenceCard({ ev, index }: { ev: Evidence; index: number }) {
         {ev.source && (
           <span className="font-mono text-label-tabular" style={{ fontSize: 10, color: 'var(--on-surface-variant)' }}>· {ev.source}</span>
         )}
+        {pdfFileName && (
+          <span className="font-mono text-label-code" style={{ fontSize: 10, color: 'var(--primary-container)' }}>
+            📄 {pdfFileName}
+          </span>
+        )}
         {ev.page_numbers && ev.page_numbers.length > 0 && (
-          <span className="font-mono text-label-tabular" style={{ fontSize: 10, color: 'var(--on-surface-variant)' }}>
+          <span className="badge badge-citation" style={{ fontSize: 10 }}>
             pp. {ev.page_numbers.join(', ')}
           </span>
+        )}
+        {pdfUrl && (
+          <a
+            href={pdfUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              marginLeft: 4,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 2,
+              fontSize: 10,
+              color: 'var(--primary-container)',
+              textDecoration: 'none',
+              fontWeight: 600,
+            }}
+          >
+            <span>PDF ↗</span>
+          </a>
         )}
         {ev.score > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginLeft: 'auto' }}>
@@ -83,6 +158,12 @@ function EvidenceCard({ ev, index }: { ev: Evidence; index: number }) {
           </div>
         )}
       </div>
+
+      {ev.source_name && (
+        <p className="text-body-sm" style={{ fontWeight: 600, color: 'var(--on-surface)', marginBottom: 6, fontSize: 12 }}>
+          {ev.source_name}
+        </p>
+      )}
 
       {/* Evidence text */}
       <p className="text-body-sm" style={{ color: 'var(--on-surface)', lineHeight: 1.65, whiteSpace: 'pre-wrap' }}>
@@ -460,11 +541,13 @@ export default function AskPage() {
                     <span className="material-symbols-outlined" style={{ fontSize: 28, color: 'var(--confidence-medium)', flexShrink: 0 }}>shield</span>
                     <div>
                       <div style={{ display: 'flex', gap: 8, marginBottom: 8, flexWrap: 'wrap' }}>
-                        <span className="badge badge-medium">Outside NutriKid Scope</span>
+                        <span className="badge badge-medium">
+                          {result.answer?.includes('Domain') ? 'Out of Clinical Domain' : 'Outside Age Scope'}
+                        </span>
                         <span className="badge badge-neutral" style={{ fontSize: 10 }}>Age: {result.child_age}y</span>
                       </div>
                       <h3 className="font-geist" style={{ fontSize: 16, fontWeight: 600, color: 'var(--on-surface)' }}>
-                        Protected Age Boundary
+                        {result.answer?.includes('Domain') ? 'Protected Domain Boundary' : 'Protected Age Boundary'}
                       </h3>
                     </div>
                   </div>
@@ -473,7 +556,7 @@ export default function AskPage() {
                   </p>
                   <div style={{ padding: '12px 16px', backgroundColor: 'var(--surface-container-low)', borderRadius: 8, border: '1px solid var(--border-subtle)' }}>
                     <p className="font-mono text-label-provenance" style={{ fontSize: 10, color: 'var(--on-surface-variant)' }}>
-                      NUTRIKID CURRENTLY SUPPORTS: 5.0 – 15.0 YEARS · THIS IS A PROTECTIVE SYSTEM BOUNDARY, NOT A TECHNICAL ERROR
+                      NUTRIKID SPECIALIZATION: PEDIATRIC CLINICAL NUTRITION (AGES 5.0–15.0 YRS) · THIS IS A PROTECTIVE SYSTEM BOUNDARY
                     </p>
                   </div>
                 </div>
@@ -550,6 +633,114 @@ export default function AskPage() {
                           {result.answer}
                         </p>
                       </div>
+
+                      {/* Cited Clinical Sources & PDF Provenance Directly in Answer Tab */}
+                      {result.citations && result.citations.length > 0 && (
+                        <div style={{ marginTop: 24, borderTop: '1px solid var(--border-subtle)', paddingTop: 18 }}>
+                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                              <span className="material-symbols-outlined" style={{ fontSize: 20, color: 'var(--primary-container)' }}>
+                                menu_book
+                              </span>
+                              <h4 className="font-geist" style={{ fontSize: 14, fontWeight: 600, color: 'var(--on-surface)' }}>
+                                Cited Clinical Documents & PDF Sources
+                              </h4>
+                            </div>
+                            <span className="badge badge-citation" style={{ fontSize: 10 }}>
+                              {result.citations.length} {result.citations.length === 1 ? 'Reference' : 'References'}
+                            </span>
+                          </div>
+
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                            {result.citations.map((c, idx) => {
+                              const pdfFileName = c.file_name || (c.title?.endsWith('.pdf') ? c.title : null);
+                              const page = c.page_numbers && c.page_numbers.length > 0 ? c.page_numbers[0] : undefined;
+                              const pdfUrl = pdfFileName ? api.getPdfUrl(pdfFileName, page) : null;
+
+                              return (
+                                <div
+                                  key={idx}
+                                  style={{
+                                    padding: '12px 16px',
+                                    borderRadius: 8,
+                                    backgroundColor: 'var(--surface-container-low)',
+                                    border: '1px solid var(--border-subtle)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'space-between',
+                                    gap: 12,
+                                    flexWrap: 'wrap',
+                                  }}
+                                >
+                                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, flex: 1, minWidth: 260 }}>
+                                    <span
+                                      className="material-symbols-outlined"
+                                      style={{ fontSize: 22, color: '#ef4444', flexShrink: 0, marginTop: 2 }}
+                                    >
+                                      picture_as_pdf
+                                    </span>
+                                    <div>
+                                      <p className="text-body-sm" style={{ fontWeight: 600, color: 'var(--on-surface)', lineHeight: 1.4 }}>
+                                        {c.title || c.file_name || 'Clinical Reference Document'}
+                                      </p>
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 4, flexWrap: 'wrap' }}>
+                                        {pdfFileName && (
+                                          <span className="font-mono text-label-code" style={{ fontSize: 11, color: 'var(--primary-container)', fontWeight: 600 }}>
+                                            📄 {pdfFileName}
+                                          </span>
+                                        )}
+                                        {c.page_numbers && c.page_numbers.length > 0 && (
+                                          <span className="badge badge-primary" style={{ fontSize: 10, padding: '2px 8px' }}>
+                                            Page {c.page_numbers.join(', ')}
+                                          </span>
+                                        )}
+                                        {c.source && (
+                                          <span className="font-mono text-label-tabular" style={{ fontSize: 10, color: 'var(--on-surface-variant)' }}>
+                                            Source: {c.source}
+                                          </span>
+                                        )}
+                                        {c.chunk_id && (
+                                          <span className="font-mono text-label-tabular" style={{ fontSize: 10, color: 'var(--on-surface-variant)' }}>
+                                            [{c.chunk_id}]
+                                          </span>
+                                        )}
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  {pdfUrl && (
+                                    <a
+                                      href={pdfUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="nk-button-secondary"
+                                      style={{
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: 5,
+                                        padding: '7px 14px',
+                                        fontSize: 12,
+                                        textDecoration: 'none',
+                                        borderRadius: 6,
+                                        fontWeight: 600,
+                                        backgroundColor: 'var(--surface-container-high)',
+                                        color: 'var(--primary-container)',
+                                        border: '1px solid var(--border-subtle)',
+                                        marginLeft: 'auto',
+                                      }}
+                                      title={`Open ${pdfFileName} at page ${page || 1}`}
+                                    >
+                                      <span>View PDF</span>
+                                      <span className="material-symbols-outlined" style={{ fontSize: 14 }}>open_in_new</span>
+                                    </a>
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      )}
+
                       {result.fidelity_check && !result.fidelity_check.passed && (
                         <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 8, backgroundColor: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.2)' }}>
                           <p className="font-mono text-label-provenance" style={{ fontSize: 10, color: 'var(--confidence-medium)', marginBottom: 4 }}>NUTRIENT FIDELITY GUARD TRIGGERED</p>

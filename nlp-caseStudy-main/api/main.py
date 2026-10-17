@@ -17,7 +17,7 @@ if BASE_DIR not in sys.path:
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, FileResponse
 from pydantic import BaseModel, Field
 from typing import Optional, List
 
@@ -181,6 +181,34 @@ def chroma_search(req: SimilarityRequest):
         return {"backend": "chromadb", "query": req.query, "k": req.k, "results": results}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"ChromaDB search error: {str(e)}")
+
+# ── /api/pdf/{file_name} ─────────────────────────────────────────────────────
+
+@app.get("/api/pdf/{file_name:path}")
+def get_pdf(file_name: str):
+    """
+    Serves authoritative pediatric nutrition PDF documents from knowledge_corpus.
+    Supports case-insensitive matching and URL-decoded filenames.
+    """
+    from urllib.parse import unquote
+    decoded_name = unquote(file_name).strip()
+    base_target = os.path.basename(decoded_name).lower()
+    
+    corpus_base = os.path.join(BASE_DIR, "knowledge_corpus")
+    for root, dirs, files in os.walk(corpus_base):
+        for f in files:
+            if f.lower() == base_target or f.lower() == decoded_name.lower():
+                pdf_path = os.path.join(root, f)
+                return FileResponse(
+                    pdf_path,
+                    media_type="application/pdf",
+                    filename=f,
+                    headers={
+                        "Content-Disposition": f"inline; filename=\"{f}\"",
+                        "Access-Control-Allow-Origin": "*",
+                    }
+                )
+    raise HTTPException(status_code=404, detail=f"PDF document '{file_name}' not found in knowledge corpus.")
 
 if __name__ == "__main__":
     import uvicorn

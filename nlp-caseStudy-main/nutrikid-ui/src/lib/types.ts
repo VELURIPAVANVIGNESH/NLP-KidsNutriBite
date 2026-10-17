@@ -5,6 +5,9 @@ export interface Evidence {
   score: number;
   text: string;
   source: string;
+  file_name?: string;
+  source_name?: string;
+  title?: string;
   page_numbers?: number[];
 }
 
@@ -12,6 +15,7 @@ export interface Citation {
   chunk_id: string;
   source: string;
   title: string;
+  file_name?: string;
   page_numbers?: number[];
 }
 

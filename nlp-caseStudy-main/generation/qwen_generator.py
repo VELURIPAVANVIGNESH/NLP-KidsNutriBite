@@ -33,7 +33,9 @@ PRIMARY_MODEL = os.environ.get("QWEN_MODEL_NAME", "Qwen/Qwen2.5-1.5B-Instruct")
 GENERATION_CONFIG = {
     "model": PRIMARY_MODEL,
     "temperature": 0.1,
-    "max_new_tokens": 36,
+    "top_p": 0.9,
+    "top_k": 50,
+    "max_new_tokens": 512,
     "seed": 42,
     "do_sample": False,
 }
@@ -69,12 +71,13 @@ def _load_qwen():
 SYSTEM_PROMPT = (
     "You are NutriKid, an evidence-grounded pediatric nutrition assistant.\n\n"
     "Answer the user's question directly using ONLY the supplied evidence.\n\n"
+    "If the supplied evidence does NOT directly answer the question, or if the query is unrelated to the retrieved passages, respond ONLY with:\n"
+    "\"Insufficient relevant evidence was retrieved.\"\n\n"
+    "Do not summarize unrelated evidence.\n\n"
     "Give the relevant value when available, but ALWAYS explain what the value means in a complete sentence.\n\n"
     "Never output a bare number or isolated value.\n\n"
     "Do not copy unrelated text from the evidence.\n\n"
     "Do not invent information.\n\n"
-    "If the evidence does not answer the question, say:\n"
-    "\"Insufficient relevant evidence was retrieved.\"\n\n"
     "Keep the answer concise: 1–3 complete sentences or short bullets."
 )
 
@@ -278,6 +281,59 @@ def select_relevant_evidence(query, child_age, evidence_items):
     return clean
 
 
+_CORPUS_CACHE = None
+
+def _get_chunk_metadata(chunk_id: str) -> dict:
+    global _CORPUS_CACHE
+    if not chunk_id:
+        return {}
+    if _CORPUS_CACHE is None:
+        try:
+            corpus_path = os.path.join(BASE_DIR, "data", "processed", "preprocessed_corpus.json")
+            if os.path.exists(corpus_path):
+                with open(corpus_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    _CORPUS_CACHE = {c.get("chunk_id"): c for c in data if "chunk_id" in c}
+            else:
+                _CORPUS_CACHE = {}
+        except Exception:
+            _CORPUS_CACHE = {}
+    return _CORPUS_CACHE.get(chunk_id, {})
+
+def _format_citation(e: dict) -> dict:
+    cid = e.get("chunk_id", "")
+    meta = _get_chunk_metadata(cid) if cid else {}
+    file_name = e.get("file_name") or meta.get("file_name", "")
+    source_name = e.get("source_name") or meta.get("source_name", "")
+    source_id = e.get("source_id") or meta.get("source_id", "")
+    page_numbers = e.get("page_numbers") or meta.get("page_numbers", [])
+    title = source_name or file_name or source_id or "Pediatric Clinical Source"
+    return {
+        "chunk_id": cid,
+        "source": source_id,
+        "title": title,
+        "file_name": file_name,
+        "page_numbers": page_numbers,
+    }
+
+def _format_evidence_item(e: dict) -> dict:
+    cid = e.get("chunk_id", "")
+    meta = _get_chunk_metadata(cid) if cid else {}
+    file_name = e.get("file_name") or meta.get("file_name", "")
+    source_name = e.get("source_name") or meta.get("source_name", "")
+    source_id = e.get("source_id") or meta.get("source_id", "")
+    page_numbers = e.get("page_numbers") or meta.get("page_numbers", [])
+    return {
+        "chunk_id": cid,
+        "score": e.get("reranker_score", e.get("score", 0.0)),
+        "text": e.get("text", "")[:500],
+        "source": source_id,
+        "source_name": source_name,
+        "title": source_name or file_name or source_id,
+        "file_name": file_name,
+        "page_numbers": page_numbers,
+    }
+
 def _build_messages(query, child_age, evidence_items):
     eb = format_evidence_block(evidence_items)
     user_content = f"{query}\n\nEVIDENCE:\n{eb}"
@@ -306,9 +362,7 @@ def generate_answer(query, child_age, evidence_items):
             "val_ms": 0.0,
         }
 
-    citations = [{"chunk_id": e.get("chunk_id",""), "source": e.get("source_id",""),
-                  "title": e.get("source_name", e.get("file_name","")),
-                  "page_numbers": e.get("page_numbers",[])} for e in evidence_items]
+    citations = [_format_citation(e) for e in evidence_items]
 
     model, tokenizer = _load_qwen()
     messages = _build_messages(query, child_age, evidence_items[:2])
@@ -327,7 +381,7 @@ def generate_answer(query, child_age, evidence_items):
     with torch.no_grad():
         out_ids = model.generate(
             **inputs,
-            max_new_tokens=GENERATION_CONFIG.get("max_new_tokens", 64),
+            max_new_tokens=GENERATION_CONFIG.get("max_new_tokens", 512),
             do_sample=False,
             pad_token_id=tokenizer.eos_token_id,
         )
@@ -385,9 +439,7 @@ def generate_answer_stream(query, child_age, evidence_items):
         }
         return
 
-    citations = [{"chunk_id": e.get("chunk_id",""), "source": e.get("source_id",""),
-                  "title": e.get("source_name", e.get("file_name","")),
-                  "page_numbers": e.get("page_numbers",[])} for e in evidence_items]
+    citations = [_format_citation(e) for e in evidence_items]
 
     model, tokenizer = _load_qwen()
     messages = _build_messages(query, child_age, evidence_items[:2])
@@ -410,7 +462,7 @@ def generate_answer_stream(query, child_age, evidence_items):
     generation_kwargs = dict(
         **inputs,
         streamer=streamer,
-        max_new_tokens=GENERATION_CONFIG.get("max_new_tokens", 64),
+        max_new_tokens=GENERATION_CONFIG.get("max_new_tokens", 512),
         do_sample=False,
         pad_token_id=tokenizer.eos_token_id,
     )
@@ -459,8 +511,23 @@ def run_qwen_pipeline(query, child_age, candidate_k=20, top_k=5, config_path="pr
     """Full end-to-end RAG pipeline with stage-by-stage timing instrumentation."""
     t_total_start = time.perf_counter()
     
-    # Stage 1: Age validation
+    # Stage 1: Domain & Age scope validation
     t0_age = time.perf_counter()
+    from generation.domain_guard import validate_domain_scope
+    is_valid_domain, domain_refusal = validate_domain_scope(query)
+    if not is_valid_domain:
+        t_scope = (time.perf_counter() - t0_age) * 1000
+        return {
+            "query": query, "child_age": child_age, "scope_status": "out_of_scope",
+            "status": "terminated_out_of_scope",
+            "answer": domain_refusal,
+            "citations": [], "evidence": [], "generation_metadata": GENERATION_CONFIG.copy(),
+            "perf_metrics": {
+                "age_validation_ms": round(t_scope, 2),
+                "total_request_ms": round(t_scope, 2)
+            }
+        }
+
     if child_age is not None and (child_age < 5.0 or child_age > 15.0):
         t_age_val = (time.perf_counter() - t0_age) * 1000
         return {
@@ -495,9 +562,7 @@ def run_qwen_pipeline(query, child_age, candidate_k=20, top_k=5, config_path="pr
 
     # Stage 5: Citation formatting
     t0_cit = time.perf_counter()
-    evidence_out = [{"chunk_id": e.get("chunk_id",""), "score": e.get("reranker_score", e.get("score", 0.0)),
-                     "text": e.get("text","")[:500], "source": e.get("source_id",""),
-                     "page_numbers": e.get("page_numbers",[])} for e in evidence_items]
+    evidence_out = [_format_evidence_item(e) for e in evidence_items]
     t_cit = (time.perf_counter() - t0_cit) * 1000
     t_total = (time.perf_counter() - t_total_start) * 1000
 
@@ -557,9 +622,25 @@ def run_qwen_pipeline_stream(query, child_age, candidate_k=20, top_k=5, config_p
     """Full streaming RAG pipeline yielding SSE events as each phase executes."""
     t_total_start = time.perf_counter()
 
-    # Stage 0: Age scope
-    yield {"event": "stage", "stage": 0, "name": "scope", "label": "Validating age scope (5.0–15.0 years)"}
+    # Stage 0: Domain & Age scope
+    yield {"event": "stage", "stage": 0, "name": "scope", "label": "Validating domain & age scope (5.0–15.0 years)"}
     t0_age = time.perf_counter()
+    from generation.domain_guard import validate_domain_scope
+    is_valid_domain, domain_refusal = validate_domain_scope(query)
+    if not is_valid_domain:
+        t_scope = (time.perf_counter() - t0_age) * 1000
+        yield {
+            "event": "done",
+            "result": {
+                "query": query, "child_age": child_age, "scope_status": "out_of_scope",
+                "status": "terminated_out_of_scope",
+                "answer": domain_refusal,
+                "citations": [], "evidence": [], "generation_metadata": GENERATION_CONFIG.copy(),
+                "perf_metrics": {"age_validation_ms": round(t_scope, 2), "total_request_ms": round(t_scope, 2)}
+            }
+        }
+        return
+
     if child_age is not None and (child_age < 5.0 or child_age > 15.0):
         t_age_val = (time.perf_counter() - t0_age) * 1000
         yield {
@@ -618,9 +699,7 @@ def run_qwen_pipeline_stream(query, child_age, candidate_k=20, top_k=5, config_p
     yield {"event": "stage", "stage": 4, "name": "validate", "label": "Nutrient fidelity validation"}
 
     t0_cit = time.perf_counter()
-    evidence_out = [{"chunk_id": e.get("chunk_id",""), "score": e.get("reranker_score", e.get("score", 0.0)),
-                     "text": e.get("text","")[:500], "source": e.get("source_id",""),
-                     "page_numbers": e.get("page_numbers",[])} for e in evidence_items]
+    evidence_out = [_format_evidence_item(e) for e in evidence_items]
     t_cit = (time.perf_counter() - t0_cit) * 1000
 
     t_total = (time.perf_counter() - t_total_start) * 1000

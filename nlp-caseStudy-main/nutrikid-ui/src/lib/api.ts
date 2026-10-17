@@ -124,4 +124,10 @@ export const api = {
       body: JSON.stringify({ query, k }),
     });
   },
+
+  getPdfUrl(fileName: string, page?: number): string {
+    const base = getAPIBase();
+    const cleanName = encodeURIComponent(fileName);
+    return `${base}/api/pdf/${cleanName}${page ? `#page=${page}` : ''}`;
+  },
 };

@@ -100,5 +100,16 @@ class TestPhase2Generation(unittest.TestCase):
         self.assertIn("temperature", meta)
         self.assertIn("max_new_tokens", meta)
 
+    def test_11_out_of_domain_queries_refused(self):
+        """Out-of-domain queries (e.g., cricket, sports, coding) must be rejected immediately."""
+        from generation.qwen_generator import run_qwen_pipeline
+        res = run_qwen_pipeline("cricket match summary of ind vs wi", child_age=12.0)
+        self.assertEqual(res["scope_status"], "out_of_scope")
+        self.assertEqual(res["status"], "terminated_out_of_scope")
+        self.assertIn("Out of Domain", res["answer"])
+        self.assertEqual(res["citations"], [])
+        self.assertEqual(res["evidence"], [])
+
 if __name__ == "__main__":
     unittest.main()
+
